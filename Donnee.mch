@@ -5,16 +5,14 @@
 MACHINE
     Donnee
 SETS
-    Donnees; Noms; Types //Contenu
+    Donnees; Noms; Types = {photo, audio, video}
 VARIABLES
-    donnees, noms, designe, type //contenu
+    donnees, noms, designe, type
 INVARIANT
     donnees<:Donnees&
     noms<:Noms&
     designe:noms-->donnees&
     type:donnees-->Types
-    //contenu renvoie vers quoi?
-    //comment définir Types précisément
     
 INITIALISATION
     donnees, noms, designe, type := {},{},{},{}

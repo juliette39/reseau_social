@@ -1,5 +1,6 @@
 digraph {
 Affiche [ label=" Affiche " shape= box ]
+Chars [ label=" Chars " shape= box ]
 Donnee [ label=" Donnee " shape= box ]
 Ecrit [ label=" Ecrit " shape= box ]
 Lit [ label=" Lit " shape= box ]
