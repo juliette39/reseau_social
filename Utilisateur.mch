@@ -5,5 +5,5 @@
 MACHINE
     Utilisateur
 SETS
-    hi
+    hi; hello
 END
