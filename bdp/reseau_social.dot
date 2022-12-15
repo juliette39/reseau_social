@@ -1,5 +1,11 @@
 digraph {
+Affiche [ label=" Affiche " shape= box ]
+Donnee [ label=" Donnee " shape= box ]
+Ecrit [ label=" Ecrit " shape= box ]
+Lit [ label=" Lit " shape= box ]
 Page [ label=" Page " shape= box ]
+PossedeD [ label=" PossedeD " shape= box ]
+PossedeP [ label=" PossedeP " shape= box ]
 Utilisateur [ label=" Utilisateur " shape= box ]
 
 }
