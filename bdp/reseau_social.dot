@@ -6,6 +6,7 @@ Lit [ label=" Lit " shape= box ]
 Page [ label=" Page " shape= box ]
 PossedeD [ label=" PossedeD " shape= box ]
 PossedeP [ label=" PossedeP " shape= box ]
+System [ label=" System " shape= box ]
 Utilisateur [ label=" Utilisateur " shape= box ]
 
 }
