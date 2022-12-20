@@ -7,23 +7,23 @@ MACHINE
 SETS
     UTILISATEURS
 VARIABLES
-    utilisateurs, identifiant
+    utilisateurs, identifiant_ut
 INVARIANT 
     utilisateurs <: UTILISATEURS &
-    identifiant : utilisateurs >-> NATURAL
+    identifiant_ut : utilisateurs >-> NATURAL
 INITIALISATION
-    identifiant, utilisateurs:={}, {}
+    identifiant_ut, utilisateurs:={}, {}
 OPERATIONS
     ut<--AjoutUtilisateur =
     PRE utilisateurs <<: UTILISATEURS
     THEN
         ANY
             util, ide WHERE util : UTILISATEURS- utilisateurs &
-            ide:NAT-ran(identifiant)
+            ide:NAT-ran(identifiant_ut)
         THEN
             ut:=util ||
             utilisateurs := utilisateurs \/{util} ||
-            identifiant(util):=ide
+            identifiant_ut(util):=ide
         END
    END
 END

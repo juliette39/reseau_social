@@ -4,10 +4,25 @@
  */
 MACHINE
     Page
-SETS PAGE
-VARIABLES page
+SETS PAGES
+VARIABLES
+    pages, identifiant_pa
 INVARIANT 
-    page <: PAGE
-INITIALISATION page:={}
-   
+    pages <: PAGES &
+    identifiant_pa : pages >-> NATURAL
+INITIALISATION
+    identifiant_pa, pages:={}, {}
+OPERATIONS
+    pa<--AjoutPages =
+    PRE pages <<: PAGES
+    THEN
+        ANY
+            pag, ide WHERE pag : PAGES- pages &
+            ide:NAT-ran(identifiant_pa)
+        THEN
+            pa:=pag ||
+            pages := pages \/{pag} ||
+            identifiant_pa(pag):=ide
+        END
+   END
 END
