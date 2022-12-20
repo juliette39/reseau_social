@@ -13,7 +13,7 @@ INVARIANT
 INITIALISATION
     possede:={}
 OPERATIONS
-    AjoutPossede(ut, pa)=
+    AjoutPossedePage(ut, pa)=
     PRE
         ut:utilisateurs &
         pa:PAGES-pages

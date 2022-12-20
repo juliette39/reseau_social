@@ -8,7 +8,7 @@ INCLUDES
     Page,
     Utilisateur
 OPERATIONS
-    utilisateur<--NouvelUtilisateur=
+    utilisateur<--Inscription=
     PRE utilisateurs <<: UTILISATEURS
     THEN
         ut=AjoutUtilisateur ||
