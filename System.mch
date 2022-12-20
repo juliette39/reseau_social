@@ -11,8 +11,8 @@ OPERATIONS
     utilisateur<--Inscription=
     PRE utilisateurs <<: UTILISATEURS
     THEN
-        ut=AjoutUtilisateur ||
-        pa=AjoutPage ||
+        ut:=AjoutUtilisateur ||
+        pa:=AjoutPage ||
         AjoutPossedePage(ut, pa)
    END
 END
