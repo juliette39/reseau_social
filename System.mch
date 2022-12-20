@@ -6,7 +6,8 @@ MACHINE
     System
 INCLUDES
     Page,
-    Utilisateur
+    Utilisateur,
+    PossedeD
 OPERATIONS
     utilisateur<--Inscription=
     PRE utilisateurs <<: UTILISATEURS
