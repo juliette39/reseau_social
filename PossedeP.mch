@@ -9,7 +9,7 @@ USES
 VARIABLES
     possede
 INVARIANT
-    possede:pages-->utilisateurs
+    possede:utilisateurs-->pages
 INITIALISATION
     possede:={}
 OPERATIONS
@@ -18,6 +18,12 @@ OPERATIONS
         ut:utilisateurs &
         pa:PAGES-pages
     THEN
-        possede(pa):=ut
+        possede(ut):=pa
+    END;
+    pa<--GetPage(ut)=
+    PRE
+        ut:utilisateurs
+    THEN
+        pa:=possede(ut)
     END
 END

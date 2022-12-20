@@ -13,7 +13,7 @@ INVARIANT
 INITIALISATION
     identifiant_pa, pages:={}, {}
 OPERATIONS
-    pa<--AjoutPages =
+    pa<--AjoutPage =
     PRE pages <<: PAGES
     THEN
         ANY
@@ -24,5 +24,10 @@ OPERATIONS
             pages := pages \/{pag} ||
             identifiant_pa(pag):=ide
         END
-   END
+   END;
+   SuppPage(pa) =
+   PRE pa: pages
+    THEN
+        pages := pages - {pa}
+    END
 END

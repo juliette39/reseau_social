@@ -25,5 +25,10 @@ OPERATIONS
             utilisateurs := utilisateurs \/{util} ||
             identifiant_ut(util):=ide
         END
-   END
+   END;
+   SuppUtilisateur(ut) =
+   PRE ut: utilisateurs
+    THEN
+        utilisateurs := utilisateurs - {ut}
+    END
 END
