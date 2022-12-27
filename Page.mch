@@ -26,6 +26,7 @@ OPERATIONS
    SuppPage(pa) =
    PRE pa: pages
     THEN
+        //il faut retirer identifiant_pa(pa) avant non?
         pages := pages - {pa}
     END
 END
