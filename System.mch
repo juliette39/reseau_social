@@ -12,9 +12,16 @@ OPERATIONS
     utilisateur<--Inscription=
     PRE utilisateurs <<: UTILISATEURS
     THEN
-        utilisateur<--AjoutUtilisateur ||
-        pa<--AjoutPage ||
-        AjoutPossedePage(utilisateur, pa)
+        ANY
+           ut, pa WHERE ut:UTILISATEURS-utilisateurs &
+           pa:PAGES-pages
+       THEN
+           AjoutUtilisateur(ut) ||
+           utilisateur:=ut ||
+           AjoutPages(pa) ||
+           page:=pa ||
+           AjoutPossedePage(ut, pa)
+       END
    END;
    Desinscription(ut)=
    PRE ut:utilisateurs

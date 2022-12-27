@@ -14,20 +14,18 @@ INVARIANT
 INITIALISATION
     identifiant_ut, utilisateurs:={}, {}
 OPERATIONS
-    ut<--AjoutUtilisateur =
-    PRE utilisateurs <<: UTILISATEURS
+    AjoutUtilisateur(ut) =
+    PRE utilisateurs <<: UTILISATEURS & ut:UTILISATEURS
     THEN
         ANY
-            util, ide WHERE util : UTILISATEURS- utilisateurs &
-            ide:NAT-ran(identifiant_ut)
+            ide WHERE ide:NAT-ran(identifiant_ut)
         THEN
-            ut:=util ||
-            utilisateurs := utilisateurs \/{util} ||
-            identifiant_ut(util):=ide
+            utilisateurs := utilisateurs \/{ut} ||
+            identifiant_ut(ut):=ide
         END
    END;
    SuppUtilisateur(ut) =
-   PRE ut: utilisateurs
+   PRE ut:utilisateurs
     THEN
         utilisateurs := utilisateurs - {ut}
     END

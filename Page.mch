@@ -13,16 +13,14 @@ INVARIANT
 INITIALISATION
     identifiant_pa, pages:={}, {}
 OPERATIONS
-    pa<--AjoutPage =
-    PRE pages <<: PAGES
+    AjoutPage(pa) =
+    PRE pages <<: PAGES & pa:pages
     THEN
         ANY
-            pag, ide WHERE pag : PAGES- pages &
-            ide:NAT-ran(identifiant_pa)
+            ide WHERE ide:NAT-ran(identifiant_pa)
         THEN
-            pa:=pag ||
-            pages := pages \/{pag} ||
-            identifiant_pa(pag):=ide
+            pages := pages \/{pa} ||
+            identifiant_pa(pa):=ide
         END
    END;
    SuppPage(pa) =
