@@ -9,7 +9,7 @@ INCLUDES
     Utilisateur,
     PossedeP
 OPERATIONS
-    utilisateur<--Inscription=
+    Inscription=
     PRE utilisateurs <<: UTILISATEURS
     THEN
         ANY
@@ -17,16 +17,13 @@ OPERATIONS
            pa:PAGES-pages
        THEN
            AjoutUtilisateur(ut) ||
-           utilisateur:=ut ||
            AjoutPages(pa) ||
-           page:=pa ||
            AjoutPossedePage(ut, pa)
        END
    END;
-   Desinscription(ut)=
-   PRE ut:utilisateurs
+   Desinscription(ut, pa)=
+   PRE ut:utilisateurs & pa:pages
    THEN
-       pa<--GetPage(ut) ||
        SuppPage(pa) ||
        SuppUtilisateur(ut)
    END

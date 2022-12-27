@@ -19,11 +19,5 @@ OPERATIONS
         pa:PAGES-pages
     THEN
         possede(ut):=pa
-    END;
-    pa<--GetPage(ut)=
-    PRE
-        ut:utilisateurs
-    THEN
-        pa:=possede(ut)
     END
 END
