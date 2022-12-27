@@ -4,10 +4,9 @@
  */
 MACHINE
     Ecrit
-USES
-    
-    // /!\ dans l'implémentation avec une fonction
-    Utilisateur, Donnee
+
+INCLUDES
+    Utilisateur, Donnee, Lit
 VARIABLES
     ecrit
 INVARIANT
@@ -17,6 +16,7 @@ INVARIANT
 INITIALISATION
     ecrit := {}
 OPERATIONS
+    //ici ajouter les droits d'écriture donne aussi ceux de lecture mais ils ne sont pas supprimés au retrait de l'écriture. Soit on l'accepte, soit on oblige à posséder la lecture avant de recevoir l'écriture, et on peut ajouter dans système que l'ajout écriture ajoute aussi la lecture. à revoir
     ajoutEcrit(ut,do)=
     PRE
         ut:utilisateurs&
@@ -24,10 +24,15 @@ OPERATIONS
         ut|->do/:ecrit
         
     THEN
-        ecrit:=ecrit \/ {ut|->do}
+        ecrit:=ecrit \/ {ut|->do}||
+        IF 
+            ut|->do/:lit 
+        THEN
+            ajoutLit(ut,do)
+        END
     END;
     
-    retraitLit(ut, do)=
+    retraitEcrit(ut, do)=
     PRE
         ut:utilisateurs&
         do:donnees&
