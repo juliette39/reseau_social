@@ -5,11 +5,9 @@
 MACHINE
     System
 INCLUDES
-    Utilisateur,
     PossedeP,
-    Page
-    
-    
+    Page,
+    Utilisateur
 OPERATIONS
     Inscription=
     PRE utilisateurs <<: UTILISATEURS
@@ -18,9 +16,9 @@ OPERATIONS
            ut, pa WHERE ut:UTILISATEURS-utilisateurs &
            pa:PAGES-pages
        THEN
-           AjoutPages(pa)||
-           AjoutPossedePage(ut,pa)||
-           AjoutUtilisateur(ut)
+           AjoutPage(pa) ||
+           AjoutUtilisateur(ut) ||
+           AjoutPossedePage(ut,pa)
        END
    END;
 
@@ -29,6 +27,5 @@ OPERATIONS
    THEN
        SuppUtilisateur(ut)||
        SuppPage(pa)
-       
    END
 END

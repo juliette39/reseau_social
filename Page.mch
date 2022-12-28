@@ -4,29 +4,23 @@
  */
 MACHINE
     Page
-SETS PAGES
+SETS 
+    PAGES
 VARIABLES
-    pages, identifiant_pa
+    pages
 INVARIANT 
-    pages <: PAGES &
-    identifiant_pa : pages >-> NATURAL
+    pages <: PAGES
 INITIALISATION
-    identifiant_pa, pages:={}, {}
+    pages:={}
 OPERATIONS
     AjoutPage(pa) =
     PRE pages <<: PAGES & pa:pages
     THEN
-        ANY
-            ide WHERE ide:NAT-ran(identifiant_pa)
-        THEN
-            pages := pages \/{pa} ||
-            identifiant_pa(pa):=ide
-        END
+            pages := pages \/{pa}
    END;
    SuppPage(pa) =
    PRE pa: pages
     THEN
-        //il faut retirer identifiant_pa(pa) avant non?
         pages := pages - {pa}
     END
 END
