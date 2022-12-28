@@ -6,8 +6,10 @@ MACHINE
     System
 INCLUDES
     PossedeP,
+    PossedeD,
     Page,
-    Utilisateur
+    Utilisateur,
+    Donnee
 OPERATIONS
     Inscription=
     PRE utilisateurs <<: UTILISATEURS
@@ -25,7 +27,15 @@ OPERATIONS
    Desinscription(ut, pa)=
    PRE ut:utilisateurs & pa:pages
    THEN
+       SuppPossedePage(ut, pa) ||
        SuppUtilisateur(ut)||
        SuppPage(pa)
+   END;
+   
+   AjoutDonnees(nom, ty, ut)=
+   PRE nom:Noms & ty:type & ut:utilisateurs
+   THEN
+       ajoutD(nom, ty) ||
+       AjoutPossedeDonnee(ut, do)
    END
 END

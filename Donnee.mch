@@ -4,8 +4,6 @@
  */
 MACHINE
     Donnee
-INCLUDES
-    PossedeD
 SETS
     Donnees; Noms; Types = {photo, audio, video}
 VARIABLES

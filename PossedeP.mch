@@ -7,17 +7,23 @@ MACHINE
 USES
     Utilisateur, Page
 VARIABLES
-    possede
+    possedeP
 INVARIANT
-    possede:utilisateurs-->pages
+    possedeP:utilisateurs-->pages
 INITIALISATION
-    possede:={}
+    possedeP:={}
 OPERATIONS
     AjoutPossedePage(ut, pa)=
     PRE
         ut:utilisateurs &
         pa:PAGES-pages
     THEN
-        possede(ut):=pa
+        possedeP(ut):=pa
+    END;
+    SuppPossedePage(ut, pa)=
+    PRE
+        ut:utilisateurs & pa:pages
+    THEN
+        possedeP := possedeP - {ut|->pa}
     END
 END
