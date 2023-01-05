@@ -9,7 +9,7 @@ USES
 VARIABLES
     possedeD
 INVARIANT
-    possedeD:utilisateurs-->donnees
+    possedeD:donnees-->utilisateurs
 INITIALISATION
     possedeD:={}
 OPERATIONS
@@ -18,12 +18,13 @@ OPERATIONS
         ut:utilisateurs &
         do:Donnees-donnees
     THEN
-        possedeD(ut):=do
+        possedeD(do):=ut
     END;
+    
     SuppPossedeDonnee(ut, do)=
     PRE
         ut:utilisateurs & do:donnees
     THEN
-        possedeD := possedeD - {ut|->do}
+        possedeD := possedeD - {do|->ut}
     END
 END

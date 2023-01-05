@@ -5,20 +5,16 @@
 MACHINE
     Donnee
 SETS
-    Donnees; Noms; Types = {photo, audio, video}
+    Donnees; Types = {photo, audio, video}
 VARIABLES
-    donnees, noms, designe, type, identifiant_do
+    donnees, type
 INVARIANT
     donnees<:Donnees&
-    noms<:Noms&
-    designe:noms-->donnees&
-    type:donnees-->Types&
-    identifiant_do:donnees>->NAT
-    
+    type:donnees-->Types
 INITIALISATION
-    donnees, noms, designe, type, identifiant_do := {},{},{},{},{}
+    donnees, type := {},{}
 OPERATIONS
-    ajoutD(nom, ty)=
+    ajoutD(do, ty)=
     PRE
         //ici un nom est unique entre tous les utilisateurs
         /*si on veut faire qu'il soit unique pour un seul utilisateur (ie Jo ne peut pas avoir 2 vacances.png, mais Jo et Jean peuvent poster leurs propres vacances.png) il faut probablement passer par possedeP 
@@ -27,18 +23,11 @@ OPERATIONS
         
         solution proposée: le nom est un ensemble de nom + id
         à réfléchir...*/
-        nom:Noms-noms&
-        ty:Types
-    THEN
-        ANY do,iu WHERE do:Donnees-donnees & iu:NAT-ran(identifiant_do)
+        ty:Types & do:Donnees-donnees
         THEN
             donnees:=donnees\/{do}||
-            noms:=noms\/{nom}||
-            designe(nom):=do||
-            type(do):=ty||
-            identifiant_do(do):=iu
+            type(do):=ty
             //aussi ajouter le lien avec l'utilisateur? ou c'est fait dans possedeP?
-        END
     END;
     
     suppressionD(do)=
@@ -47,10 +36,7 @@ OPERATIONS
     THEN
             donnees:=donnees-{do}||
             //ici aussi le problème d'unicité des noms se pose
-            noms:=noms-designe~[{do}]||
-            designe:=designe|>>{do}||
-            type:={do}<<|type||
-            identifiant_do:={do}<<|identifiant_do
+            type:={do}<<|type
             //aussi supprimer le lien possedeP? Ou c'est fait dans possedeP
     END
 END

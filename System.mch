@@ -24,18 +24,29 @@ OPERATIONS
        END
    END;
 
-   Desinscription(ut, pa)=
-   PRE ut:utilisateurs & pa:pages
+   Desinscription(ut)=
+   PRE ut:utilisateurs
    THEN
-       SuppPossedePage(ut, pa) ||
+       SuppPossedePage(ut, possedeP(ut)) ||
        SuppUtilisateur(ut)||
-       SuppPage(pa)
+       SuppPage(possedeP(ut))
    END;
    
-   AjoutDonnees(nom, ty, ut)=
-   PRE nom:Noms & ty:type & ut:utilisateurs
+   AjoutDonnees(ty, ut)=
+   PRE donnees <<: Donnees & ty:Types & ut:utilisateurs
    THEN
-       ajoutD(nom, ty) ||
-       AjoutPossedeDonnee(ut, do)
+       ANY
+           do WHERE do:Donnees-donnees
+       THEN
+           ajoutD(do, ty) ||
+           AjoutPossedeDonnee(ut, do)
+       END
+   END;
+   
+   SupprimeDonnee(do, ut)=
+      PRE do:donnees & ut:utilisateurs
+   THEN
+       SuppPossedeDonnee(possedeD(do), do) ||
+       suppressionD(do)
    END
 END
