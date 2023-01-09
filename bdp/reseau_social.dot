@@ -1,10 +1,8 @@
 digraph {
 Affiche [ label=" Affiche " shape= box ]
-Chars [ label=" Chars " shape= box ]
 Donnee [ label=" Donnee " shape= box ]
-Ecrit [ label=" Ecrit " shape= box ]
-Lit [ label=" Lit " shape= box ]
 Page [ label=" Page " shape= box ]
+Permissions [ label=" Permissions " shape= box ]
 PossedeD [ label=" PossedeD " shape= box ]
 PossedeP [ label=" PossedeP " shape= box ]
 System [ label=" System " shape= box ]
