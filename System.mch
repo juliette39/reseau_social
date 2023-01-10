@@ -5,46 +5,43 @@
 MACHINE
     System
 INCLUDES
-    PossedeP,
+    Permissions,
     PossedeD,
     Page,
-    Utilisateur,
     Donnee
 OPERATIONS
     Inscription=
-    PRE utilisateurs <<: UTILISATEURS
+    PRE pages <<: PAGES
     THEN
         ANY
-           ut, pa WHERE ut:UTILISATEURS-utilisateurs &
-           pa:PAGES-pages
+           pa, do WHERE pa:PAGES-pages & do:Donnees-donnees
        THEN
            AjoutPage(pa) ||
-           AjoutUtilisateur(ut) ||
-           AjoutPossedePage(ut,pa)
+           ajoutD(do, photo) ||
+           AjoutPossedeDonnee(pa, do)
        END
    END;
 
-   Desinscription(ut)=
-   PRE ut:utilisateurs
+   Desinscription(pa)=
+   PRE pa:pages
    THEN
-       SuppPossedePage(ut, possedeP(ut)) ||
-       SuppUtilisateur(ut)||
-       SuppPage(possedeP(ut))
+       //Faire la suppression de toutes les données d'une page possedeD|>{pa} ||
+       SuppPage(pa)
    END;
    
-   AjoutDonnees(ty, ut)=
-   PRE donnees <<: Donnees & ty:Types & ut:utilisateurs
+   AjoutDonnees(ty, pa)=
+   PRE donnees <<: Donnees & ty:Types & pa:pages
    THEN
        ANY
            do WHERE do:Donnees-donnees
        THEN
            ajoutD(do, ty) ||
-           AjoutPossedeDonnee(ut, do)
+           AjoutPossedeDonnee(pa, do)
        END
    END;
    
-   SupprimeDonnee(do, ut)=
-      PRE do:donnees & ut:utilisateurs
+   SupprimeDonnee(do, pa)=
+      PRE do:donnees & pa:pages & pa=possedeD(do)
    THEN
        SuppPossedeDonnee(possedeD(do), do) ||
        suppressionD(do)

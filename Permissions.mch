@@ -5,7 +5,7 @@
 MACHINE
     Permissions
 USES 
-    Utilisateur, Donnee
+    Donnee
 VARIABLES
     Lit, Ecrit
 INVARIANT

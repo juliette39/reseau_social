@@ -5,26 +5,27 @@
 MACHINE
     PossedeD
 USES
-    Utilisateur, Donnee
+    Page, Donnee
 VARIABLES
     possedeD
 INVARIANT
-    possedeD:donnees-->utilisateurs
+    possedeD:donnees-->pages
 INITIALISATION
     possedeD:={}
 OPERATIONS
-    AjoutPossedeDonnee(ut, do)=
+    AjoutPossedeDonnee(pa, do)=
     PRE
-        ut:utilisateurs &
+        pa:pages &
         do:Donnees-donnees
     THEN
-        possedeD(do):=ut
+        possedeD(do):=pa
     END;
     
-    SuppPossedeDonnee(ut, do)=
+    SuppPossedeDonnee(pa, do)=
     PRE
-        ut:utilisateurs & do:donnees
+        pa:pages & do:donnees
     THEN
-        possedeD := possedeD - {do|->ut}
+        possedeD := possedeD - {do|->pa}
     END
+    
 END
