@@ -5,38 +5,51 @@
 MACHINE
     Permissions
 USES 
-    Donnee
+    Donnee, Page
 VARIABLES
     Lit, Ecrit
 INVARIANT
-    Lit:donnees<->utilisateurs&
-    Ecrit:donnees<->utilisateurs
+    Lit:donnees<->pages&
+    Ecrit:donnees<->pages&
+    //On peut écrire ssi on peut déjà lire
+    ran(Ecrit)<:ran(Lit)
 INITIALISATION
     Lit, Ecrit := {},{}
 OPERATIONS
-    AjoutLit(ut, do)=
+    AjoutLit(pa, do)=
     PRE
-        ut:utilisateurs &
+        pa:pages&
         do:donnees
     THEN
-        Lit:=Lit \/ {do|->ut}
+        Lit:=Lit \/ {do|->pa}
     END;
     
-    SuppLit(ut, do)=
+    SuppLit(pa, do)=
     PRE
-        {do|->ut}:Lit &
-        {do|->ut}/:Ecrit
-    THEN
-        Lit:= Lit - {do|->ut}
-    END;
-    
-    AjoutEcrit(ut, do)=
-    PRE
-        ut:utilisateurs &
+        pa:pages&
         do:donnees&
-        ut:Lit[{do}]
+        (do|->pa):Lit&
+        (do|->pa)/:Ecrit
     THEN
-        Ecrit:=Ecrit \/ {do|->ut}
+        Lit:= Lit - {do|->pa}
+    END;
+    
+    AjoutEcrit(pa, do)=
+    PRE
+        pa:pages&
+        do:donnees&
+        (do|->pa):Lit
+    THEN
+        Ecrit:=Ecrit \/ {do|->pa}
+    END;
+    
+    SuppEcrit(pa, do)=
+    PRE
+        pa:pages&
+        do:donnees&
+        (do|->pa):Ecrit
+    THEN
+        Ecrit:=Ecrit - {do|->pa}
     END
     
 

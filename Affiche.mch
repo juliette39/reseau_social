@@ -26,7 +26,7 @@ OPERATIONS
     PRE
         pa:pages&
         do:donnees&
-        pa|->do:affiche
+        (pa|->do):affiche
     THEN
         affiche := affiche - {pa|->do}
     END
