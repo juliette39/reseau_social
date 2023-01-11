@@ -10,7 +10,7 @@ USES
 VARIABLES
     affiche
 INVARIANT
-    affiche:pages-->donnees
+    affiche:pages<->donnees
 INITIALISATION
     affiche:={}
 OPERATIONS

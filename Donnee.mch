@@ -4,8 +4,6 @@
  */
 MACHINE
     Donnee
-USES
-    Permissions
 SETS
     Donnees; Types = {photo, audio, video}
 VARIABLES
@@ -29,8 +27,6 @@ OPERATIONS
         do:donnees
     THEN
             donnees:=donnees-{do}||
-            type:={do}<<|type||
-            
-            
+            type:={do}<<|type
     END
 END

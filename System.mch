@@ -18,7 +18,8 @@ OPERATIONS
        THEN
            AjoutPage(pa) ||
            ajoutD(do, photo) ||
-           AjoutPossedeDonnee(pa, do)
+           AjoutPossedeDonnee(pa, do)||
+           AjoutPermissionsUtilisateur(pa, do)
        END
    END;
 
@@ -38,7 +39,8 @@ OPERATIONS
            do WHERE do:Donnees-donnees
        THEN
            ajoutD(do, ty) ||
-           AjoutPossedeDonnee(pa, do)
+           AjoutPossedeDonnee(pa, do)||
+           AjoutPermissionsUtilisateur(pa, do)  //Ajout des droit Lecture/Ecriture au propriétaire de la donnée. L'ajout des 2 ne peut se faire en parallèle car Ecrit à besoin de Lit
        END
    END;
    
@@ -47,7 +49,7 @@ OPERATIONS
    THEN
        SuppPossedeDonnee(possedeD(do), do) ||
        suppressionD(do)||
-       //supprimer les autres trucs qui pointent sur la donnée? ex permissions (idée : la virer du ran d'Ecrit/Lit)
+       SoustraireDroits(do)|| //Supprime tous les droits qui étaient accordés sur la donnée
        //if dernière donnée supprimée -> supprimer la page
        IF card(possedeD|>{pa})<=1 THEN
            SuppPage(pa)
@@ -72,6 +74,7 @@ OPERATIONS
        pa:pages&
        do:donnees&
        proprio=possedeD(do)&
+       proprio/=pa&
        (do|->pa):Lit&
        (do|->pa)/:Ecrit
    THEN
@@ -95,20 +98,30 @@ OPERATIONS
        pa:pages&
        do:donnees&
        proprio=possedeD(do)&
+       proprio/=pa&
        (do|->pa):Ecrit
    THEN
        SuppEcrit(pa, do)
    END;
    
-   /*/Affichage
-   Affiche(pa, do)=
+   //Affichage
+   CommenceRegarde(pa, do)=
    PRE
        pa:pages&
        do:donnees&
-       pa=possedeD(do)
-       */
+       (do|->pa):Lit
+   THEN
+       AjoutRegarde(pa, do)
+   END;
+   
+   ArreteRegarde(pa, do)=
+   PRE
+       pa:pages&
+       do:donnees&
+       (do|->pa):Regarde
+   THEN
+       SuppRegarde(pa,do)
+   END
 
        
 END
-
-//write|>>{donne}

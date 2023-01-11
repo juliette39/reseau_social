@@ -1,5 +1,4 @@
 digraph {
-Affiche [ label=" Affiche " shape= box ]
 Donnee [ label=" Donnee " shape= box ]
 Page [ label=" Page " shape= box ]
 Permissions [ label=" Permissions " shape= box ]
