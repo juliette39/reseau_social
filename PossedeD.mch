@@ -14,6 +14,7 @@ INVARIANT
 INITIALISATION
     possedeD:={}
 OPERATIONS
+    
     AjoutPossedeDonnee(pa, do)=
     PRE
         pa:pages &
@@ -27,6 +28,15 @@ OPERATIONS
         pa:pages & do:donnees
     THEN
         possedeD := possedeD - {do|->pa}
+    END;
+    
+    //Inscription
+    AjoutPremiereDonnee(pa, do)=
+    PRE
+        pa:PAGES &
+        do:Donnees-donnees
+    THEN
+        possedeD(do):=pa
     END
     
 END

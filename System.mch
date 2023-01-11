@@ -10,7 +10,7 @@ INCLUDES
     Page,
     Donnee
 OPERATIONS
-    Inscription=
+    page<--Inscription=
     PRE pages <<: PAGES
     THEN
         ANY
@@ -18,8 +18,9 @@ OPERATIONS
        THEN
            AjoutPage(pa) ||
            ajoutD(do, photo) ||
-           AjoutPossedeDonnee(pa, do)||
-           AjoutPermissionsProprietaire(pa, do)
+           AjoutPremiereDonnee(pa, do)|| //On ne passe pas par AjoutPossedeDonnee  car pa : PAGES - pages et donc viole la précondition d'AjoutPossedeDonnee
+           AjoutPremieresPermissions(pa, do)|| //Idem
+           page:=pa
        END
    END;
 

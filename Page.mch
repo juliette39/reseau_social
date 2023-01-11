@@ -14,9 +14,9 @@ INITIALISATION
     pages:={}
 OPERATIONS
     AjoutPage(pa) =
-    PRE pages <<: PAGES & pa:pages
+    PRE pa:PAGES-pages
     THEN
-            pages := pages \/{pa}
+            pages := pages \/ {pa}
    END;
    SuppPage(pa) =
    PRE pa: pages
