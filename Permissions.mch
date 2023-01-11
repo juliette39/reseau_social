@@ -12,8 +12,8 @@ INVARIANT
     Lit:donnees<->pages&
     Ecrit:donnees<->pages&
     Regarde:donnees<->pages& //On choisit de traiter regarde (si un utilisateur veut voir la donnée ou non) ici car la propriété se comporte comme Lit et Ecrit ici. Elle est traitée différement dans System
-    //On peut écrire ssi on peut déjà lire
-    ran(Ecrit)<:ran(Lit)
+    ran(Ecrit)<:ran(Lit)& //On peut écrire ssi on peut déjà lire
+    !do.(do:donnees=>possedeD(do):Lit[{do}]/\Ecrit[{do}]) //i.e. le propriétaire d'une donnée a tous les droits dessus
 INITIALISATION
     Lit, Ecrit, Regarde := {},{},{}
 OPERATIONS
@@ -87,14 +87,15 @@ OPERATIONS
     END;
     
     //Master
-    AjoutPermissionsUtilisateur(pa, do)=
+    AjoutPermissionsProprietaire(pa, do)= //Appellée à l'ajout d'une nouvelle donnée pour donner les droits au propriétaire
     PRE
         pa:pages&
         do:donnees&
         pa=possedeD(do)
     THEN
         Lit:=Lit \/ {do|->pa}||
-        Ecrit:=Ecrit \/ {do|->pa}
+        Ecrit:=Ecrit \/ {do|->pa}||
+        Regarde:=Regarde \/ {do|->pa}
     END
 
 

@@ -19,7 +19,7 @@ OPERATIONS
            AjoutPage(pa) ||
            ajoutD(do, photo) ||
            AjoutPossedeDonnee(pa, do)||
-           AjoutPermissionsUtilisateur(pa, do)
+           AjoutPermissionsProprietaire(pa, do)
        END
    END;
 
@@ -40,7 +40,7 @@ OPERATIONS
        THEN
            ajoutD(do, ty) ||
            AjoutPossedeDonnee(pa, do)||
-           AjoutPermissionsUtilisateur(pa, do)  //Ajout des droit Lecture/Ecriture au propriétaire de la donnée. L'ajout des 2 ne peut se faire en parallèle car Ecrit à besoin de Lit
+           AjoutPermissionsProprietaire(pa, do)  //Ajout des droit Lecture/Ecriture au propriétaire de la donnée. L'ajout des 2 ne peut se faire en parallèle car Ecrit à besoin de Lit
        END
    END;
    

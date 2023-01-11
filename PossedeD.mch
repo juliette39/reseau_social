@@ -9,7 +9,8 @@ USES
 VARIABLES
     possedeD
 INVARIANT
-    possedeD:donnees-->pages
+    possedeD:donnees-->pages&
+    !pa.(pa:pages=>card(possedeD|>{pa})>=1) //Tout utilisateur possède au moins une donnée
 INITIALISATION
     possedeD:={}
 OPERATIONS
