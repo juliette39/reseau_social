@@ -165,6 +165,17 @@
                 <Id value="donnees" typref="0" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:1:2:1:2:2"/>
             </Exp_Comparison>
         </Hypothesis>
+        <Hypothesis>
+            <Unary_Pred op="not">
+                <Exp_Comparison op=":">
+                    <Binary_Exp op="|-&gt;" typref="4">
+                        <Id value="do" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:1:2:1:3:1:1"/>
+                        <Id value="pa" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:1:2:1:3:1:2"/>
+                    </Binary_Exp>
+                    <Id value="Lit" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:1:2:1:3:2"/>
+                </Exp_Comparison>
+            </Unary_Pred>
+        </Hypothesis>
         <Local_Hyp num="1">
             <Exp_Comparison op=":">
                 <Id value="do" suffix="1" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:1:1"/>
@@ -415,6 +426,17 @@
                 <Id value="Lit" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:3:2:1:3:2"/>
             </Exp_Comparison>
         </Hypothesis>
+        <Hypothesis>
+            <Unary_Pred op="not">
+                <Exp_Comparison op=":">
+                    <Binary_Exp op="|-&gt;" typref="4">
+                        <Id value="do" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:3:2:1:4:1:1"/>
+                        <Id value="pa" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:3:2:1:4:1:2"/>
+                    </Binary_Exp>
+                    <Id value="Ecrit" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:3:2:1:4:2"/>
+                </Exp_Comparison>
+            </Unary_Pred>
+        </Hypothesis>
         <Local_Hyp num="1">
             <Exp_Comparison op=":">
                 <Id value="do" suffix="1" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:1:1"/>
@@ -644,6 +666,17 @@
                 <Id value="do" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:5:2:1:2:1"/>
                 <Id value="donnees" typref="0" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:5:2:1:2:2"/>
             </Exp_Comparison>
+        </Hypothesis>
+        <Hypothesis>
+            <Unary_Pred op="not">
+                <Exp_Comparison op=":">
+                    <Binary_Exp op="|-&gt;" typref="4">
+                        <Id value="do" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:5:2:1:3:1:1"/>
+                        <Id value="pa" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:5:2:1:3:1:2"/>
+                    </Binary_Exp>
+                    <Id value="Regarde" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:5:2:1:3:2"/>
+                </Exp_Comparison>
+            </Unary_Pred>
         </Hypothesis>
         <Simple_Goal>
             <Tag>Invariant is preserved</Tag>

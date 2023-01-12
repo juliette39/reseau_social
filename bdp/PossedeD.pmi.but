@@ -1,0 +1,1 @@
+﻿Flag(FileOn("PossedeD.pmi.res")) & Set(toto | bfalse)

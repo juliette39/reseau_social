@@ -719,7 +719,7 @@
             </Goal>
         </Simple_Goal>
     </Proof_Obligation>
-    <Proof_Obligation goalHash="1731204890418868248">
+    <Proof_Obligation goalHash="11040597628565047191">
         <Tag>WellDefinednessPrecondition_DonneLit</Tag>
         <Definition name="B definitions"/>
         <Definition name="ctx"/>
@@ -845,7 +845,7 @@
             </Goal>
         </Simple_Goal>
     </Proof_Obligation>
-    <Proof_Obligation goalHash="10361661519624788154">
+    <Proof_Obligation goalHash="14017407860820139955">
         <Tag>WellDefinednessPrecondition_DonneEcrit</Tag>
         <Definition name="B definitions"/>
         <Definition name="ctx"/>

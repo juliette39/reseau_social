@@ -24,7 +24,9 @@ OPERATIONS
     AjoutLit(pa, do)=
     PRE
         pa:pages&
-        do:donnees
+        do:donnees&
+        
+        do|->pa/:Lit
     THEN
         Lit:=Lit \/ {do|->pa}
     END;
@@ -45,7 +47,9 @@ OPERATIONS
     PRE
         pa:pages&
         do:donnees&
-        (do|->pa):Lit
+        (do|->pa):Lit&
+        
+        do|->pa/:Ecrit
     THEN
         Ecrit:=Ecrit \/ {do|->pa}
     END;
@@ -65,7 +69,9 @@ OPERATIONS
     AjoutRegarde(pa, do)=
     PRE
         pa:pages&
-        do:donnees
+        do:donnees&
+        
+        do|->pa/:Regarde
     THEN
         Regarde:=Regarde \/ {do|->pa}
     END;

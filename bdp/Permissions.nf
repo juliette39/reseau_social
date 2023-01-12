@@ -143,11 +143,11 @@ END
 THEORY ListOperationGuardX END
 &
 THEORY ListPreconditionX IS
-  List_Precondition(Machine(Permissions),AjoutLit)==(pa: pages & do: donnees);
+  List_Precondition(Machine(Permissions),AjoutLit)==(pa: pages & do: donnees & do|->pa/:Lit);
   List_Precondition(Machine(Permissions),SuppLit)==(pa: pages & do: donnees & do|->pa: Lit & do|->pa/:Ecrit & pa/=possedeD(do));
-  List_Precondition(Machine(Permissions),AjoutEcrit)==(pa: pages & do: donnees & do|->pa: Lit);
+  List_Precondition(Machine(Permissions),AjoutEcrit)==(pa: pages & do: donnees & do|->pa: Lit & do|->pa/:Ecrit);
   List_Precondition(Machine(Permissions),SuppEcrit)==(pa: pages & do: donnees & do|->pa: Ecrit & pa/=possedeD(do));
-  List_Precondition(Machine(Permissions),AjoutRegarde)==(pa: pages & do: donnees);
+  List_Precondition(Machine(Permissions),AjoutRegarde)==(pa: pages & do: donnees & do|->pa/:Regarde);
   List_Precondition(Machine(Permissions),SuppRegarde)==(pa: pages & do: donnees & do|->pa: Regarde);
   List_Precondition(Machine(Permissions),SoustraireDroitsD)==(do: donnees);
   List_Precondition(Machine(Permissions),SoustraireDroitsDP)==(do: donnees & pa: pages);
@@ -161,11 +161,11 @@ THEORY ListSubstitutionX IS
   Expanded_List_Substitution(Machine(Permissions),SoustraireDroitsDP)==(do: donnees & pa: pages | Lit,Regarde,Ecrit:={do}<<|Lit|>>{pa},{do}<<|Regarde|>>{pa},{do}<<|Ecrit|>>{pa});
   Expanded_List_Substitution(Machine(Permissions),SoustraireDroitsD)==(do: donnees | Lit,Ecrit,Regarde:={do}<<|Lit,{do}<<|Ecrit,{do}<<|Regarde);
   Expanded_List_Substitution(Machine(Permissions),SuppRegarde)==(pa: pages & do: donnees & do|->pa: Regarde | Regarde:=Regarde-{do|->pa});
-  Expanded_List_Substitution(Machine(Permissions),AjoutRegarde)==(pa: pages & do: donnees | Regarde:=Regarde\/{do|->pa});
+  Expanded_List_Substitution(Machine(Permissions),AjoutRegarde)==(pa: pages & do: donnees & do|->pa/:Regarde | Regarde:=Regarde\/{do|->pa});
   Expanded_List_Substitution(Machine(Permissions),SuppEcrit)==(pa: pages & do: donnees & do|->pa: Ecrit & pa/=possedeD(do) | Ecrit:=Ecrit-{do|->pa});
-  Expanded_List_Substitution(Machine(Permissions),AjoutEcrit)==(pa: pages & do: donnees & do|->pa: Lit | Ecrit:=Ecrit\/{do|->pa});
+  Expanded_List_Substitution(Machine(Permissions),AjoutEcrit)==(pa: pages & do: donnees & do|->pa: Lit & do|->pa/:Ecrit | Ecrit:=Ecrit\/{do|->pa});
   Expanded_List_Substitution(Machine(Permissions),SuppLit)==(pa: pages & do: donnees & do|->pa: Lit & do|->pa/:Ecrit & pa/=possedeD(do) | Lit:=Lit-{do|->pa});
-  Expanded_List_Substitution(Machine(Permissions),AjoutLit)==(pa: pages & do: donnees | Lit:=Lit\/{do|->pa});
+  Expanded_List_Substitution(Machine(Permissions),AjoutLit)==(pa: pages & do: donnees & do|->pa/:Lit | Lit:=Lit\/{do|->pa});
   List_Substitution(Machine(Permissions),AjoutLit)==(Lit:=Lit\/{do|->pa});
   List_Substitution(Machine(Permissions),SuppLit)==(Lit:=Lit-{do|->pa});
   List_Substitution(Machine(Permissions),AjoutEcrit)==(Ecrit:=Ecrit\/{do|->pa});

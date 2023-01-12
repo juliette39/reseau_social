@@ -67,7 +67,9 @@ OPERATIONS
        proprio:pages&
        pa:pages&
        do:donnees&
-       proprio=possedeD(do)
+       proprio=possedeD(do)&
+       
+       do|->pa/:Lit
    THEN
        AjoutLit(pa, do)
    END;
@@ -91,7 +93,9 @@ OPERATIONS
        pa:pages&
        do:donnees&
        proprio=possedeD(do)&
-       (do|->pa):Lit
+       (do|->pa):Lit&
+       
+       do|->pa/:Ecrit
    THEN
        AjoutEcrit(pa, do)
    END;
@@ -113,7 +117,9 @@ OPERATIONS
    PRE
        pa:pages&
        do:donnees&
-       (do|->pa):Lit
+       (do|->pa):Lit&
+       
+       do|->pa/:Regarde
    THEN
        AjoutRegarde(pa, do)
    END;

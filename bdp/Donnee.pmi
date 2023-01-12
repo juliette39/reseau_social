@@ -16,7 +16,7 @@ END
 THEORY MethodList IS
 ?;
 pr;
-?;
+pr & pr & ct & ch;
 pr;
 pr
 END

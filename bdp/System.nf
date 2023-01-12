@@ -148,21 +148,21 @@ THEORY ListPreconditionX IS
   List_Precondition(Machine(System),Inscription)==(pages <<: PAGES);
   List_Precondition(Machine(System),Publier)==(donnees <<: DONNEES & ty: TYPES & pa: pages);
   List_Precondition(Machine(System),SupprimeDonnee)==(do: donnees & pa: pages & pa = possedeD(do));
-  List_Precondition(Machine(System),DonneLit)==(proprio: pages & pa: pages & do: donnees & proprio = possedeD(do));
+  List_Precondition(Machine(System),DonneLit)==(proprio: pages & pa: pages & do: donnees & proprio = possedeD(do) & do|->pa/:Lit);
   List_Precondition(Machine(System),RetireLit)==(proprio: pages & pa: pages & do: donnees & proprio = possedeD(do) & proprio/=pa & do|->pa: Lit & do|->pa/:Ecrit);
-  List_Precondition(Machine(System),DonneEcrit)==(proprio: pages & pa: pages & do: donnees & proprio = possedeD(do) & do|->pa: Lit);
+  List_Precondition(Machine(System),DonneEcrit)==(proprio: pages & pa: pages & do: donnees & proprio = possedeD(do) & do|->pa: Lit & do|->pa/:Ecrit);
   List_Precondition(Machine(System),RetireEcrit)==(proprio: pages & pa: pages & do: donnees & proprio = possedeD(do) & proprio/=pa & do|->pa: Ecrit);
-  List_Precondition(Machine(System),CommenceRegarde)==(pa: pages & do: donnees & do|->pa: Lit);
+  List_Precondition(Machine(System),CommenceRegarde)==(pa: pages & do: donnees & do|->pa: Lit & do|->pa/:Regarde);
   List_Precondition(Machine(System),ArreteRegarde)==(pa: pages & do: donnees & do|->pa: Regarde)
 END
 &
 THEORY ListSubstitutionX IS
   Expanded_List_Substitution(Machine(System),ArreteRegarde)==(pa: pages & do: donnees & do|->pa: Regarde | Regarde:=Regarde-{do|->pa});
-  Expanded_List_Substitution(Machine(System),CommenceRegarde)==(pa: pages & do: donnees & do|->pa: Lit & pa: pages & do: donnees | Regarde:=Regarde\/{do|->pa});
+  Expanded_List_Substitution(Machine(System),CommenceRegarde)==(pa: pages & do: donnees & do|->pa: Lit & do|->pa/:Regarde & pa: pages & do: donnees & do|->pa/:Regarde | Regarde:=Regarde\/{do|->pa});
   Expanded_List_Substitution(Machine(System),RetireEcrit)==(proprio: pages & pa: pages & do: donnees & proprio = possedeD(do) & proprio/=pa & do|->pa: Ecrit & pa: pages & do: donnees & do|->pa: Ecrit & pa/=possedeD(do) | Ecrit:=Ecrit-{do|->pa});
-  Expanded_List_Substitution(Machine(System),DonneEcrit)==(proprio: pages & pa: pages & do: donnees & proprio = possedeD(do) & do|->pa: Lit & pa: pages & do: donnees & do|->pa: Lit | Ecrit:=Ecrit\/{do|->pa});
+  Expanded_List_Substitution(Machine(System),DonneEcrit)==(proprio: pages & pa: pages & do: donnees & proprio = possedeD(do) & do|->pa: Lit & do|->pa/:Ecrit & pa: pages & do: donnees & do|->pa: Lit & do|->pa/:Ecrit | Ecrit:=Ecrit\/{do|->pa});
   Expanded_List_Substitution(Machine(System),RetireLit)==(proprio: pages & pa: pages & do: donnees & proprio = possedeD(do) & proprio/=pa & do|->pa: Lit & do|->pa/:Ecrit & pa: pages & do: donnees & do|->pa: Lit & do|->pa/:Ecrit & pa/=possedeD(do) | Lit:=Lit-{do|->pa});
-  Expanded_List_Substitution(Machine(System),DonneLit)==(proprio: pages & pa: pages & do: donnees & proprio = possedeD(do) & pa: pages & do: donnees | Lit:=Lit\/{do|->pa});
+  Expanded_List_Substitution(Machine(System),DonneLit)==(proprio: pages & pa: pages & do: donnees & proprio = possedeD(do) & do|->pa/:Lit & pa: pages & do: donnees & do|->pa/:Lit | Lit:=Lit\/{do|->pa});
   Expanded_List_Substitution(Machine(System),SupprimeDonnee)==(do: donnees & pa: pages & pa = possedeD(do) & possedeD(do): pages & do: donnees & possedeD(do) = possedeD(do) & do: donnees | possedeD:=possedeD-{do|->possedeD(do)} || donnees,types:=donnees-{do},{do}<<|types || (card(possedeD|>{pa})<=1 ==> (pa: pages & do: donnees & pa: pages | pages:=pages-{pa} || Lit,Regarde,Ecrit:={do}<<|Lit|>>{pa},{do}<<|Regarde|>>{pa},{do}<<|Ecrit|>>{pa}) [] not(card(possedeD|>{pa})<=1) ==> (do: donnees | Lit,Ecrit,Regarde:={do}<<|Lit,{do}<<|Ecrit,{do}<<|Regarde)));
   Expanded_List_Substitution(Machine(System),Publier)==(donnees <<: DONNEES & ty: TYPES & pa: pages | @do.(do: DONNEES-donnees ==> (ty: TYPES & do: DONNEES-donnees & pa: pages & do: DONNEES-donnees & pa: pages & do: DONNEES | donnees,types:=donnees\/{do},types<+{do|->ty} || possedeD:=possedeD<+{do|->pa} || Lit,Ecrit,Regarde:=Lit\/{do|->pa},Ecrit\/{do|->pa},Regarde\/{do|->pa})));
   Expanded_List_Substitution(Machine(System),Inscription)==(pages <<: PAGES | @(pa,do).(pa: PAGES-pages & do: DONNEES-donnees ==> (pa: PAGES-pages & photo: TYPES & do: DONNEES-donnees & pa: PAGES & do: DONNEES-donnees & pa: PAGES & do: DONNEES | pages:=pages\/{pa} || donnees,types:=donnees\/{do},types<+{do|->photo} || possedeD:=possedeD<+{do|->pa} || Lit,Ecrit,Regarde:=Lit\/{do|->pa},Ecrit\/{do|->pa},Regarde\/{do|->pa} || page:=pa)));

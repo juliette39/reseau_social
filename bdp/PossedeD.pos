@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<Proof_Obligations version="1.0" xmlns="https://www.atelierb.eu/Formats/pog" author="pmi2Pos">
+<Proof_Obligations xmlns="https://www.atelierb.eu/Formats/pog" author="pmi2Pos" version="1.0">
 <Proof_Obligation>
 <Tag>Initialisation</Tag>
 <Simple_Goal status="Unproved">

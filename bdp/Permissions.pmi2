@@ -1,10 +1,10 @@
 THEORY BalanceX IS
-Permissions,39,0,11,2,0,0,0;
+Permissions,39,0,9,4,0,0,0;
 Initialisation,2,0,1,0,0,0,0;
 Operation_AjoutEcrit,3,0,1,0,0,0,0;
 Operation_AjoutLit,3,0,2,0,0,0,0;
-Operation_AjoutPermissionsProprietaire,5,0,1,0,0,0,0;
-Operation_AjoutPremieresPermissions,5,0,1,0,0,0,0;
+Operation_AjoutPermissionsProprietaire,5,0,0,1,0,0,0;
+Operation_AjoutPremieresPermissions,5,0,0,1,0,0,0;
 Operation_AjoutRegarde,1,0,1,0,0,0,0;
 Operation_SoustraireDroits,5,0,0,0,0,0,0;
 Operation_SuppEcrit,3,0,2,0,0,0,0;
@@ -26,12 +26,12 @@ Proved(0);
 Unproved;
 Unproved;
 Unproved;
-Proved(Rapide);
+Proved(0);
 Unproved;
 Unproved;
 Unproved;
 Unproved;
-Proved(Rapide);
+Proved(0);
 Unproved;
 Unproved;
 Unproved;
@@ -101,24 +101,24 @@ pr
 END
 &
 THEORY PassList IS
-Force(0),(?; Rapide; 0; 1);
-Force(0),(?; Rapide; 0; 1);
-Force(0),(?; Rapide; 0; 1);
-Force(0),(?; Rapide);
+Force(0),(?; 0; 1; Rapide);
+Force(0),(?; 0; 1; Rapide);
 Force(0),(?; Rapide; 0; 1);
 Force(0),(?; Rapide);
 Force(0),(?; Rapide; 0; 1);
+Force(0),(?; Rapide);
 Force(0),(?; Rapide; 0; 1);
 Force(0),(?; Rapide; 0; 1);
-Force(Rapide),?;
-Force(0),(?; Rapide; 0; 1);
-Force(0),(?; Rapide; 0; 1);
-Force(0),(?; Rapide; 0; 1);
-Force(0),(?; Rapide; 0; 1);
-Force(Rapide),?;
-Force(0),(?; Rapide; 0; 1);
-Force(0),(?; Rapide; 0; 1);
-Force(0),(?; Rapide; 0; 1);
+Force(0),(?; 0; 1; Rapide);
+Force(0),?;
+Force(0),(?; 0; 1; Rapide);
+Force(0),(?; 0; 1; Rapide);
+Force(0),(?; 0; 1; Rapide);
+Force(0),(?; 0; 1; Rapide);
+Force(0),?;
+Force(0),(?; 0; 1; Rapide);
+Force(0),(?; 0; 1; Rapide);
+Force(0),(?; 0; 1; Rapide);
 Force(0),(?; Rapide; 0; 1);
 Force(0),(?; Rapide; 0; 1);
 Force(0),(?; Rapide; 0; 1);

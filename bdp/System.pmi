@@ -1,12 +1,12 @@
 THEORY BalanceX IS
-System,21,0,0,14,1,0,0;
+System,21,0,4,10,1,0,0;
 Operation_Inscription,1,0,0,0,0,0,0;
 Operation_Publier,1,0,0,0,0,0,0;
 Operation_RetireEcrit,1,0,0,1,0,0,0;
 Operation_RetireLit,1,0,0,0,1,0,0;
 Operation_SupprimeDonnee,4,0,0,1,0,0,0;
-WellDefinednessPrecondition_DonneEcrit,2,0,0,2,0,0,0;
-WellDefinednessPrecondition_DonneLit,2,0,0,2,0,0,0;
+WellDefinednessPrecondition_DonneEcrit,2,0,2,0,0,0,0;
+WellDefinednessPrecondition_DonneLit,2,0,2,0,0,0,0;
 WellDefinednessPrecondition_RetireEcrit,2,0,0,2,0,0,0;
 WellDefinednessPrecondition_RetireLit,2,0,0,2,0,0,0;
 WellDefinednessPrecondition_SupprimeDonnee,2,0,0,2,0,0,0;
@@ -16,12 +16,12 @@ END
 THEORY ProofState IS
 Proved(0);
 Proved(0);
+Proved(Rapide);
+Proved(Rapide);
 Proved(0);
 Proved(0);
-Proved(0);
-Proved(0);
-Proved(0);
-Proved(0);
+Proved(Rapide);
+Proved(Rapide);
 Unproved;
 Proved(0);
 Proved(0);
@@ -58,18 +58,18 @@ pr;
 ?;
 pr;
 ?;
-?
+dd
 END
 &
 THEORY PassList IS
 Force(0),?;
 Force(0),?;
+Force(Rapide),?;
+Force(Rapide),?;
 Force(0),?;
 Force(0),?;
-Force(0),?;
-Force(0),?;
-Force(0),?;
-Force(0),?;
+Force(Rapide),?;
+Force(Rapide),?;
 Force(0),(?; 0; Rapide; 1);
 Force(0),?;
 Force(0),?;

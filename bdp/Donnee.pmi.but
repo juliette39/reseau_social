@@ -1,0 +1,1 @@
+﻿Flag(FileOn("Donnee.pmi.res")) & Set(toto | dom(ran(types)): FIN(INTEGER))

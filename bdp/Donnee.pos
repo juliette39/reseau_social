@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<Proof_Obligations author="pmi2Pos" xmlns="https://www.atelierb.eu/Formats/pog" version="1.0">
+<Proof_Obligations version="1.0" xmlns="https://www.atelierb.eu/Formats/pog" author="pmi2Pos">
 <Proof_Obligation>
 <Tag>Initialisation</Tag>
 <Simple_Goal status="Proved">
@@ -15,7 +15,7 @@
 </Simple_Goal>
 <Simple_Goal status="Unproved">
 <Tag>Invariant is preserved</Tag>
-<Proof_State methodList="?" proofState="Unproved" passList="Force(0),(?; 0; 1; Rapide)"/>
+<Proof_State methodList="pr &amp; pr &amp; ct &amp; ch" proofState="Unproved" passList="Force(0),(?; 0; 1; Rapide)"/>
 </Simple_Goal>
 </Proof_Obligation>
 <Proof_Obligation>
