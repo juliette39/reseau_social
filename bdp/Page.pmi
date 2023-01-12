@@ -1,0 +1,26 @@
+THEORY BalanceX IS
+Page,2,0,1,1,0,0,0;
+Operation_AjoutPage,1,0,0,1,0,0,0;
+Operation_SuppPage,1,0,1,0,0,0,0
+END
+&
+THEORY ProofState IS
+Proved(Rapide);
+Proved(0)
+END
+&
+THEORY MethodList IS
+pr;
+pr
+END
+&
+THEORY PassList IS
+Force(Rapide),?;
+Force(0),(?; Rapide)
+END
+&
+THEORY Status IS
+Page,2,0,2,0,0,0;
+Operation_AjoutPage,1,0,1,0,0,0;
+Operation_SuppPage,1,0,1,0,0,0
+END

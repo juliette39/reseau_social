@@ -1,0 +1,92 @@
+THEORY ProofList IS
+_f(1) & _f(6) & WellDefinednessPrecondition_AjoutPermissionsProprietaire.2,(_f(7) & _f(33) & _f(45) => _f(44));
+_f(1) & _f(6) & WellDefinednessPrecondition_AjoutPermissionsProprietaire.1,(_f(7) & _f(33) & _f(45) => _f(43));
+_f(1) & _f(6) & WellDefinednessPrecondition_SuppEcrit.2,(_f(7) & _f(2) & _f(21) & _f(45) => _f(44));
+_f(1) & _f(6) & WellDefinednessPrecondition_SuppEcrit.1,(_f(7) & _f(2) & _f(21) & _f(45) => _f(43));
+_f(1) & _f(6) & WellDefinednessPrecondition_SuppLit.2,(_f(7) & _f(2) & _f(12) & _f(13) & _f(45) => _f(44));
+_f(1) & _f(6) & WellDefinednessPrecondition_SuppLit.1,(_f(7) & _f(2) & _f(12) & _f(13) & _f(45) => _f(43));
+_f(1) & WellDefinednessInvariant.2,(_f(38) & _f(39) & _f(40) & _f(41) & _f(2) & _f(42) => _f(44));
+_f(1) & WellDefinednessInvariant.1,(_f(38) & _f(39) & _f(40) & _f(41) & _f(2) & _f(42) => _f(43));
+_f(1) & _f(6) & _f(37) & _f(33) & Operation_AjoutPremieresPermissions.5,(_f(8) & _f(3) => _f(36));
+_f(1) & _f(6) & _f(37) & _f(33) & Operation_AjoutPremieresPermissions.4,(_f(3) => _f(35));
+_f(1) & _f(6) & _f(37) & _f(33) & Operation_AjoutPremieresPermissions.3,(_f(3) => _f(25));
+_f(1) & _f(6) & _f(37) & _f(33) & Operation_AjoutPremieresPermissions.2,(_f(3) => _f(18));
+_f(1) & _f(6) & _f(37) & _f(33) & Operation_AjoutPremieresPermissions.1,(_f(3) => _f(9));
+_f(1) & _f(6) & _f(7) & _f(33) & _f(34) & Operation_AjoutPermissionsProprietaire.5,(_f(8) & _f(3) => _f(36));
+_f(1) & _f(6) & _f(7) & _f(33) & _f(34) & Operation_AjoutPermissionsProprietaire.4,(_f(3) => _f(35));
+_f(1) & _f(6) & _f(7) & _f(33) & _f(34) & Operation_AjoutPermissionsProprietaire.3,(_f(3) => _f(25));
+_f(1) & _f(6) & _f(7) & _f(33) & _f(34) & Operation_AjoutPermissionsProprietaire.2,(_f(3) => _f(18));
+_f(1) & _f(6) & _f(7) & _f(33) & _f(34) & Operation_AjoutPermissionsProprietaire.1,(_f(3) => _f(9));
+_f(1) & _f(6) & _f(2) & Operation_SoustraireDroits.5,(_f(8) & _f(3) => _f(32));
+_f(1) & _f(6) & _f(2) & Operation_SoustraireDroits.4,(_f(3) => _f(31));
+_f(1) & _f(6) & _f(2) & Operation_SoustraireDroits.3,(_f(3) => _f(30));
+_f(1) & _f(6) & _f(2) & Operation_SoustraireDroits.2,(_f(3) => _f(29));
+_f(1) & _f(6) & _f(2) & Operation_SoustraireDroits.1,(_f(3) => _f(28));
+_f(1) & _f(6) & _f(7) & _f(2) & _f(26) & Operation_SuppRegarde.1,(_f(3) => _f(27));
+_f(1) & _f(6) & _f(7) & _f(2) & Operation_AjoutRegarde.1,(_f(3) => _f(25));
+_f(1) & _f(6) & _f(7) & _f(2) & _f(21) & _f(14) & Operation_SuppEcrit.3,(_f(8) & _f(3) => _f(24));
+_f(1) & _f(6) & _f(7) & _f(2) & _f(21) & _f(14) & Operation_SuppEcrit.2,(_f(3) => _f(23));
+_f(1) & _f(6) & _f(7) & _f(2) & _f(21) & _f(14) & Operation_SuppEcrit.1,(_f(3) => _f(22));
+_f(1) & _f(6) & _f(7) & _f(2) & _f(12) & Operation_AjoutEcrit.3,(_f(8) & _f(3) => _f(20));
+_f(1) & _f(6) & _f(7) & _f(2) & _f(12) & Operation_AjoutEcrit.2,(_f(3) => _f(19));
+_f(1) & _f(6) & _f(7) & _f(2) & _f(12) & Operation_AjoutEcrit.1,(_f(3) => _f(18));
+_f(1) & _f(6) & _f(7) & _f(2) & _f(12) & _f(13) & _f(14) & Operation_SuppLit.3,(_f(8) & _f(3) => _f(17));
+_f(1) & _f(6) & _f(7) & _f(2) & _f(12) & _f(13) & _f(14) & Operation_SuppLit.2,(_f(3) => _f(16));
+_f(1) & _f(6) & _f(7) & _f(2) & _f(12) & _f(13) & _f(14) & Operation_SuppLit.1,(_f(3) => _f(15));
+_f(1) & _f(6) & _f(7) & _f(2) & Operation_AjoutLit.3,(_f(8) & _f(3) => _f(11));
+_f(1) & _f(6) & _f(7) & _f(2) & Operation_AjoutLit.2,(_f(3) => _f(10));
+_f(1) & _f(6) & _f(7) & _f(2) & Operation_AjoutLit.1,(_f(3) => _f(9));
+_f(1) & Initialisation.2,(_f(2) & _f(3) => _f(5));
+_f(1) & Initialisation.1,(_f(3) => _f(4))
+END
+&
+THEORY Formulas IS
+((NAT) = (((0) .. (2147483647)))) & ((INT) = (((-2147483647) .. (2147483647))));
+((do) : (donnees));
+"Invariant is preserved";
+(({}) : (((donnees) <-> (pages))));
+(((possedeD )(do)) : (((({} )[({do})]) /\ (({} )[({do})]))));
+((Lit) : (((donnees) <-> (pages)))) & ((Ecrit) : (((donnees) <-> (pages)))) & ((Regarde) : (((donnees) <-> (pages)))) & ran(Ecrit) : POW( ran(Lit)) & !(do).(((((do) : (donnees))) => ((((possedeD )(do)) : ((((Lit )[({do})]) /\ ((Ecrit )[({do})])))))));
+((pa) : (pages));
+((do$1) : (donnees));
+((((Lit) \/ (({((do) |-> (pa))})))) : (((donnees) <-> (pages))));
+ran(Ecrit) : POW( ran(((Lit) \/ (({((do) |-> (pa))})))));
+(((possedeD )(do$1)) : ((((((Lit) \/ (({((do) |-> (pa))}))) )[({do$1})]) /\ ((Ecrit )[({do$1})]))));
+((((do) |-> (pa))) : (Lit));
+not(((((do) |-> (pa))) : (Ecrit)));
+not(((pa) = ((possedeD )(do))));
+(((Lit - ({((do) |-> (pa))}))) : (((donnees) <-> (pages))));
+ran(Ecrit) : POW( ran((Lit - ({((do) |-> (pa))}))));
+(((possedeD )(do$1)) : (((((Lit - ({((do) |-> (pa))})) )[({do$1})]) /\ ((Ecrit )[({do$1})]))));
+((((Ecrit) \/ (({((do) |-> (pa))})))) : (((donnees) <-> (pages))));
+ran(((Ecrit) \/ (({((do) |-> (pa))})))) : POW( ran(Lit));
+(((possedeD )(do$1)) : ((((Lit )[({do$1})]) /\ ((((Ecrit) \/ (({((do) |-> (pa))}))) )[({do$1})]))));
+((((do) |-> (pa))) : (Ecrit));
+(((Ecrit - ({((do) |-> (pa))}))) : (((donnees) <-> (pages))));
+ran((Ecrit - ({((do) |-> (pa))}))) : POW( ran(Lit));
+(((possedeD )(do$1)) : ((((Lit )[({do$1})]) /\ (((Ecrit - ({((do) |-> (pa))})) )[({do$1})]))));
+((((Regarde) \/ (({((do) |-> (pa))})))) : (((donnees) <-> (pages))));
+((((do) |-> (pa))) : (Regarde));
+(((Regarde - ({((do) |-> (pa))}))) : (((donnees) <-> (pages))));
+((((({do})) <<| (Lit))) : (((donnees) <-> (pages))));
+((((({do})) <<| (Ecrit))) : (((donnees) <-> (pages))));
+((((({do})) <<| (Regarde))) : (((donnees) <-> (pages))));
+ran(((({do})) <<| (Ecrit))) : POW( ran(((({do})) <<| (Lit))));
+(((possedeD )(do$1)) : ((((((({do})) <<| (Lit)) )[({do$1})]) /\ ((((({do})) <<| (Ecrit)) )[({do$1})]))));
+((do) : (DONNEES));
+((pa) = ((possedeD )(do)));
+ran(((Ecrit) \/ (({((do) |-> (pa))})))) : POW( ran(((Lit) \/ (({((do) |-> (pa))})))));
+(((possedeD )(do$1)) : ((((((Lit) \/ (({((do) |-> (pa))}))) )[({do$1})]) /\ ((((Ecrit) \/ (({((do) |-> (pa))}))) )[({do$1})]))));
+((pa) : (PAGES));
+((Lit) : (((donnees) <-> (pages))));
+((Ecrit) : (((donnees) <-> (pages))));
+((Regarde) : (((donnees) <-> (pages))));
+ran(Ecrit) : POW( ran(Lit));
+"Invariant is well defined";
+((do) : (dom(possedeD)));
+((possedeD) : (((dom(possedeD)) +-> (ran(possedeD)))));
+"Operation precondition is well defined"
+END
+&
+THEORY EnumerateX
+END

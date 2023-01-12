@@ -18,7 +18,7 @@ OPERATIONS
     AjoutPossedeDonnee(pa, do)=
     PRE
         pa:pages &
-        do:Donnees-donnees
+        do:DONNEES-donnees
     THEN
         possedeD(do):=pa
     END;
@@ -34,7 +34,7 @@ OPERATIONS
     AjoutPremiereDonnee(pa, do)=
     PRE
         pa:PAGES &
-        do:Donnees-donnees
+        do:DONNEES-donnees
     THEN
         possedeD(do):=pa
     END

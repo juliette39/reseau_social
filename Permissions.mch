@@ -92,8 +92,8 @@ OPERATIONS
     //Master
     AjoutPermissionsProprietaire(pa, do)= //Appellée à l'ajout d'une nouvelle donnée pour donner les droits au propriétaire
     PRE
-        pa:pages&
-        do:Donnees& //S'execute en parallèle de l'attribution de la donnée, donc donnée : Donnees et pas à donnees
+        pa:pages &
+        do:DONNEES & //S'execute en parallèle de l'attribution de la donnée, donc donnée : Donnees et pas à donnees
         pa=possedeD(do)
     THEN
         Lit:=Lit \/ {do|->pa}||
@@ -104,9 +104,8 @@ OPERATIONS
     //Inscription (+Master)
     AjoutPremieresPermissions(pa, do)= //Appellée à l'ajout de la première donnée, uniquement pour l'inscription
     PRE
-        pa:PAGES&
-        do:Donnees&
-        pa=possedeD(do)
+        pa:PAGES &
+        do:DONNEES
     THEN
         Lit:=Lit \/ {do|->pa}||
         Ecrit:=Ecrit \/ {do|->pa}||

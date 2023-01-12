@@ -17,7 +17,7 @@ THEORY ListSeesX IS
 END
 &
 THEORY ListUsesX IS
-  List_Uses(Machine(PossedeD))==(?)
+  List_Uses(Machine(PossedeD))==(Page,Donnee)
 END
 &
 THEORY ListIncludesX IS
@@ -34,12 +34,12 @@ THEORY ListExtendsX IS
 END
 &
 THEORY ListVariablesX IS
-  External_Context_List_Variables(Machine(PossedeD))==(?);
-  Context_List_Variables(Machine(PossedeD))==(?);
+  External_Context_List_Variables(Machine(PossedeD))==(pages,types,donnees);
+  Context_List_Variables(Machine(PossedeD))==(pages,types,donnees);
   Abstract_List_Variables(Machine(PossedeD))==(?);
-  Local_List_Variables(Machine(PossedeD))==(?);
-  List_Variables(Machine(PossedeD))==(?);
-  External_List_Variables(Machine(PossedeD))==(?)
+  Local_List_Variables(Machine(PossedeD))==(possedeD);
+  List_Variables(Machine(PossedeD))==(possedeD);
+  External_List_Variables(Machine(PossedeD))==(possedeD)
 END
 &
 THEORY ListVisibleVariablesX IS
@@ -53,10 +53,10 @@ END
 &
 THEORY ListInvariantX IS
   Gluing_Seen_List_Invariant(Machine(PossedeD))==(btrue);
-  Gluing_List_Invariant(Machine(PossedeD))==(btrue);
+  Gluing_List_Invariant(Machine(PossedeD))==(possedeD: donnees --> pages & !pa.(pa: pages => card(possedeD|>{pa})>=1));
   Expanded_List_Invariant(Machine(PossedeD))==(btrue);
   Abstract_List_Invariant(Machine(PossedeD))==(btrue);
-  Context_List_Invariant(Machine(PossedeD))==(btrue);
+  Context_List_Invariant(Machine(PossedeD))==(pages <: PAGES & donnees <: DONNEES & types: donnees --> TYPES);
   List_Invariant(Machine(PossedeD))==(btrue)
 END
 &
@@ -76,16 +76,19 @@ THEORY ListExclusivityX IS
 END
 &
 THEORY ListInitialisationX IS
-  Expanded_List_Initialisation(Machine(PossedeD))==(skip);
-  Context_List_Initialisation(Machine(PossedeD))==(skip);
-  List_Initialisation(Machine(PossedeD))==(skip)
+  Expanded_List_Initialisation(Machine(PossedeD))==(possedeD:={});
+  Context_List_Initialisation(Machine(PossedeD))==(pages:={};donnees,types:={},{});
+  List_Initialisation(Machine(PossedeD))==(possedeD:={})
 END
 &
 THEORY ListParametersX IS
   List_Parameters(Machine(PossedeD))==(?)
 END
 &
-THEORY ListInstanciatedParametersX END
+THEORY ListInstanciatedParametersX IS
+  List_Instanciated_Parameters(Machine(PossedeD),Machine(Page))==(?);
+  List_Instanciated_Parameters(Machine(PossedeD),Machine(Donnee))==(?)
+END
 &
 THEORY ListConstraintsX IS
   List_Context_Constraints(Machine(PossedeD))==(btrue);
@@ -93,21 +96,44 @@ THEORY ListConstraintsX IS
 END
 &
 THEORY ListOperationsX IS
-  Internal_List_Operations(Machine(PossedeD))==(?);
-  List_Operations(Machine(PossedeD))==(?)
+  Internal_List_Operations(Machine(PossedeD))==(AjoutPossedeDonnee,SuppPossedeDonnee,AjoutPremiereDonnee);
+  List_Operations(Machine(PossedeD))==(AjoutPossedeDonnee,SuppPossedeDonnee,AjoutPremiereDonnee)
 END
 &
-THEORY ListInputX END
+THEORY ListInputX IS
+  List_Input(Machine(PossedeD),AjoutPossedeDonnee)==(pa,do);
+  List_Input(Machine(PossedeD),SuppPossedeDonnee)==(pa,do);
+  List_Input(Machine(PossedeD),AjoutPremiereDonnee)==(pa,do)
+END
 &
-THEORY ListOutputX END
+THEORY ListOutputX IS
+  List_Output(Machine(PossedeD),AjoutPossedeDonnee)==(?);
+  List_Output(Machine(PossedeD),SuppPossedeDonnee)==(?);
+  List_Output(Machine(PossedeD),AjoutPremiereDonnee)==(?)
+END
 &
-THEORY ListHeaderX END
+THEORY ListHeaderX IS
+  List_Header(Machine(PossedeD),AjoutPossedeDonnee)==(AjoutPossedeDonnee(pa,do));
+  List_Header(Machine(PossedeD),SuppPossedeDonnee)==(SuppPossedeDonnee(pa,do));
+  List_Header(Machine(PossedeD),AjoutPremiereDonnee)==(AjoutPremiereDonnee(pa,do))
+END
 &
 THEORY ListOperationGuardX END
 &
-THEORY ListPreconditionX END
+THEORY ListPreconditionX IS
+  List_Precondition(Machine(PossedeD),AjoutPossedeDonnee)==(pa: pages & do: DONNEES-donnees);
+  List_Precondition(Machine(PossedeD),SuppPossedeDonnee)==(pa: pages & do: donnees);
+  List_Precondition(Machine(PossedeD),AjoutPremiereDonnee)==(pa: PAGES & do: DONNEES-donnees)
+END
 &
-THEORY ListSubstitutionX END
+THEORY ListSubstitutionX IS
+  Expanded_List_Substitution(Machine(PossedeD),AjoutPremiereDonnee)==(pa: PAGES & do: DONNEES-donnees | possedeD:=possedeD<+{do|->pa});
+  Expanded_List_Substitution(Machine(PossedeD),SuppPossedeDonnee)==(pa: pages & do: donnees | possedeD:=possedeD-{do|->pa});
+  Expanded_List_Substitution(Machine(PossedeD),AjoutPossedeDonnee)==(pa: pages & do: DONNEES-donnees | possedeD:=possedeD<+{do|->pa});
+  List_Substitution(Machine(PossedeD),AjoutPossedeDonnee)==(possedeD(do):=pa);
+  List_Substitution(Machine(PossedeD),SuppPossedeDonnee)==(possedeD:=possedeD-{do|->pa});
+  List_Substitution(Machine(PossedeD),AjoutPremiereDonnee)==(possedeD(do):=pa)
+END
 &
 THEORY ListConstantsX IS
   List_Valuable_Constants(Machine(PossedeD))==(?);
@@ -116,9 +142,10 @@ THEORY ListConstantsX IS
 END
 &
 THEORY ListSetsX IS
-  Context_List_Enumerated(Machine(PossedeD))==(?);
-  Context_List_Defered(Machine(PossedeD))==(?);
-  Context_List_Sets(Machine(PossedeD))==(?);
+  Set_Definition(Machine(PossedeD),TYPES)==({photo,audio,video});
+  Context_List_Enumerated(Machine(PossedeD))==(TYPES);
+  Context_List_Defered(Machine(PossedeD))==(PAGES,DONNEES);
+  Context_List_Sets(Machine(PossedeD))==(PAGES,DONNEES,TYPES);
   List_Valuable_Sets(Machine(PossedeD))==(?);
   Inherited_List_Enumerated(Machine(PossedeD))==(?);
   Inherited_List_Defered(Machine(PossedeD))==(?);
@@ -137,21 +164,43 @@ END
 &
 THEORY ListPropertiesX IS
   Abstract_List_Properties(Machine(PossedeD))==(btrue);
-  Context_List_Properties(Machine(PossedeD))==(btrue);
+  Context_List_Properties(Machine(PossedeD))==(PAGES: FIN(INTEGER) & not(PAGES = {}) & DONNEES: FIN(INTEGER) & not(DONNEES = {}) & TYPES: FIN(INTEGER) & not(TYPES = {}));
   Inherited_List_Properties(Machine(PossedeD))==(btrue);
   List_Properties(Machine(PossedeD))==(btrue)
 END
 &
 THEORY ListSeenInfoX END
 &
-THEORY ListANYVarX END
+THEORY ListANYVarX IS
+  List_ANY_Var(Machine(PossedeD),AjoutPossedeDonnee)==(?);
+  List_ANY_Var(Machine(PossedeD),SuppPossedeDonnee)==(?);
+  List_ANY_Var(Machine(PossedeD),AjoutPremiereDonnee)==(?)
+END
 &
 THEORY ListOfIdsX IS
-  List_Of_Ids(Machine(PossedeD)) == (? | ? | ? | ? | ? | ? | ? | ? | PossedeD);
+  List_Of_Ids(Machine(PossedeD)) == (? | ? | possedeD | ? | AjoutPossedeDonnee,SuppPossedeDonnee,AjoutPremiereDonnee | ? | used(Machine(Page)),used(Machine(Donnee)) | ? | PossedeD);
   List_Of_HiddenCst_Ids(Machine(PossedeD)) == (? | ?);
   List_Of_VisibleCst_Ids(Machine(PossedeD)) == (?);
   List_Of_VisibleVar_Ids(Machine(PossedeD)) == (? | ?);
-  List_Of_Ids_SeenBNU(Machine(PossedeD)) == (?: ?)
+  List_Of_Ids_SeenBNU(Machine(PossedeD)) == (?: ?);
+  List_Of_Ids(Machine(Donnee)) == (DONNEES,TYPES,photo,audio,video | ? | types,donnees | ? | ajoutD,suppressionD | ? | ? | ? | Donnee);
+  List_Of_HiddenCst_Ids(Machine(Donnee)) == (? | ?);
+  List_Of_VisibleCst_Ids(Machine(Donnee)) == (?);
+  List_Of_VisibleVar_Ids(Machine(Donnee)) == (? | ?);
+  List_Of_Ids_SeenBNU(Machine(Donnee)) == (?: ?);
+  List_Of_Ids(Machine(Page)) == (PAGES | ? | pages | ? | AjoutPage,SuppPage | ? | ? | ? | Page);
+  List_Of_HiddenCst_Ids(Machine(Page)) == (? | ?);
+  List_Of_VisibleCst_Ids(Machine(Page)) == (?);
+  List_Of_VisibleVar_Ids(Machine(Page)) == (? | ?);
+  List_Of_Ids_SeenBNU(Machine(Page)) == (?: ?)
+END
+&
+THEORY VariablesEnvX IS
+  Variables(Machine(PossedeD)) == (Type(possedeD) == Mvl(SetOf(atype(DONNEES,?,?)*atype(PAGES,?,?))))
+END
+&
+THEORY OperationsEnvX IS
+  Operations(Machine(PossedeD)) == (Type(AjoutPremiereDonnee) == Cst(No_type,atype(PAGES,?,?)*atype(DONNEES,?,?));Type(SuppPossedeDonnee) == Cst(No_type,atype(PAGES,?,?)*atype(DONNEES,?,?));Type(AjoutPossedeDonnee) == Cst(No_type,atype(PAGES,?,?)*atype(DONNEES,?,?)))
 END
 &
 THEORY TCIntRdX IS

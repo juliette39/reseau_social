@@ -37,9 +37,9 @@ THEORY ListVariablesX IS
   External_Context_List_Variables(Machine(Page))==(?);
   Context_List_Variables(Machine(Page))==(?);
   Abstract_List_Variables(Machine(Page))==(?);
-  Local_List_Variables(Machine(Page))==(identifiant_pa,pages);
-  List_Variables(Machine(Page))==(identifiant_pa,pages);
-  External_List_Variables(Machine(Page))==(identifiant_pa,pages)
+  Local_List_Variables(Machine(Page))==(pages);
+  List_Variables(Machine(Page))==(pages);
+  External_List_Variables(Machine(Page))==(pages)
 END
 &
 THEORY ListVisibleVariablesX IS
@@ -57,7 +57,7 @@ THEORY ListInvariantX IS
   Expanded_List_Invariant(Machine(Page))==(btrue);
   Abstract_List_Invariant(Machine(Page))==(btrue);
   Context_List_Invariant(Machine(Page))==(btrue);
-  List_Invariant(Machine(Page))==(pages <: PAGES & identifiant_pa: pages >-> NATURAL)
+  List_Invariant(Machine(Page))==(pages <: PAGES)
 END
 &
 THEORY ListAssertionsX IS
@@ -76,9 +76,9 @@ THEORY ListExclusivityX IS
 END
 &
 THEORY ListInitialisationX IS
-  Expanded_List_Initialisation(Machine(Page))==(identifiant_pa,pages:={},{});
+  Expanded_List_Initialisation(Machine(Page))==(pages:={});
   Context_List_Initialisation(Machine(Page))==(skip);
-  List_Initialisation(Machine(Page))==(identifiant_pa,pages:={},{})
+  List_Initialisation(Machine(Page))==(pages:={})
 END
 &
 THEORY ListParametersX IS
@@ -115,14 +115,14 @@ END
 THEORY ListOperationGuardX END
 &
 THEORY ListPreconditionX IS
-  List_Precondition(Machine(Page),AjoutPage)==(pages <<: PAGES & pa: pages);
+  List_Precondition(Machine(Page),AjoutPage)==(pa: PAGES-pages);
   List_Precondition(Machine(Page),SuppPage)==(pa: pages)
 END
 &
 THEORY ListSubstitutionX IS
   Expanded_List_Substitution(Machine(Page),SuppPage)==(pa: pages | pages:=pages-{pa});
-  Expanded_List_Substitution(Machine(Page),AjoutPage)==(pages <<: PAGES & pa: pages | @ide.(ide: NAT-ran(identifiant_pa) ==> pages,identifiant_pa:=pages\/{pa},identifiant_pa<+{pa|->ide}));
-  List_Substitution(Machine(Page),AjoutPage)==(ANY ide WHERE ide: NAT-ran(identifiant_pa) THEN pages:=pages\/{pa} || identifiant_pa(pa):=ide END);
+  Expanded_List_Substitution(Machine(Page),AjoutPage)==(pa: PAGES-pages | pages:=pages\/{pa});
+  List_Substitution(Machine(Page),AjoutPage)==(pages:=pages\/{pa});
   List_Substitution(Machine(Page),SuppPage)==(pages:=pages-{pa})
 END
 &
@@ -163,12 +163,12 @@ END
 THEORY ListSeenInfoX END
 &
 THEORY ListANYVarX IS
-  List_ANY_Var(Machine(Page),AjoutPage)==(Var(ide) == btype(INTEGER,?,?));
+  List_ANY_Var(Machine(Page),AjoutPage)==(?);
   List_ANY_Var(Machine(Page),SuppPage)==(?)
 END
 &
 THEORY ListOfIdsX IS
-  List_Of_Ids(Machine(Page)) == (PAGES | ? | identifiant_pa,pages | ? | AjoutPage,SuppPage | ? | ? | ? | Page);
+  List_Of_Ids(Machine(Page)) == (PAGES | ? | pages | ? | AjoutPage,SuppPage | ? | ? | ? | Page);
   List_Of_HiddenCst_Ids(Machine(Page)) == (? | ?);
   List_Of_VisibleCst_Ids(Machine(Page)) == (?);
   List_Of_VisibleVar_Ids(Machine(Page)) == (? | ?);
@@ -180,7 +180,7 @@ THEORY SetsEnvX IS
 END
 &
 THEORY VariablesEnvX IS
-  Variables(Machine(Page)) == (Type(identifiant_pa) == Mvl(SetOf(atype(PAGES,?,?)*btype(INTEGER,?,?)));Type(pages) == Mvl(SetOf(atype(PAGES,?,?))))
+  Variables(Machine(Page)) == (Type(pages) == Mvl(SetOf(atype(PAGES,?,?))))
 END
 &
 THEORY OperationsEnvX IS

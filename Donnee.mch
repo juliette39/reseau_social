@@ -5,21 +5,21 @@
 MACHINE
     Donnee
 SETS
-    Donnees; Types = {photo, audio, video}
+    DONNEES; TYPES = {photo, audio, video}
 VARIABLES
-    donnees, type
+    donnees, types
 INVARIANT
-    donnees<:Donnees&
-    type:donnees-->Types
+    donnees<:DONNEES&
+    types:donnees-->TYPES
 INITIALISATION
-    donnees, type := {},{}
+    donnees, types := {},{}
 OPERATIONS
     ajoutD(do, ty)=
     PRE
-        ty:Types & do:Donnees-donnees
+        ty:TYPES & do:DONNEES-donnees
         THEN
             donnees:=donnees\/{do}||
-            type(do):=ty
+            types(do):=ty
     END;
     
     suppressionD(do)=
@@ -27,6 +27,6 @@ OPERATIONS
         do:donnees
     THEN
             donnees:=donnees-{do}||
-            type:={do}<<|type
+            types:={do}<<|types
     END
 END

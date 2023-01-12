@@ -14,12 +14,12 @@ OPERATIONS
     PRE pages <<: PAGES
     THEN
         ANY
-           pa, do WHERE pa:PAGES-pages & do:Donnees-donnees
+           pa, do WHERE pa:PAGES-pages & do:DONNEES-donnees
        THEN
            AjoutPage(pa) ||
            ajoutD(do, photo) ||
            AjoutPremiereDonnee(pa, do)|| //On ne passe pas par AjoutPossedeDonnee  car pa : PAGES - pages et donc viole la précondition d'AjoutPossedeDonnee
-           AjoutPremieresPermissions(pa, do)|| //Idem
+            AjoutPremieresPermissions(pa, do)|| //Idem
            page:=pa
        END
    END;
@@ -34,10 +34,10 @@ OPERATIONS
    
    //Données
    Publier(ty, pa)=
-   PRE donnees <<: Donnees & ty:Types & pa:pages
+   PRE donnees <<: DONNEES & ty:TYPES & pa:pages
    THEN
        ANY
-           do WHERE do:Donnees-donnees
+           do WHERE do:DONNEES-donnees
        THEN
            ajoutD(do, ty) ||
            AjoutPossedeDonnee(pa, do)||

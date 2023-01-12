@@ -1,0 +1,34 @@
+THEORY ProofList IS
+_f(1) & WellDefinednessInvariant.1,(_f(15) & _f(2) & _f(16) => _f(17));
+_f(1) & _f(6) & _f(14) & _f(7) & Operation_AjoutPremiereDonnee.2,(_f(8) & _f(3) => _f(10));
+_f(1) & _f(6) & _f(14) & _f(7) & Operation_AjoutPremiereDonnee.1,(_f(3) => _f(9));
+_f(1) & _f(6) & _f(2) & _f(11) & Operation_SuppPossedeDonnee.2,(_f(8) & _f(3) => _f(13));
+_f(1) & _f(6) & _f(2) & _f(11) & Operation_SuppPossedeDonnee.1,(_f(3) => _f(12));
+_f(1) & _f(6) & _f(2) & _f(7) & Operation_AjoutPossedeDonnee.2,(_f(8) & _f(3) => _f(10));
+_f(1) & _f(6) & _f(2) & _f(7) & Operation_AjoutPossedeDonnee.1,(_f(3) => _f(9));
+_f(1) & Initialisation.2,(_f(2) & _f(3) => _f(5));
+_f(1) & Initialisation.1,(_f(3) => _f(4))
+END
+&
+THEORY Formulas IS
+((NAT) = (((0) .. (2147483647)))) & ((INT) = (((-2147483647) .. (2147483647))));
+((pa) : (pages));
+"Invariant is preserved";
+(({}) : (((donnees) --> (pages))));
+(1 <= card((({}) |> (({pa})))));
+possedeD : donnees +-> pages & dom(possedeD) = donnees & ((possedeD) : (((donnees) --> (pages)))) & !(pa).(((((pa) : (pages))) => ((1 <= card(((possedeD) |> (({pa}))))))));
+((do) : ((DONNEES - donnees)));
+((pa$1) : (pages));
+((((possedeD) <+ (({((do) |-> (pa))})))) : (((donnees) --> (pages))));
+(1 <= card(((((possedeD) <+ (({((do) |-> (pa))})))) |> (({pa$1})))));
+((do) : (donnees));
+(((possedeD - ({((do) |-> (pa))}))) : (((donnees) --> (pages))));
+(1 <= card((((possedeD - ({((do) |-> (pa))}))) |> (({pa$1})))));
+((pa) : (PAGES));
+possedeD : donnees +-> pages & dom(possedeD) = donnees & ((possedeD) : (((donnees) --> (pages))));
+"Invariant is well defined";
+((((possedeD) |> (({pa})))) : (FIN(((possedeD) |> (({pa}))))))
+END
+&
+THEORY EnumerateX
+END

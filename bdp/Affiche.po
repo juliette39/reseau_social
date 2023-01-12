@@ -1,0 +1,20 @@
+THEORY ProofList IS
+_f(1) & _f(4) & _f(5) & _f(6) & _f(8) & Operation_suprAffiche.1,(_f(2) => _f(9));
+_f(1) & _f(4) & _f(5) & _f(6) & Operation_ajoutAffiche.1,(_f(2) => _f(7));
+_f(1) & Initialisation.1,(_f(2) => _f(3))
+END
+&
+THEORY Formulas IS
+((NAT) = (((0) .. (2147483647)))) & ((INT) = (((-2147483647) .. (2147483647))));
+"Invariant is preserved";
+(({}) : (((pages) <-> (donnees))));
+((affiche) : (((pages) <-> (donnees))));
+((pa) : (pages));
+((do) : (donnees));
+((((affiche) <+ (({((pa) |-> (do))})))) : (((pages) <-> (donnees))));
+((((pa) |-> (do))) : (affiche));
+(((affiche - ({((pa) |-> (do))}))) : (((pages) <-> (donnees))))
+END
+&
+THEORY EnumerateX
+END

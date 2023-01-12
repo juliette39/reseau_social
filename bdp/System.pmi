@@ -1,0 +1,101 @@
+THEORY BalanceX IS
+System,21,0,0,15,1,0,0;
+Operation_Inscription,1,0,0,0,0,0,0;
+Operation_Publier,2,0,0,1,0,0,0;
+Operation_RetireEcrit,1,0,0,1,0,0,0;
+Operation_RetireLit,2,0,0,0,1,0,0;
+Operation_SupprimeDonnee,2,0,0,1,0,0,0;
+WellDefinednessPrecondition_DonneEcrit,2,0,0,2,0,0,0;
+WellDefinednessPrecondition_DonneLit,2,0,0,2,0,0,0;
+WellDefinednessPrecondition_RetireEcrit,2,0,0,2,0,0,0;
+WellDefinednessPrecondition_RetireLit,2,0,0,2,0,0,0;
+WellDefinednessPrecondition_SupprimeDonnee,2,0,0,2,0,0,0;
+WellDefinedness_SupprimeDonnee,3,0,0,2,0,0,0
+END
+&
+THEORY ProofState IS
+Proved(0);
+Proved(0);
+Proved(0);
+Proved(0);
+Proved(0);
+Proved(0);
+Proved(0);
+Proved(0);
+Unproved;
+Proved(0);
+Proved(0);
+Proved(0);
+Proved(0);
+Proved(0);
+Proved(1);
+Unproved;
+Unproved;
+Proved(0);
+Proved(0);
+Unproved;
+Unproved
+END
+&
+THEORY MethodList IS
+pr;
+pr;
+pr;
+pr;
+pr;
+pr;
+pr;
+pr;
+?;
+pr;
+pr;
+pr;
+pr;
+pr;
+pr;
+?;
+?;
+pr;
+pr;
+?;
+?
+END
+&
+THEORY PassList IS
+Force(0),?;
+Force(0),?;
+Force(0),?;
+Force(0),?;
+Force(0),?;
+Force(0),?;
+Force(0),?;
+Force(0),?;
+Force(0),(?; 0; 1; Rapide);
+Force(0),?;
+Force(0),?;
+Force(0),?;
+Force(0),?;
+Force(0),?;
+Force(1),(?; 0);
+Force(0),(?; 0; 1; Rapide);
+Force(0),(?; 0; 1; Rapide);
+Force(0),?;
+Force(0),?;
+Force(0),(?; 0; 1; Rapide);
+Force(0),(?; 0; 1; Rapide)
+END
+&
+THEORY Status IS
+System,21,0,16,0,0,0;
+Operation_Inscription,1,0,0,0,0,0;
+Operation_Publier,2,0,1,0,0,0;
+Operation_RetireEcrit,1,0,1,0,0,0;
+Operation_RetireLit,2,0,1,0,0,0;
+Operation_SupprimeDonnee,2,0,1,0,0,0;
+WellDefinednessPrecondition_DonneEcrit,2,0,2,0,0,0;
+WellDefinednessPrecondition_DonneLit,2,0,2,0,0,0;
+WellDefinednessPrecondition_RetireEcrit,2,0,2,0,0,0;
+WellDefinednessPrecondition_RetireLit,2,0,2,0,0,0;
+WellDefinednessPrecondition_SupprimeDonnee,2,0,2,0,0,0;
+WellDefinedness_SupprimeDonnee,3,0,2,0,0,0
+END
