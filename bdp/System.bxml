@@ -434,7 +434,7 @@
 </Operation>
 <Operation name='SupprimeDonnee'>
 <Attr>
-<Pos l='48' c='4' s='14' endLine='58'/>
+<Pos l='48' c='4' s='14' endLine='61'/>
 </Attr>
 <Input_Parameters>
 <Id value='do' typref='6'>
@@ -562,25 +562,6 @@
 </Id>
 </Input_Parameters>
 </Operation_Call>
-<Operation_Call>
-<Attr>
-<Pos l='53' c='24' s='0'/>
-</Attr>
-<Name>
-<Id value='SoustraireDroits'>
-<Attr>
-<Pos l='53' c='8' s='16'/>
-</Attr>
-</Id>
-</Name>
-<Input_Parameters>
-<Id value='do' typref='6'>
-<Attr>
-<Pos l='53' c='25' s='2'/>
-</Attr>
-</Id>
-</Input_Parameters>
-</Operation_Call>
 <If_Sub elseif='no'>
 <Attr>
 <Pos l='55' c='8' s='2'/>
@@ -623,6 +604,7 @@
 </Exp_Comparison>
 </Condition>
 <Then>
+<Nary_Sub op='||'>
 <Operation_Call>
 <Attr>
 <Pos l='56' c='20' s='0'/>
@@ -642,80 +624,81 @@
 </Id>
 </Input_Parameters>
 </Operation_Call>
+<Operation_Call>
+<Attr>
+<Pos l='57' c='30' s='0'/>
+</Attr>
+<Name>
+<Id value='SoustraireDroitsDP'>
+<Attr>
+<Pos l='57' c='12' s='18'/>
+</Attr>
+</Id>
+</Name>
+<Input_Parameters>
+<Id value='do' typref='6'>
+<Attr>
+<Pos l='57' c='31' s='2'/>
+</Attr>
+</Id>
+<Id value='pa' typref='4'>
+<Attr>
+<Pos l='57' c='35' s='2'/>
+</Attr>
+</Id>
+</Input_Parameters>
+</Operation_Call>
+</Nary_Sub>
 </Then>
+<Else>
+<Operation_Call>
+<Attr>
+<Pos l='59' c='29' s='0'/>
+</Attr>
+<Name>
+<Id value='SoustraireDroitsD'>
+<Attr>
+<Pos l='59' c='12' s='17'/>
+</Attr>
+</Id>
+</Name>
+<Input_Parameters>
+<Id value='do' typref='6'>
+<Attr>
+<Pos l='59' c='30' s='2'/>
+</Attr>
+</Id>
+</Input_Parameters>
+</Operation_Call>
+</Else>
 </If_Sub>
 </Nary_Sub>
 </Body>
 </Operation>
 <Operation name='DonneLit'>
 <Attr>
-<Pos l='62' c='4' s='8' endLine='70'/>
+<Pos l='65' c='4' s='8' endLine='73'/>
 </Attr>
 <Input_Parameters>
 <Id value='proprio' typref='4'>
 <Attr>
-<Pos l='62' c='13' s='7'/>
+<Pos l='65' c='13' s='7'/>
 </Attr>
 </Id>
 <Id value='pa' typref='4'>
 <Attr>
-<Pos l='62' c='22' s='2'/>
+<Pos l='65' c='22' s='2'/>
 </Attr>
 </Id>
 <Id value='do' typref='6'>
 <Attr>
-<Pos l='62' c='26' s='2'/>
+<Pos l='65' c='26' s='2'/>
 </Attr>
 </Id>
 </Input_Parameters>
 <Precondition>
 <Nary_Pred op='&amp;'>
 <Exp_Comparison op=':'>
-<Attr>
-<Pos l='64' c='15' s='1'/>
-</Attr>
-<Id value='proprio' typref='4'>
-<Attr>
-<Pos l='64' c='8' s='7'/>
-</Attr>
-</Id>
-<Id value='pages' typref='5'>
-<Attr>
-<Pos l='64' c='16' s='5'/>
-</Attr>
-</Id>
-</Exp_Comparison>
-<Exp_Comparison op=':'>
-<Attr>
-<Pos l='65' c='10' s='1'/>
-</Attr>
-<Id value='pa' typref='4'>
-<Attr>
-<Pos l='65' c='8' s='2'/>
-</Attr>
-</Id>
-<Id value='pages' typref='5'>
-<Attr>
-<Pos l='65' c='11' s='5'/>
-</Attr>
-</Id>
-</Exp_Comparison>
-<Exp_Comparison op=':'>
-<Attr>
-<Pos l='66' c='10' s='1'/>
-</Attr>
-<Id value='do' typref='6'>
-<Attr>
-<Pos l='66' c='8' s='2'/>
-</Attr>
-</Id>
-<Id value='donnees' typref='7'>
-<Attr>
-<Pos l='66' c='11' s='7'/>
-</Attr>
-</Id>
-</Exp_Comparison>
-<Exp_Comparison op='='>
 <Attr>
 <Pos l='67' c='15' s='1'/>
 </Attr>
@@ -724,18 +707,63 @@
 <Pos l='67' c='8' s='7'/>
 </Attr>
 </Id>
+<Id value='pages' typref='5'>
+<Attr>
+<Pos l='67' c='16' s='5'/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=':'>
+<Attr>
+<Pos l='68' c='10' s='1'/>
+</Attr>
+<Id value='pa' typref='4'>
+<Attr>
+<Pos l='68' c='8' s='2'/>
+</Attr>
+</Id>
+<Id value='pages' typref='5'>
+<Attr>
+<Pos l='68' c='11' s='5'/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=':'>
+<Attr>
+<Pos l='69' c='10' s='1'/>
+</Attr>
+<Id value='do' typref='6'>
+<Attr>
+<Pos l='69' c='8' s='2'/>
+</Attr>
+</Id>
+<Id value='donnees' typref='7'>
+<Attr>
+<Pos l='69' c='11' s='7'/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op='='>
+<Attr>
+<Pos l='70' c='15' s='1'/>
+</Attr>
+<Id value='proprio' typref='4'>
+<Attr>
+<Pos l='70' c='8' s='7'/>
+</Attr>
+</Id>
 <Binary_Exp op='(' typref='4'>
 <Attr>
-<Pos l='67' c='24' s='0'/>
+<Pos l='70' c='24' s='0'/>
 </Attr>
 <Id value='possedeD' typref='10'>
 <Attr>
-<Pos l='67' c='16' s='8'/>
+<Pos l='70' c='16' s='8'/>
 </Attr>
 </Id>
 <Id value='do' typref='6'>
 <Attr>
-<Pos l='67' c='25' s='2'/>
+<Pos l='70' c='25' s='2'/>
 </Attr>
 </Id>
 </Binary_Exp>
@@ -745,24 +773,24 @@
 <Body>
 <Operation_Call>
 <Attr>
-<Pos l='69' c='16' s='0'/>
+<Pos l='72' c='16' s='0'/>
 </Attr>
 <Name>
 <Id value='AjoutLit'>
 <Attr>
-<Pos l='69' c='8' s='8'/>
+<Pos l='72' c='8' s='8'/>
 </Attr>
 </Id>
 </Name>
 <Input_Parameters>
 <Id value='pa' typref='4'>
 <Attr>
-<Pos l='69' c='17' s='2'/>
+<Pos l='72' c='17' s='2'/>
 </Attr>
 </Id>
 <Id value='do' typref='6'>
 <Attr>
-<Pos l='69' c='21' s='2'/>
+<Pos l='72' c='21' s='2'/>
 </Attr>
 </Id>
 </Input_Parameters>
@@ -771,73 +799,28 @@
 </Operation>
 <Operation name='RetireLit'>
 <Attr>
-<Pos l='72' c='4' s='9' endLine='83'/>
+<Pos l='75' c='4' s='9' endLine='86'/>
 </Attr>
 <Input_Parameters>
 <Id value='proprio' typref='4'>
 <Attr>
-<Pos l='72' c='14' s='7'/>
+<Pos l='75' c='14' s='7'/>
 </Attr>
 </Id>
 <Id value='pa' typref='4'>
 <Attr>
-<Pos l='72' c='23' s='2'/>
+<Pos l='75' c='23' s='2'/>
 </Attr>
 </Id>
 <Id value='do' typref='6'>
 <Attr>
-<Pos l='72' c='27' s='2'/>
+<Pos l='75' c='27' s='2'/>
 </Attr>
 </Id>
 </Input_Parameters>
 <Precondition>
 <Nary_Pred op='&amp;'>
 <Exp_Comparison op=':'>
-<Attr>
-<Pos l='74' c='15' s='1'/>
-</Attr>
-<Id value='proprio' typref='4'>
-<Attr>
-<Pos l='74' c='8' s='7'/>
-</Attr>
-</Id>
-<Id value='pages' typref='5'>
-<Attr>
-<Pos l='74' c='16' s='5'/>
-</Attr>
-</Id>
-</Exp_Comparison>
-<Exp_Comparison op=':'>
-<Attr>
-<Pos l='75' c='10' s='1'/>
-</Attr>
-<Id value='pa' typref='4'>
-<Attr>
-<Pos l='75' c='8' s='2'/>
-</Attr>
-</Id>
-<Id value='pages' typref='5'>
-<Attr>
-<Pos l='75' c='11' s='5'/>
-</Attr>
-</Id>
-</Exp_Comparison>
-<Exp_Comparison op=':'>
-<Attr>
-<Pos l='76' c='10' s='1'/>
-</Attr>
-<Id value='do' typref='6'>
-<Attr>
-<Pos l='76' c='8' s='2'/>
-</Attr>
-</Id>
-<Id value='donnees' typref='7'>
-<Attr>
-<Pos l='76' c='11' s='7'/>
-</Attr>
-</Id>
-</Exp_Comparison>
-<Exp_Comparison op='='>
 <Attr>
 <Pos l='77' c='15' s='1'/>
 </Attr>
@@ -846,84 +829,129 @@
 <Pos l='77' c='8' s='7'/>
 </Attr>
 </Id>
+<Id value='pages' typref='5'>
+<Attr>
+<Pos l='77' c='16' s='5'/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=':'>
+<Attr>
+<Pos l='78' c='10' s='1'/>
+</Attr>
+<Id value='pa' typref='4'>
+<Attr>
+<Pos l='78' c='8' s='2'/>
+</Attr>
+</Id>
+<Id value='pages' typref='5'>
+<Attr>
+<Pos l='78' c='11' s='5'/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=':'>
+<Attr>
+<Pos l='79' c='10' s='1'/>
+</Attr>
+<Id value='do' typref='6'>
+<Attr>
+<Pos l='79' c='8' s='2'/>
+</Attr>
+</Id>
+<Id value='donnees' typref='7'>
+<Attr>
+<Pos l='79' c='11' s='7'/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op='='>
+<Attr>
+<Pos l='80' c='15' s='1'/>
+</Attr>
+<Id value='proprio' typref='4'>
+<Attr>
+<Pos l='80' c='8' s='7'/>
+</Attr>
+</Id>
 <Binary_Exp op='(' typref='4'>
 <Attr>
-<Pos l='77' c='24' s='0'/>
+<Pos l='80' c='24' s='0'/>
 </Attr>
 <Id value='possedeD' typref='10'>
 <Attr>
-<Pos l='77' c='16' s='8'/>
+<Pos l='80' c='16' s='8'/>
 </Attr>
 </Id>
 <Id value='do' typref='6'>
 <Attr>
-<Pos l='77' c='25' s='2'/>
+<Pos l='80' c='25' s='2'/>
 </Attr>
 </Id>
 </Binary_Exp>
 </Exp_Comparison>
 <Exp_Comparison op='/='>
 <Attr>
-<Pos l='78' c='15' s='2'/>
+<Pos l='81' c='15' s='2'/>
 </Attr>
 <Id value='proprio' typref='4'>
 <Attr>
-<Pos l='78' c='8' s='7'/>
+<Pos l='81' c='8' s='7'/>
 </Attr>
 </Id>
 <Id value='pa' typref='4'>
 <Attr>
-<Pos l='78' c='17' s='2'/>
+<Pos l='81' c='17' s='2'/>
 </Attr>
 </Id>
 </Exp_Comparison>
 <Exp_Comparison op=':'>
 <Attr>
-<Pos l='79' c='17' s='1'/>
+<Pos l='82' c='17' s='1'/>
 </Attr>
 <Binary_Exp op='|-&gt;' typref='11'>
 <Attr>
-<Pos l='79' c='11' s='3'/>
+<Pos l='82' c='11' s='3'/>
 </Attr>
 <Id value='do' typref='6'>
 <Attr>
-<Pos l='79' c='9' s='2'/>
+<Pos l='82' c='9' s='2'/>
 </Attr>
 </Id>
 <Id value='pa' typref='4'>
 <Attr>
-<Pos l='79' c='14' s='2'/>
+<Pos l='82' c='14' s='2'/>
 </Attr>
 </Id>
 </Binary_Exp>
 <Id value='Lit' typref='10'>
 <Attr>
-<Pos l='79' c='18' s='3'/>
+<Pos l='82' c='18' s='3'/>
 </Attr>
 </Id>
 </Exp_Comparison>
 <Exp_Comparison op='/:'>
 <Attr>
-<Pos l='80' c='17' s='2'/>
+<Pos l='83' c='17' s='2'/>
 </Attr>
 <Binary_Exp op='|-&gt;' typref='11'>
 <Attr>
-<Pos l='80' c='11' s='3'/>
+<Pos l='83' c='11' s='3'/>
 </Attr>
 <Id value='do' typref='6'>
 <Attr>
-<Pos l='80' c='9' s='2'/>
+<Pos l='83' c='9' s='2'/>
 </Attr>
 </Id>
 <Id value='pa' typref='4'>
 <Attr>
-<Pos l='80' c='14' s='2'/>
+<Pos l='83' c='14' s='2'/>
 </Attr>
 </Id>
 </Binary_Exp>
 <Id value='Ecrit' typref='10'>
 <Attr>
-<Pos l='80' c='19' s='5'/>
+<Pos l='83' c='19' s='5'/>
 </Attr>
 </Id>
 </Exp_Comparison>
@@ -932,24 +960,24 @@
 <Body>
 <Operation_Call>
 <Attr>
-<Pos l='82' c='17' s='0'/>
+<Pos l='85' c='15' s='0'/>
 </Attr>
 <Name>
-<Id value='SuppEcrit'>
+<Id value='SuppLit'>
 <Attr>
-<Pos l='82' c='8' s='9'/>
+<Pos l='85' c='8' s='7'/>
 </Attr>
 </Id>
 </Name>
 <Input_Parameters>
 <Id value='pa' typref='4'>
 <Attr>
-<Pos l='82' c='18' s='2'/>
+<Pos l='85' c='16' s='2'/>
 </Attr>
 </Id>
 <Id value='do' typref='6'>
 <Attr>
-<Pos l='82' c='22' s='2'/>
+<Pos l='85' c='20' s='2'/>
 </Attr>
 </Id>
 </Input_Parameters>
@@ -958,73 +986,28 @@
 </Operation>
 <Operation name='DonneEcrit'>
 <Attr>
-<Pos l='85' c='4' s='10' endLine='94'/>
+<Pos l='88' c='4' s='10' endLine='97'/>
 </Attr>
 <Input_Parameters>
 <Id value='proprio' typref='4'>
 <Attr>
-<Pos l='85' c='15' s='7'/>
+<Pos l='88' c='15' s='7'/>
 </Attr>
 </Id>
 <Id value='pa' typref='4'>
 <Attr>
-<Pos l='85' c='24' s='2'/>
+<Pos l='88' c='24' s='2'/>
 </Attr>
 </Id>
 <Id value='do' typref='6'>
 <Attr>
-<Pos l='85' c='28' s='2'/>
+<Pos l='88' c='28' s='2'/>
 </Attr>
 </Id>
 </Input_Parameters>
 <Precondition>
 <Nary_Pred op='&amp;'>
 <Exp_Comparison op=':'>
-<Attr>
-<Pos l='87' c='15' s='1'/>
-</Attr>
-<Id value='proprio' typref='4'>
-<Attr>
-<Pos l='87' c='8' s='7'/>
-</Attr>
-</Id>
-<Id value='pages' typref='5'>
-<Attr>
-<Pos l='87' c='16' s='5'/>
-</Attr>
-</Id>
-</Exp_Comparison>
-<Exp_Comparison op=':'>
-<Attr>
-<Pos l='88' c='10' s='1'/>
-</Attr>
-<Id value='pa' typref='4'>
-<Attr>
-<Pos l='88' c='8' s='2'/>
-</Attr>
-</Id>
-<Id value='pages' typref='5'>
-<Attr>
-<Pos l='88' c='11' s='5'/>
-</Attr>
-</Id>
-</Exp_Comparison>
-<Exp_Comparison op=':'>
-<Attr>
-<Pos l='89' c='10' s='1'/>
-</Attr>
-<Id value='do' typref='6'>
-<Attr>
-<Pos l='89' c='8' s='2'/>
-</Attr>
-</Id>
-<Id value='donnees' typref='7'>
-<Attr>
-<Pos l='89' c='11' s='7'/>
-</Attr>
-</Id>
-</Exp_Comparison>
-<Exp_Comparison op='='>
 <Attr>
 <Pos l='90' c='15' s='1'/>
 </Attr>
@@ -1033,44 +1016,89 @@
 <Pos l='90' c='8' s='7'/>
 </Attr>
 </Id>
+<Id value='pages' typref='5'>
+<Attr>
+<Pos l='90' c='16' s='5'/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=':'>
+<Attr>
+<Pos l='91' c='10' s='1'/>
+</Attr>
+<Id value='pa' typref='4'>
+<Attr>
+<Pos l='91' c='8' s='2'/>
+</Attr>
+</Id>
+<Id value='pages' typref='5'>
+<Attr>
+<Pos l='91' c='11' s='5'/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=':'>
+<Attr>
+<Pos l='92' c='10' s='1'/>
+</Attr>
+<Id value='do' typref='6'>
+<Attr>
+<Pos l='92' c='8' s='2'/>
+</Attr>
+</Id>
+<Id value='donnees' typref='7'>
+<Attr>
+<Pos l='92' c='11' s='7'/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op='='>
+<Attr>
+<Pos l='93' c='15' s='1'/>
+</Attr>
+<Id value='proprio' typref='4'>
+<Attr>
+<Pos l='93' c='8' s='7'/>
+</Attr>
+</Id>
 <Binary_Exp op='(' typref='4'>
 <Attr>
-<Pos l='90' c='24' s='0'/>
+<Pos l='93' c='24' s='0'/>
 </Attr>
 <Id value='possedeD' typref='10'>
 <Attr>
-<Pos l='90' c='16' s='8'/>
+<Pos l='93' c='16' s='8'/>
 </Attr>
 </Id>
 <Id value='do' typref='6'>
 <Attr>
-<Pos l='90' c='25' s='2'/>
+<Pos l='93' c='25' s='2'/>
 </Attr>
 </Id>
 </Binary_Exp>
 </Exp_Comparison>
 <Exp_Comparison op=':'>
 <Attr>
-<Pos l='91' c='17' s='1'/>
+<Pos l='94' c='17' s='1'/>
 </Attr>
 <Binary_Exp op='|-&gt;' typref='11'>
 <Attr>
-<Pos l='91' c='11' s='3'/>
+<Pos l='94' c='11' s='3'/>
 </Attr>
 <Id value='do' typref='6'>
 <Attr>
-<Pos l='91' c='9' s='2'/>
+<Pos l='94' c='9' s='2'/>
 </Attr>
 </Id>
 <Id value='pa' typref='4'>
 <Attr>
-<Pos l='91' c='14' s='2'/>
+<Pos l='94' c='14' s='2'/>
 </Attr>
 </Id>
 </Binary_Exp>
 <Id value='Lit' typref='10'>
 <Attr>
-<Pos l='91' c='18' s='3'/>
+<Pos l='94' c='18' s='3'/>
 </Attr>
 </Id>
 </Exp_Comparison>
@@ -1079,24 +1107,24 @@
 <Body>
 <Operation_Call>
 <Attr>
-<Pos l='93' c='18' s='0'/>
+<Pos l='96' c='18' s='0'/>
 </Attr>
 <Name>
 <Id value='AjoutEcrit'>
 <Attr>
-<Pos l='93' c='8' s='10'/>
+<Pos l='96' c='8' s='10'/>
 </Attr>
 </Id>
 </Name>
 <Input_Parameters>
 <Id value='pa' typref='4'>
 <Attr>
-<Pos l='93' c='19' s='2'/>
+<Pos l='96' c='19' s='2'/>
 </Attr>
 </Id>
 <Id value='do' typref='6'>
 <Attr>
-<Pos l='93' c='23' s='2'/>
+<Pos l='96' c='23' s='2'/>
 </Attr>
 </Id>
 </Input_Parameters>
@@ -1105,73 +1133,28 @@
 </Operation>
 <Operation name='RetireEcrit'>
 <Attr>
-<Pos l='96' c='4' s='11' endLine='106'/>
+<Pos l='99' c='4' s='11' endLine='109'/>
 </Attr>
 <Input_Parameters>
 <Id value='proprio' typref='4'>
 <Attr>
-<Pos l='96' c='16' s='7'/>
+<Pos l='99' c='16' s='7'/>
 </Attr>
 </Id>
 <Id value='pa' typref='4'>
 <Attr>
-<Pos l='96' c='25' s='2'/>
+<Pos l='99' c='25' s='2'/>
 </Attr>
 </Id>
 <Id value='do' typref='6'>
 <Attr>
-<Pos l='96' c='29' s='2'/>
+<Pos l='99' c='29' s='2'/>
 </Attr>
 </Id>
 </Input_Parameters>
 <Precondition>
 <Nary_Pred op='&amp;'>
 <Exp_Comparison op=':'>
-<Attr>
-<Pos l='98' c='15' s='1'/>
-</Attr>
-<Id value='proprio' typref='4'>
-<Attr>
-<Pos l='98' c='8' s='7'/>
-</Attr>
-</Id>
-<Id value='pages' typref='5'>
-<Attr>
-<Pos l='98' c='16' s='5'/>
-</Attr>
-</Id>
-</Exp_Comparison>
-<Exp_Comparison op=':'>
-<Attr>
-<Pos l='99' c='10' s='1'/>
-</Attr>
-<Id value='pa' typref='4'>
-<Attr>
-<Pos l='99' c='8' s='2'/>
-</Attr>
-</Id>
-<Id value='pages' typref='5'>
-<Attr>
-<Pos l='99' c='11' s='5'/>
-</Attr>
-</Id>
-</Exp_Comparison>
-<Exp_Comparison op=':'>
-<Attr>
-<Pos l='100' c='10' s='1'/>
-</Attr>
-<Id value='do' typref='6'>
-<Attr>
-<Pos l='100' c='8' s='2'/>
-</Attr>
-</Id>
-<Id value='donnees' typref='7'>
-<Attr>
-<Pos l='100' c='11' s='7'/>
-</Attr>
-</Id>
-</Exp_Comparison>
-<Exp_Comparison op='='>
 <Attr>
 <Pos l='101' c='15' s='1'/>
 </Attr>
@@ -1180,59 +1163,104 @@
 <Pos l='101' c='8' s='7'/>
 </Attr>
 </Id>
+<Id value='pages' typref='5'>
+<Attr>
+<Pos l='101' c='16' s='5'/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=':'>
+<Attr>
+<Pos l='102' c='10' s='1'/>
+</Attr>
+<Id value='pa' typref='4'>
+<Attr>
+<Pos l='102' c='8' s='2'/>
+</Attr>
+</Id>
+<Id value='pages' typref='5'>
+<Attr>
+<Pos l='102' c='11' s='5'/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=':'>
+<Attr>
+<Pos l='103' c='10' s='1'/>
+</Attr>
+<Id value='do' typref='6'>
+<Attr>
+<Pos l='103' c='8' s='2'/>
+</Attr>
+</Id>
+<Id value='donnees' typref='7'>
+<Attr>
+<Pos l='103' c='11' s='7'/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op='='>
+<Attr>
+<Pos l='104' c='15' s='1'/>
+</Attr>
+<Id value='proprio' typref='4'>
+<Attr>
+<Pos l='104' c='8' s='7'/>
+</Attr>
+</Id>
 <Binary_Exp op='(' typref='4'>
 <Attr>
-<Pos l='101' c='24' s='0'/>
+<Pos l='104' c='24' s='0'/>
 </Attr>
 <Id value='possedeD' typref='10'>
 <Attr>
-<Pos l='101' c='16' s='8'/>
+<Pos l='104' c='16' s='8'/>
 </Attr>
 </Id>
 <Id value='do' typref='6'>
 <Attr>
-<Pos l='101' c='25' s='2'/>
+<Pos l='104' c='25' s='2'/>
 </Attr>
 </Id>
 </Binary_Exp>
 </Exp_Comparison>
 <Exp_Comparison op='/='>
 <Attr>
-<Pos l='102' c='15' s='2'/>
+<Pos l='105' c='15' s='2'/>
 </Attr>
 <Id value='proprio' typref='4'>
 <Attr>
-<Pos l='102' c='8' s='7'/>
+<Pos l='105' c='8' s='7'/>
 </Attr>
 </Id>
 <Id value='pa' typref='4'>
 <Attr>
-<Pos l='102' c='17' s='2'/>
+<Pos l='105' c='17' s='2'/>
 </Attr>
 </Id>
 </Exp_Comparison>
 <Exp_Comparison op=':'>
 <Attr>
-<Pos l='103' c='17' s='1'/>
+<Pos l='106' c='17' s='1'/>
 </Attr>
 <Binary_Exp op='|-&gt;' typref='11'>
 <Attr>
-<Pos l='103' c='11' s='3'/>
+<Pos l='106' c='11' s='3'/>
 </Attr>
 <Id value='do' typref='6'>
 <Attr>
-<Pos l='103' c='9' s='2'/>
+<Pos l='106' c='9' s='2'/>
 </Attr>
 </Id>
 <Id value='pa' typref='4'>
 <Attr>
-<Pos l='103' c='14' s='2'/>
+<Pos l='106' c='14' s='2'/>
 </Attr>
 </Id>
 </Binary_Exp>
 <Id value='Ecrit' typref='10'>
 <Attr>
-<Pos l='103' c='18' s='5'/>
+<Pos l='106' c='18' s='5'/>
 </Attr>
 </Id>
 </Exp_Comparison>
@@ -1241,24 +1269,24 @@
 <Body>
 <Operation_Call>
 <Attr>
-<Pos l='105' c='17' s='0'/>
+<Pos l='108' c='17' s='0'/>
 </Attr>
 <Name>
 <Id value='SuppEcrit'>
 <Attr>
-<Pos l='105' c='8' s='9'/>
+<Pos l='108' c='8' s='9'/>
 </Attr>
 </Id>
 </Name>
 <Input_Parameters>
 <Id value='pa' typref='4'>
 <Attr>
-<Pos l='105' c='18' s='2'/>
+<Pos l='108' c='18' s='2'/>
 </Attr>
 </Id>
 <Id value='do' typref='6'>
 <Attr>
-<Pos l='105' c='22' s='2'/>
+<Pos l='108' c='22' s='2'/>
 </Attr>
 </Id>
 </Input_Parameters>
@@ -1267,17 +1295,17 @@
 </Operation>
 <Operation name='CommenceRegarde'>
 <Attr>
-<Pos l='109' c='4' s='15' endLine='116'/>
+<Pos l='112' c='4' s='15' endLine='119'/>
 </Attr>
 <Input_Parameters>
 <Id value='pa' typref='4'>
 <Attr>
-<Pos l='109' c='20' s='2'/>
+<Pos l='112' c='20' s='2'/>
 </Attr>
 </Id>
 <Id value='do' typref='6'>
 <Attr>
-<Pos l='109' c='24' s='2'/>
+<Pos l='112' c='24' s='2'/>
 </Attr>
 </Id>
 </Input_Parameters>
@@ -1285,56 +1313,56 @@
 <Nary_Pred op='&amp;'>
 <Exp_Comparison op=':'>
 <Attr>
-<Pos l='111' c='10' s='1'/>
+<Pos l='114' c='10' s='1'/>
 </Attr>
 <Id value='pa' typref='4'>
 <Attr>
-<Pos l='111' c='8' s='2'/>
+<Pos l='114' c='8' s='2'/>
 </Attr>
 </Id>
 <Id value='pages' typref='5'>
 <Attr>
-<Pos l='111' c='11' s='5'/>
+<Pos l='114' c='11' s='5'/>
 </Attr>
 </Id>
 </Exp_Comparison>
 <Exp_Comparison op=':'>
 <Attr>
-<Pos l='112' c='10' s='1'/>
+<Pos l='115' c='10' s='1'/>
 </Attr>
 <Id value='do' typref='6'>
 <Attr>
-<Pos l='112' c='8' s='2'/>
+<Pos l='115' c='8' s='2'/>
 </Attr>
 </Id>
 <Id value='donnees' typref='7'>
 <Attr>
-<Pos l='112' c='11' s='7'/>
+<Pos l='115' c='11' s='7'/>
 </Attr>
 </Id>
 </Exp_Comparison>
 <Exp_Comparison op=':'>
 <Attr>
-<Pos l='113' c='17' s='1'/>
+<Pos l='116' c='17' s='1'/>
 </Attr>
 <Binary_Exp op='|-&gt;' typref='11'>
 <Attr>
-<Pos l='113' c='11' s='3'/>
+<Pos l='116' c='11' s='3'/>
 </Attr>
 <Id value='do' typref='6'>
 <Attr>
-<Pos l='113' c='9' s='2'/>
+<Pos l='116' c='9' s='2'/>
 </Attr>
 </Id>
 <Id value='pa' typref='4'>
 <Attr>
-<Pos l='113' c='14' s='2'/>
+<Pos l='116' c='14' s='2'/>
 </Attr>
 </Id>
 </Binary_Exp>
 <Id value='Lit' typref='10'>
 <Attr>
-<Pos l='113' c='18' s='3'/>
+<Pos l='116' c='18' s='3'/>
 </Attr>
 </Id>
 </Exp_Comparison>
@@ -1343,24 +1371,24 @@
 <Body>
 <Operation_Call>
 <Attr>
-<Pos l='115' c='20' s='0'/>
+<Pos l='118' c='20' s='0'/>
 </Attr>
 <Name>
 <Id value='AjoutRegarde'>
 <Attr>
-<Pos l='115' c='8' s='12'/>
+<Pos l='118' c='8' s='12'/>
 </Attr>
 </Id>
 </Name>
 <Input_Parameters>
 <Id value='pa' typref='4'>
 <Attr>
-<Pos l='115' c='21' s='2'/>
+<Pos l='118' c='21' s='2'/>
 </Attr>
 </Id>
 <Id value='do' typref='6'>
 <Attr>
-<Pos l='115' c='25' s='2'/>
+<Pos l='118' c='25' s='2'/>
 </Attr>
 </Id>
 </Input_Parameters>
@@ -1369,17 +1397,17 @@
 </Operation>
 <Operation name='ArreteRegarde'>
 <Attr>
-<Pos l='118' c='4' s='13' endLine='125'/>
+<Pos l='121' c='4' s='13' endLine='128'/>
 </Attr>
 <Input_Parameters>
 <Id value='pa' typref='4'>
 <Attr>
-<Pos l='118' c='18' s='2'/>
+<Pos l='121' c='18' s='2'/>
 </Attr>
 </Id>
 <Id value='do' typref='6'>
 <Attr>
-<Pos l='118' c='22' s='2'/>
+<Pos l='121' c='22' s='2'/>
 </Attr>
 </Id>
 </Input_Parameters>
@@ -1387,56 +1415,56 @@
 <Nary_Pred op='&amp;'>
 <Exp_Comparison op=':'>
 <Attr>
-<Pos l='120' c='10' s='1'/>
+<Pos l='123' c='10' s='1'/>
 </Attr>
 <Id value='pa' typref='4'>
 <Attr>
-<Pos l='120' c='8' s='2'/>
+<Pos l='123' c='8' s='2'/>
 </Attr>
 </Id>
 <Id value='pages' typref='5'>
 <Attr>
-<Pos l='120' c='11' s='5'/>
+<Pos l='123' c='11' s='5'/>
 </Attr>
 </Id>
 </Exp_Comparison>
 <Exp_Comparison op=':'>
 <Attr>
-<Pos l='121' c='10' s='1'/>
+<Pos l='124' c='10' s='1'/>
 </Attr>
 <Id value='do' typref='6'>
 <Attr>
-<Pos l='121' c='8' s='2'/>
+<Pos l='124' c='8' s='2'/>
 </Attr>
 </Id>
 <Id value='donnees' typref='7'>
 <Attr>
-<Pos l='121' c='11' s='7'/>
+<Pos l='124' c='11' s='7'/>
 </Attr>
 </Id>
 </Exp_Comparison>
 <Exp_Comparison op=':'>
 <Attr>
-<Pos l='122' c='17' s='1'/>
+<Pos l='125' c='17' s='1'/>
 </Attr>
 <Binary_Exp op='|-&gt;' typref='11'>
 <Attr>
-<Pos l='122' c='11' s='3'/>
+<Pos l='125' c='11' s='3'/>
 </Attr>
 <Id value='do' typref='6'>
 <Attr>
-<Pos l='122' c='9' s='2'/>
+<Pos l='125' c='9' s='2'/>
 </Attr>
 </Id>
 <Id value='pa' typref='4'>
 <Attr>
-<Pos l='122' c='14' s='2'/>
+<Pos l='125' c='14' s='2'/>
 </Attr>
 </Id>
 </Binary_Exp>
 <Id value='Regarde' typref='10'>
 <Attr>
-<Pos l='122' c='18' s='7'/>
+<Pos l='125' c='18' s='7'/>
 </Attr>
 </Id>
 </Exp_Comparison>
@@ -1445,24 +1473,24 @@
 <Body>
 <Operation_Call>
 <Attr>
-<Pos l='124' c='19' s='0'/>
+<Pos l='127' c='19' s='0'/>
 </Attr>
 <Name>
 <Id value='SuppRegarde'>
 <Attr>
-<Pos l='124' c='8' s='11'/>
+<Pos l='127' c='8' s='11'/>
 </Attr>
 </Id>
 </Name>
 <Input_Parameters>
 <Id value='pa' typref='4'>
 <Attr>
-<Pos l='124' c='20' s='2'/>
+<Pos l='127' c='20' s='2'/>
 </Attr>
 </Id>
 <Id value='do' typref='6'>
 <Attr>
-<Pos l='124' c='23' s='2'/>
+<Pos l='127' c='23' s='2'/>
 </Attr>
 </Id>
 </Input_Parameters>

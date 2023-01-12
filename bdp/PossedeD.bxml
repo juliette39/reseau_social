@@ -293,6 +293,31 @@
 </Attr>
 </Id>
 </Exp_Comparison>
+<Exp_Comparison op='='>
+<Attr>
+<Pos l='28' c='45' s='1'/>
+</Attr>
+<Binary_Exp op='(' typref='8'>
+<Attr>
+<Pos l='28' c='41' s='0'/>
+</Attr>
+<Id value='possedeD' typref='4'>
+<Attr>
+<Pos l='28' c='33' s='8'/>
+</Attr>
+</Id>
+<Id value='do' typref='9'>
+<Attr>
+<Pos l='28' c='42' s='2'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Id value='pa' typref='8'>
+<Attr>
+<Pos l='28' c='46' s='2'/>
+</Attr>
+</Id>
+</Exp_Comparison>
 </Nary_Pred>
 </Precondition>
 <Body>

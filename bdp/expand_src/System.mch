@@ -50,10 +50,13 @@ OPERATIONS
    THEN
        SuppPossedeDonnee ( possedeD ( do ) , do ) ||
        suppressionD ( do ) ||
-       SoustraireDroits ( do ) || //Supprime tous les droits qui étaient accordés sur la donnée
+       //Supprime tous les droits qui étaient accordés sur la donnée
        //if dernière donnée supprimée -> supprimer la page
        IF card ( possedeD |> { pa } ) <= 1 THEN
-           SuppPage ( pa )
+           SuppPage ( pa ) ||
+           SoustraireDroitsDP ( do , pa )
+       ELSE
+           SoustraireDroitsD ( do )
        END
    END ;
 
@@ -79,7 +82,7 @@ OPERATIONS
        ( do |-> pa ) : Lit &
        ( do |-> pa ) /: Ecrit
    THEN
-       SuppEcrit ( pa , do )
+       SuppLit ( pa , do )
    END ;
 
    DonneEcrit ( proprio , pa , do ) =

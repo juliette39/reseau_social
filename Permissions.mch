@@ -80,7 +80,7 @@ OPERATIONS
     END;
     
     //Flush
-    SoustraireDroits(do)=
+    SoustraireDroitsD(do)=
     PRE
         do:donnees
     THEN
@@ -89,12 +89,22 @@ OPERATIONS
         Regarde:={do}<<|Regarde
     END;
     
+    SoustraireDroitsDP(do, pa)=
+    PRE
+        do:donnees&
+        pa:pages
+    THEN
+        Lit:={do}<<|Lit|>>{pa}||
+        Regarde:={do}<<|Regarde|>>{pa}||
+        Ecrit:={do}<<|Ecrit|>>{pa}
+    END;
+    
     //Master
     AjoutPermissionsProprietaire(pa, do)= //Appellée à l'ajout d'une nouvelle donnée pour donner les droits au propriétaire
     PRE
         pa:pages &
-        do:DONNEES & //S'execute en parallèle de l'attribution de la donnée, donc donnée : Donnees et pas à donnees
-        pa=possedeD(do)
+        do:DONNEES //S'execute en parallèle de l'attribution de la donnée, donc donnée : Donnees et pas à donnees
+        //pa=possedeD(do)
     THEN
         Lit:=Lit \/ {do|->pa}||
         Ecrit:=Ecrit \/ {do|->pa}||

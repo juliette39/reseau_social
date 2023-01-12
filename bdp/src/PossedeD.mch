@@ -25,7 +25,7 @@ OPERATIONS
 
     SuppPossedeDonnee ( pa , do ) =
     PRE
-        pa : pages & do : donnees
+        pa : pages & do : donnees & possedeD ( do ) = pa
     THEN
         possedeD := possedeD - { do |-> pa }
     END ;

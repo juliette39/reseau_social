@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Proof_Obligations xmlns="https://www.atelierb.eu/Formats/pog" version="1.0">
-    <Define name="B definitions" hash="14675746054373257956">
+    <Define name="B definitions" hash="17219133420564441872">
         <Exp_Comparison op="=">
             <Id value="NAT" typref="0"/>
             <Binary_Exp op=".." typref="0">
@@ -21,34 +21,34 @@
     <Define name="lprp" hash="0"/>
     <Define name="inprp" hash="0"/>
     <Define name="inext" hash="0"/>
-    <Define name="inv" hash="13923534262698440247">
+    <Define name="inv" hash="1353252926930846394">
         <Exp_Comparison op=":">
-            <Id value="Lit" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:1:1"/>
+            <Id value="Lit" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:1:1"/>
             <Binary_Exp op="&lt;-&gt;" typref="3">
-                <Id value="donnees" typref="0" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:1:2:1"/>
-                <Id value="pages" typref="0" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:1:2:2"/>
+                <Id value="donnees" typref="0" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:1:2:1"/>
+                <Id value="pages" typref="0" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:1:2:2"/>
             </Binary_Exp>
         </Exp_Comparison>
         <Exp_Comparison op=":">
-            <Id value="Ecrit" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:2:1"/>
+            <Id value="Ecrit" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:2:1"/>
             <Binary_Exp op="&lt;-&gt;" typref="3">
-                <Id value="donnees" typref="0" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:2:2:1"/>
-                <Id value="pages" typref="0" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:2:2:2"/>
+                <Id value="donnees" typref="0" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:2:2:1"/>
+                <Id value="pages" typref="0" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:2:2:2"/>
             </Binary_Exp>
         </Exp_Comparison>
         <Exp_Comparison op=":">
-            <Id value="Regarde" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:3:1"/>
+            <Id value="Regarde" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:3:1"/>
             <Binary_Exp op="&lt;-&gt;" typref="3">
-                <Id value="donnees" typref="0" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:3:2:1"/>
-                <Id value="pages" typref="0" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:3:2:2"/>
+                <Id value="donnees" typref="0" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:3:2:1"/>
+                <Id value="pages" typref="0" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:3:2:2"/>
             </Binary_Exp>
         </Exp_Comparison>
         <Exp_Comparison op="&lt;:">
             <Unary_Exp op="ran" typref="0">
-                <Id value="Ecrit" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:4:1:1"/>
+                <Id value="Ecrit" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:4:1:1"/>
             </Unary_Exp>
             <Unary_Exp op="ran" typref="0">
-                <Id value="Lit" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:4:2:1"/>
+                <Id value="Lit" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:4:2:1"/>
             </Unary_Exp>
         </Exp_Comparison>
         <Quantified_Pred type="!">
@@ -58,25 +58,25 @@
             <Body>
                 <Binary_Pred op="=&gt;">
                     <Exp_Comparison op=":">
-                        <Id value="do" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:1:1"/>
-                        <Id value="donnees" typref="0" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:1:2"/>
+                        <Id value="do" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:1:1"/>
+                        <Id value="donnees" typref="0" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:1:2"/>
                     </Exp_Comparison>
                     <Exp_Comparison op=":">
                         <Binary_Exp op="(" typref="1">
-                            <Id value="possedeD" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:1:1"/>
-                            <Id value="do" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:1:2"/>
+                            <Id value="possedeD" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:1:1"/>
+                            <Id value="do" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:1:2"/>
                         </Binary_Exp>
                         <Binary_Exp op="/\" typref="0">
                             <Binary_Exp op="[" typref="0">
-                                <Id value="Lit" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:2:1:1"/>
+                                <Id value="Lit" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:2:1:1"/>
                                 <Nary_Exp op="{" typref="0">
-                                    <Id value="do" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:2:1:2:1"/>
+                                    <Id value="do" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:2:1:2:1"/>
                                 </Nary_Exp>
                             </Binary_Exp>
                             <Binary_Exp op="[" typref="0">
-                                <Id value="Ecrit" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:2:2:1"/>
+                                <Id value="Ecrit" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:2:2:1"/>
                                 <Nary_Exp op="{" typref="0">
-                                    <Id value="do" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:2:2:2:1"/>
+                                    <Id value="do" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:2:2:2:1"/>
                                 </Nary_Exp>
                             </Binary_Exp>
                         </Binary_Exp>
@@ -88,7 +88,7 @@
     <Define name="ass" hash="0"/>
     <Define name="cst" hash="0"/>
     <Define name="sets" hash="0"/>
-    <Proof_Obligation goalHash="14068549401813249773">
+    <Proof_Obligation goalHash="10331355054249657477">
         <Tag>Initialisation</Tag>
         <Definition name="B definitions"/>
         <Definition name="ctx"/>
@@ -99,18 +99,18 @@
         <Definition name="seext"/>
         <Local_Hyp num="1">
             <Exp_Comparison op=":">
-                <Id value="do" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:1:1"/>
-                <Id value="donnees" typref="0" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:1:2"/>
+                <Id value="do" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:1:1"/>
+                <Id value="donnees" typref="0" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:1:2"/>
             </Exp_Comparison>
         </Local_Hyp>
         <Simple_Goal>
             <Tag>Invariant is preserved</Tag>
             <Goal>
                 <Exp_Comparison op=":">
-                    <EmptySet typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:1:1,/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:4:1:2:1"/>
+                    <EmptySet typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:1:1,/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:4:1:2:1"/>
                     <Binary_Exp op="&lt;-&gt;" typref="3">
-                        <Id value="donnees" typref="0" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:1:2:1"/>
-                        <Id value="pages" typref="0" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:1:2:2"/>
+                        <Id value="donnees" typref="0" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:1:2:1"/>
+                        <Id value="pages" typref="0" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:1:2:2"/>
                     </Binary_Exp>
                 </Exp_Comparison>
             </Goal>
@@ -121,20 +121,20 @@
             <Goal>
                 <Exp_Comparison op=":">
                     <Binary_Exp op="(" typref="1">
-                        <Id value="possedeD" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:1:1"/>
-                        <Id value="do" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:1:2"/>
+                        <Id value="possedeD" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:1:1"/>
+                        <Id value="do" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:1:2"/>
                     </Binary_Exp>
                     <Binary_Exp op="/\" typref="0">
                         <Binary_Exp op="[" typref="0">
-                            <EmptySet typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:2:1:1,/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:4:1:2:1"/>
+                            <EmptySet typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:2:1:1,/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:4:1:2:1"/>
                             <Nary_Exp op="{" typref="0">
-                                <Id value="do" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:2:1:2:1"/>
+                                <Id value="do" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:2:1:2:1"/>
                             </Nary_Exp>
                         </Binary_Exp>
                         <Binary_Exp op="[" typref="0">
-                            <EmptySet typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:2:2:1,/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:4:1:2:2"/>
+                            <EmptySet typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:2:2:1,/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:4:1:2:2"/>
                             <Nary_Exp op="{" typref="0">
-                                <Id value="do" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:2:2:2:1"/>
+                                <Id value="do" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:2:2:2:1"/>
                             </Nary_Exp>
                         </Binary_Exp>
                     </Binary_Exp>
@@ -142,7 +142,7 @@
             </Goal>
         </Simple_Goal>
     </Proof_Obligation>
-    <Proof_Obligation goalHash="3210311460785453993">
+    <Proof_Obligation goalHash="18149685816317023104">
         <Tag>Operation_AjoutLit</Tag>
         <Definition name="B definitions"/>
         <Definition name="ctx"/>
@@ -155,38 +155,38 @@
         <Definition name="ass"/>
         <Hypothesis>
             <Exp_Comparison op=":">
-                <Id value="pa" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:1:2:1:1:1"/>
-                <Id value="pages" typref="0" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:1:2:1:1:2"/>
+                <Id value="pa" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:1:2:1:1:1"/>
+                <Id value="pages" typref="0" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:1:2:1:1:2"/>
             </Exp_Comparison>
         </Hypothesis>
         <Hypothesis>
             <Exp_Comparison op=":">
-                <Id value="do" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:1:2:1:2:1"/>
-                <Id value="donnees" typref="0" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:1:2:1:2:2"/>
+                <Id value="do" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:1:2:1:2:1"/>
+                <Id value="donnees" typref="0" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:1:2:1:2:2"/>
             </Exp_Comparison>
         </Hypothesis>
         <Local_Hyp num="1">
             <Exp_Comparison op=":">
-                <Id value="do" suffix="1" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:1:1"/>
-                <Id value="donnees" typref="0" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:1:2"/>
+                <Id value="do" suffix="1" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:1:1"/>
+                <Id value="donnees" typref="0" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:1:2"/>
             </Exp_Comparison>
         </Local_Hyp>
         <Simple_Goal>
             <Tag>Invariant is preserved</Tag>
             <Goal>
                 <Exp_Comparison op=":">
-                    <Binary_Exp op="\/" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:1:1">
-                        <Id value="Lit" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:1:3:1:2:1:1"/>
+                    <Binary_Exp op="\/" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:1:1">
+                        <Id value="Lit" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:1:3:1:2:1:1"/>
                         <Nary_Exp op="{" typref="2">
                             <Binary_Exp op="|-&gt;" typref="4">
-                                <Id value="do" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:1:3:1:2:1:2:1:1"/>
-                                <Id value="pa" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:1:3:1:2:1:2:1:2"/>
+                                <Id value="do" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:1:3:1:2:1:2:1:1"/>
+                                <Id value="pa" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:1:3:1:2:1:2:1:2"/>
                             </Binary_Exp>
                         </Nary_Exp>
                     </Binary_Exp>
                     <Binary_Exp op="&lt;-&gt;" typref="3">
-                        <Id value="donnees" typref="0" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:1:2:1"/>
-                        <Id value="pages" typref="0" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:1:2:2"/>
+                        <Id value="donnees" typref="0" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:1:2:1"/>
+                        <Id value="pages" typref="0" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:1:2:2"/>
                     </Binary_Exp>
                 </Exp_Comparison>
             </Goal>
@@ -196,15 +196,15 @@
             <Goal>
                 <Exp_Comparison op="&lt;:">
                     <Unary_Exp op="ran" typref="0">
-                        <Id value="Ecrit" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:4:1:1"/>
+                        <Id value="Ecrit" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:4:1:1"/>
                     </Unary_Exp>
                     <Unary_Exp op="ran" typref="0">
-                        <Binary_Exp op="\/" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:4:2:1">
-                            <Id value="Lit" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:1:3:1:2:1:1"/>
+                        <Binary_Exp op="\/" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:4:2:1">
+                            <Id value="Lit" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:1:3:1:2:1:1"/>
                             <Nary_Exp op="{" typref="2">
                                 <Binary_Exp op="|-&gt;" typref="4">
-                                    <Id value="do" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:1:3:1:2:1:2:1:1"/>
-                                    <Id value="pa" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:1:3:1:2:1:2:1:2"/>
+                                    <Id value="do" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:1:3:1:2:1:2:1:1"/>
+                                    <Id value="pa" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:1:3:1:2:1:2:1:2"/>
                                 </Binary_Exp>
                             </Nary_Exp>
                         </Binary_Exp>
@@ -218,28 +218,28 @@
             <Goal>
                 <Exp_Comparison op=":">
                     <Binary_Exp op="(" typref="1">
-                        <Id value="possedeD" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:1:1"/>
-                        <Id value="do" suffix="1" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:1:2"/>
+                        <Id value="possedeD" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:1:1"/>
+                        <Id value="do" suffix="1" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:1:2"/>
                     </Binary_Exp>
                     <Binary_Exp op="/\" typref="0">
                         <Binary_Exp op="[" typref="0">
-                            <Binary_Exp op="\/" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:2:1:1">
-                                <Id value="Lit" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:1:3:1:2:1:1"/>
+                            <Binary_Exp op="\/" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:2:1:1">
+                                <Id value="Lit" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:1:3:1:2:1:1"/>
                                 <Nary_Exp op="{" typref="2">
                                     <Binary_Exp op="|-&gt;" typref="4">
-                                        <Id value="do" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:1:3:1:2:1:2:1:1"/>
-                                        <Id value="pa" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:1:3:1:2:1:2:1:2"/>
+                                        <Id value="do" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:1:3:1:2:1:2:1:1"/>
+                                        <Id value="pa" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:1:3:1:2:1:2:1:2"/>
                                     </Binary_Exp>
                                 </Nary_Exp>
                             </Binary_Exp>
                             <Nary_Exp op="{" typref="0">
-                                <Id value="do" suffix="1" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:2:1:2:1"/>
+                                <Id value="do" suffix="1" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:2:1:2:1"/>
                             </Nary_Exp>
                         </Binary_Exp>
                         <Binary_Exp op="[" typref="0">
-                            <Id value="Ecrit" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:2:2:1"/>
+                            <Id value="Ecrit" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:2:2:1"/>
                             <Nary_Exp op="{" typref="0">
-                                <Id value="do" suffix="1" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:2:2:2:1"/>
+                                <Id value="do" suffix="1" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:2:2:2:1"/>
                             </Nary_Exp>
                         </Binary_Exp>
                     </Binary_Exp>
@@ -247,7 +247,7 @@
             </Goal>
         </Simple_Goal>
     </Proof_Obligation>
-    <Proof_Obligation goalHash="509014971614592000">
+    <Proof_Obligation goalHash="5889318860278152112">
         <Tag>Operation_SuppLit</Tag>
         <Definition name="B definitions"/>
         <Definition name="ctx"/>
@@ -260,69 +260,69 @@
         <Definition name="ass"/>
         <Hypothesis>
             <Exp_Comparison op=":">
-                <Id value="pa" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:2:2:1:1:1"/>
-                <Id value="pages" typref="0" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:2:2:1:1:2"/>
+                <Id value="pa" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:2:2:1:1:1"/>
+                <Id value="pages" typref="0" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:2:2:1:1:2"/>
             </Exp_Comparison>
         </Hypothesis>
         <Hypothesis>
             <Exp_Comparison op=":">
-                <Id value="do" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:2:2:1:2:1"/>
-                <Id value="donnees" typref="0" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:2:2:1:2:2"/>
+                <Id value="do" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:2:2:1:2:1"/>
+                <Id value="donnees" typref="0" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:2:2:1:2:2"/>
             </Exp_Comparison>
         </Hypothesis>
         <Hypothesis>
             <Exp_Comparison op=":">
                 <Binary_Exp op="|-&gt;" typref="4">
-                    <Id value="do" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:2:2:1:3:1:1"/>
-                    <Id value="pa" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:2:2:1:3:1:2"/>
+                    <Id value="do" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:2:2:1:3:1:1"/>
+                    <Id value="pa" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:2:2:1:3:1:2"/>
                 </Binary_Exp>
-                <Id value="Lit" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:2:2:1:3:2"/>
+                <Id value="Lit" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:2:2:1:3:2"/>
             </Exp_Comparison>
         </Hypothesis>
         <Hypothesis>
             <Unary_Pred op="not">
                 <Exp_Comparison op=":">
                     <Binary_Exp op="|-&gt;" typref="4">
-                        <Id value="do" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:2:2:1:4:1:1"/>
-                        <Id value="pa" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:2:2:1:4:1:2"/>
+                        <Id value="do" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:2:2:1:4:1:1"/>
+                        <Id value="pa" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:2:2:1:4:1:2"/>
                     </Binary_Exp>
-                    <Id value="Ecrit" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:2:2:1:4:2"/>
+                    <Id value="Ecrit" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:2:2:1:4:2"/>
                 </Exp_Comparison>
             </Unary_Pred>
         </Hypothesis>
         <Hypothesis>
             <Unary_Pred op="not">
                 <Exp_Comparison op="=">
-                    <Id value="pa" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:2:2:1:5:1"/>
+                    <Id value="pa" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:2:2:1:5:1"/>
                     <Binary_Exp op="(" typref="1">
-                        <Id value="possedeD" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:2:2:1:5:2:1"/>
-                        <Id value="do" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:2:2:1:5:2:2"/>
+                        <Id value="possedeD" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:2:2:1:5:2:1"/>
+                        <Id value="do" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:2:2:1:5:2:2"/>
                     </Binary_Exp>
                 </Exp_Comparison>
             </Unary_Pred>
         </Hypothesis>
         <Local_Hyp num="1">
             <Exp_Comparison op=":">
-                <Id value="do" suffix="1" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:1:1"/>
-                <Id value="donnees" typref="0" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:1:2"/>
+                <Id value="do" suffix="1" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:1:1"/>
+                <Id value="donnees" typref="0" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:1:2"/>
             </Exp_Comparison>
         </Local_Hyp>
         <Simple_Goal>
             <Tag>Invariant is preserved</Tag>
             <Goal>
                 <Exp_Comparison op=":">
-                    <Binary_Exp op="-s" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:1:1">
-                        <Id value="Lit" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:2:3:1:2:1:1"/>
+                    <Binary_Exp op="-s" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:1:1">
+                        <Id value="Lit" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:2:3:1:2:1:1"/>
                         <Nary_Exp op="{" typref="2">
                             <Binary_Exp op="|-&gt;" typref="4">
-                                <Id value="do" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:2:3:1:2:1:2:1:1"/>
-                                <Id value="pa" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:2:3:1:2:1:2:1:2"/>
+                                <Id value="do" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:2:3:1:2:1:2:1:1"/>
+                                <Id value="pa" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:2:3:1:2:1:2:1:2"/>
                             </Binary_Exp>
                         </Nary_Exp>
                     </Binary_Exp>
                     <Binary_Exp op="&lt;-&gt;" typref="3">
-                        <Id value="donnees" typref="0" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:1:2:1"/>
-                        <Id value="pages" typref="0" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:1:2:2"/>
+                        <Id value="donnees" typref="0" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:1:2:1"/>
+                        <Id value="pages" typref="0" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:1:2:2"/>
                     </Binary_Exp>
                 </Exp_Comparison>
             </Goal>
@@ -332,15 +332,15 @@
             <Goal>
                 <Exp_Comparison op="&lt;:">
                     <Unary_Exp op="ran" typref="0">
-                        <Id value="Ecrit" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:4:1:1"/>
+                        <Id value="Ecrit" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:4:1:1"/>
                     </Unary_Exp>
                     <Unary_Exp op="ran" typref="0">
-                        <Binary_Exp op="-s" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:4:2:1">
-                            <Id value="Lit" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:2:3:1:2:1:1"/>
+                        <Binary_Exp op="-s" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:4:2:1">
+                            <Id value="Lit" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:2:3:1:2:1:1"/>
                             <Nary_Exp op="{" typref="2">
                                 <Binary_Exp op="|-&gt;" typref="4">
-                                    <Id value="do" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:2:3:1:2:1:2:1:1"/>
-                                    <Id value="pa" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:2:3:1:2:1:2:1:2"/>
+                                    <Id value="do" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:2:3:1:2:1:2:1:1"/>
+                                    <Id value="pa" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:2:3:1:2:1:2:1:2"/>
                                 </Binary_Exp>
                             </Nary_Exp>
                         </Binary_Exp>
@@ -354,28 +354,28 @@
             <Goal>
                 <Exp_Comparison op=":">
                     <Binary_Exp op="(" typref="1">
-                        <Id value="possedeD" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:1:1"/>
-                        <Id value="do" suffix="1" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:1:2"/>
+                        <Id value="possedeD" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:1:1"/>
+                        <Id value="do" suffix="1" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:1:2"/>
                     </Binary_Exp>
                     <Binary_Exp op="/\" typref="0">
                         <Binary_Exp op="[" typref="0">
-                            <Binary_Exp op="-s" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:2:1:1">
-                                <Id value="Lit" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:2:3:1:2:1:1"/>
+                            <Binary_Exp op="-s" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:2:1:1">
+                                <Id value="Lit" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:2:3:1:2:1:1"/>
                                 <Nary_Exp op="{" typref="2">
                                     <Binary_Exp op="|-&gt;" typref="4">
-                                        <Id value="do" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:2:3:1:2:1:2:1:1"/>
-                                        <Id value="pa" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:2:3:1:2:1:2:1:2"/>
+                                        <Id value="do" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:2:3:1:2:1:2:1:1"/>
+                                        <Id value="pa" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:2:3:1:2:1:2:1:2"/>
                                     </Binary_Exp>
                                 </Nary_Exp>
                             </Binary_Exp>
                             <Nary_Exp op="{" typref="0">
-                                <Id value="do" suffix="1" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:2:1:2:1"/>
+                                <Id value="do" suffix="1" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:2:1:2:1"/>
                             </Nary_Exp>
                         </Binary_Exp>
                         <Binary_Exp op="[" typref="0">
-                            <Id value="Ecrit" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:2:2:1"/>
+                            <Id value="Ecrit" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:2:2:1"/>
                             <Nary_Exp op="{" typref="0">
-                                <Id value="do" suffix="1" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:2:2:2:1"/>
+                                <Id value="do" suffix="1" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:2:2:2:1"/>
                             </Nary_Exp>
                         </Binary_Exp>
                     </Binary_Exp>
@@ -383,7 +383,7 @@
             </Goal>
         </Simple_Goal>
     </Proof_Obligation>
-    <Proof_Obligation goalHash="12456941125407496942">
+    <Proof_Obligation goalHash="12533207900477324477">
         <Tag>Operation_AjoutEcrit</Tag>
         <Definition name="B definitions"/>
         <Definition name="ctx"/>
@@ -396,47 +396,47 @@
         <Definition name="ass"/>
         <Hypothesis>
             <Exp_Comparison op=":">
-                <Id value="pa" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:3:2:1:1:1"/>
-                <Id value="pages" typref="0" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:3:2:1:1:2"/>
+                <Id value="pa" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:3:2:1:1:1"/>
+                <Id value="pages" typref="0" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:3:2:1:1:2"/>
             </Exp_Comparison>
         </Hypothesis>
         <Hypothesis>
             <Exp_Comparison op=":">
-                <Id value="do" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:3:2:1:2:1"/>
-                <Id value="donnees" typref="0" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:3:2:1:2:2"/>
+                <Id value="do" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:3:2:1:2:1"/>
+                <Id value="donnees" typref="0" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:3:2:1:2:2"/>
             </Exp_Comparison>
         </Hypothesis>
         <Hypothesis>
             <Exp_Comparison op=":">
                 <Binary_Exp op="|-&gt;" typref="4">
-                    <Id value="do" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:3:2:1:3:1:1"/>
-                    <Id value="pa" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:3:2:1:3:1:2"/>
+                    <Id value="do" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:3:2:1:3:1:1"/>
+                    <Id value="pa" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:3:2:1:3:1:2"/>
                 </Binary_Exp>
-                <Id value="Lit" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:3:2:1:3:2"/>
+                <Id value="Lit" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:3:2:1:3:2"/>
             </Exp_Comparison>
         </Hypothesis>
         <Local_Hyp num="1">
             <Exp_Comparison op=":">
-                <Id value="do" suffix="1" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:1:1"/>
-                <Id value="donnees" typref="0" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:1:2"/>
+                <Id value="do" suffix="1" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:1:1"/>
+                <Id value="donnees" typref="0" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:1:2"/>
             </Exp_Comparison>
         </Local_Hyp>
         <Simple_Goal>
             <Tag>Invariant is preserved</Tag>
             <Goal>
                 <Exp_Comparison op=":">
-                    <Binary_Exp op="\/" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:2:1">
-                        <Id value="Ecrit" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:3:3:1:2:1:1"/>
+                    <Binary_Exp op="\/" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:2:1">
+                        <Id value="Ecrit" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:3:3:1:2:1:1"/>
                         <Nary_Exp op="{" typref="2">
                             <Binary_Exp op="|-&gt;" typref="4">
-                                <Id value="do" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:3:3:1:2:1:2:1:1"/>
-                                <Id value="pa" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:3:3:1:2:1:2:1:2"/>
+                                <Id value="do" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:3:3:1:2:1:2:1:1"/>
+                                <Id value="pa" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:3:3:1:2:1:2:1:2"/>
                             </Binary_Exp>
                         </Nary_Exp>
                     </Binary_Exp>
                     <Binary_Exp op="&lt;-&gt;" typref="3">
-                        <Id value="donnees" typref="0" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:2:2:1"/>
-                        <Id value="pages" typref="0" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:2:2:2"/>
+                        <Id value="donnees" typref="0" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:2:2:1"/>
+                        <Id value="pages" typref="0" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:2:2:2"/>
                     </Binary_Exp>
                 </Exp_Comparison>
             </Goal>
@@ -446,18 +446,18 @@
             <Goal>
                 <Exp_Comparison op="&lt;:">
                     <Unary_Exp op="ran" typref="0">
-                        <Binary_Exp op="\/" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:4:1:1">
-                            <Id value="Ecrit" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:3:3:1:2:1:1"/>
+                        <Binary_Exp op="\/" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:4:1:1">
+                            <Id value="Ecrit" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:3:3:1:2:1:1"/>
                             <Nary_Exp op="{" typref="2">
                                 <Binary_Exp op="|-&gt;" typref="4">
-                                    <Id value="do" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:3:3:1:2:1:2:1:1"/>
-                                    <Id value="pa" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:3:3:1:2:1:2:1:2"/>
+                                    <Id value="do" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:3:3:1:2:1:2:1:1"/>
+                                    <Id value="pa" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:3:3:1:2:1:2:1:2"/>
                                 </Binary_Exp>
                             </Nary_Exp>
                         </Binary_Exp>
                     </Unary_Exp>
                     <Unary_Exp op="ran" typref="0">
-                        <Id value="Lit" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:4:2:1"/>
+                        <Id value="Lit" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:4:2:1"/>
                     </Unary_Exp>
                 </Exp_Comparison>
             </Goal>
@@ -468,28 +468,28 @@
             <Goal>
                 <Exp_Comparison op=":">
                     <Binary_Exp op="(" typref="1">
-                        <Id value="possedeD" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:1:1"/>
-                        <Id value="do" suffix="1" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:1:2"/>
+                        <Id value="possedeD" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:1:1"/>
+                        <Id value="do" suffix="1" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:1:2"/>
                     </Binary_Exp>
                     <Binary_Exp op="/\" typref="0">
                         <Binary_Exp op="[" typref="0">
-                            <Id value="Lit" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:2:1:1"/>
+                            <Id value="Lit" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:2:1:1"/>
                             <Nary_Exp op="{" typref="0">
-                                <Id value="do" suffix="1" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:2:1:2:1"/>
+                                <Id value="do" suffix="1" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:2:1:2:1"/>
                             </Nary_Exp>
                         </Binary_Exp>
                         <Binary_Exp op="[" typref="0">
-                            <Binary_Exp op="\/" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:2:2:1">
-                                <Id value="Ecrit" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:3:3:1:2:1:1"/>
+                            <Binary_Exp op="\/" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:2:2:1">
+                                <Id value="Ecrit" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:3:3:1:2:1:1"/>
                                 <Nary_Exp op="{" typref="2">
                                     <Binary_Exp op="|-&gt;" typref="4">
-                                        <Id value="do" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:3:3:1:2:1:2:1:1"/>
-                                        <Id value="pa" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:3:3:1:2:1:2:1:2"/>
+                                        <Id value="do" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:3:3:1:2:1:2:1:1"/>
+                                        <Id value="pa" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:3:3:1:2:1:2:1:2"/>
                                     </Binary_Exp>
                                 </Nary_Exp>
                             </Binary_Exp>
                             <Nary_Exp op="{" typref="0">
-                                <Id value="do" suffix="1" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:2:2:2:1"/>
+                                <Id value="do" suffix="1" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:2:2:2:1"/>
                             </Nary_Exp>
                         </Binary_Exp>
                     </Binary_Exp>
@@ -497,7 +497,7 @@
             </Goal>
         </Simple_Goal>
     </Proof_Obligation>
-    <Proof_Obligation goalHash="14767650376076166430">
+    <Proof_Obligation goalHash="6775672901793749441">
         <Tag>Operation_SuppEcrit</Tag>
         <Definition name="B definitions"/>
         <Definition name="ctx"/>
@@ -510,58 +510,58 @@
         <Definition name="ass"/>
         <Hypothesis>
             <Exp_Comparison op=":">
-                <Id value="pa" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:4:2:1:1:1"/>
-                <Id value="pages" typref="0" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:4:2:1:1:2"/>
+                <Id value="pa" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:4:2:1:1:1"/>
+                <Id value="pages" typref="0" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:4:2:1:1:2"/>
             </Exp_Comparison>
         </Hypothesis>
         <Hypothesis>
             <Exp_Comparison op=":">
-                <Id value="do" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:4:2:1:2:1"/>
-                <Id value="donnees" typref="0" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:4:2:1:2:2"/>
+                <Id value="do" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:4:2:1:2:1"/>
+                <Id value="donnees" typref="0" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:4:2:1:2:2"/>
             </Exp_Comparison>
         </Hypothesis>
         <Hypothesis>
             <Exp_Comparison op=":">
                 <Binary_Exp op="|-&gt;" typref="4">
-                    <Id value="do" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:4:2:1:3:1:1"/>
-                    <Id value="pa" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:4:2:1:3:1:2"/>
+                    <Id value="do" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:4:2:1:3:1:1"/>
+                    <Id value="pa" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:4:2:1:3:1:2"/>
                 </Binary_Exp>
-                <Id value="Ecrit" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:4:2:1:3:2"/>
+                <Id value="Ecrit" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:4:2:1:3:2"/>
             </Exp_Comparison>
         </Hypothesis>
         <Hypothesis>
             <Unary_Pred op="not">
                 <Exp_Comparison op="=">
-                    <Id value="pa" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:4:2:1:4:1"/>
+                    <Id value="pa" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:4:2:1:4:1"/>
                     <Binary_Exp op="(" typref="1">
-                        <Id value="possedeD" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:4:2:1:4:2:1"/>
-                        <Id value="do" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:4:2:1:4:2:2"/>
+                        <Id value="possedeD" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:4:2:1:4:2:1"/>
+                        <Id value="do" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:4:2:1:4:2:2"/>
                     </Binary_Exp>
                 </Exp_Comparison>
             </Unary_Pred>
         </Hypothesis>
         <Local_Hyp num="1">
             <Exp_Comparison op=":">
-                <Id value="do" suffix="1" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:1:1"/>
-                <Id value="donnees" typref="0" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:1:2"/>
+                <Id value="do" suffix="1" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:1:1"/>
+                <Id value="donnees" typref="0" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:1:2"/>
             </Exp_Comparison>
         </Local_Hyp>
         <Simple_Goal>
             <Tag>Invariant is preserved</Tag>
             <Goal>
                 <Exp_Comparison op=":">
-                    <Binary_Exp op="-s" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:2:1">
-                        <Id value="Ecrit" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:4:3:1:2:1:1"/>
+                    <Binary_Exp op="-s" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:2:1">
+                        <Id value="Ecrit" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:4:3:1:2:1:1"/>
                         <Nary_Exp op="{" typref="2">
                             <Binary_Exp op="|-&gt;" typref="4">
-                                <Id value="do" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:4:3:1:2:1:2:1:1"/>
-                                <Id value="pa" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:4:3:1:2:1:2:1:2"/>
+                                <Id value="do" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:4:3:1:2:1:2:1:1"/>
+                                <Id value="pa" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:4:3:1:2:1:2:1:2"/>
                             </Binary_Exp>
                         </Nary_Exp>
                     </Binary_Exp>
                     <Binary_Exp op="&lt;-&gt;" typref="3">
-                        <Id value="donnees" typref="0" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:2:2:1"/>
-                        <Id value="pages" typref="0" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:2:2:2"/>
+                        <Id value="donnees" typref="0" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:2:2:1"/>
+                        <Id value="pages" typref="0" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:2:2:2"/>
                     </Binary_Exp>
                 </Exp_Comparison>
             </Goal>
@@ -571,18 +571,18 @@
             <Goal>
                 <Exp_Comparison op="&lt;:">
                     <Unary_Exp op="ran" typref="0">
-                        <Binary_Exp op="-s" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:4:1:1">
-                            <Id value="Ecrit" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:4:3:1:2:1:1"/>
+                        <Binary_Exp op="-s" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:4:1:1">
+                            <Id value="Ecrit" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:4:3:1:2:1:1"/>
                             <Nary_Exp op="{" typref="2">
                                 <Binary_Exp op="|-&gt;" typref="4">
-                                    <Id value="do" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:4:3:1:2:1:2:1:1"/>
-                                    <Id value="pa" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:4:3:1:2:1:2:1:2"/>
+                                    <Id value="do" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:4:3:1:2:1:2:1:1"/>
+                                    <Id value="pa" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:4:3:1:2:1:2:1:2"/>
                                 </Binary_Exp>
                             </Nary_Exp>
                         </Binary_Exp>
                     </Unary_Exp>
                     <Unary_Exp op="ran" typref="0">
-                        <Id value="Lit" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:4:2:1"/>
+                        <Id value="Lit" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:4:2:1"/>
                     </Unary_Exp>
                 </Exp_Comparison>
             </Goal>
@@ -593,28 +593,28 @@
             <Goal>
                 <Exp_Comparison op=":">
                     <Binary_Exp op="(" typref="1">
-                        <Id value="possedeD" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:1:1"/>
-                        <Id value="do" suffix="1" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:1:2"/>
+                        <Id value="possedeD" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:1:1"/>
+                        <Id value="do" suffix="1" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:1:2"/>
                     </Binary_Exp>
                     <Binary_Exp op="/\" typref="0">
                         <Binary_Exp op="[" typref="0">
-                            <Id value="Lit" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:2:1:1"/>
+                            <Id value="Lit" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:2:1:1"/>
                             <Nary_Exp op="{" typref="0">
-                                <Id value="do" suffix="1" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:2:1:2:1"/>
+                                <Id value="do" suffix="1" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:2:1:2:1"/>
                             </Nary_Exp>
                         </Binary_Exp>
                         <Binary_Exp op="[" typref="0">
-                            <Binary_Exp op="-s" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:2:2:1">
-                                <Id value="Ecrit" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:4:3:1:2:1:1"/>
+                            <Binary_Exp op="-s" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:2:2:1">
+                                <Id value="Ecrit" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:4:3:1:2:1:1"/>
                                 <Nary_Exp op="{" typref="2">
                                     <Binary_Exp op="|-&gt;" typref="4">
-                                        <Id value="do" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:4:3:1:2:1:2:1:1"/>
-                                        <Id value="pa" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:4:3:1:2:1:2:1:2"/>
+                                        <Id value="do" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:4:3:1:2:1:2:1:1"/>
+                                        <Id value="pa" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:4:3:1:2:1:2:1:2"/>
                                     </Binary_Exp>
                                 </Nary_Exp>
                             </Binary_Exp>
                             <Nary_Exp op="{" typref="0">
-                                <Id value="do" suffix="1" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:2:2:2:1"/>
+                                <Id value="do" suffix="1" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:2:2:2:1"/>
                             </Nary_Exp>
                         </Binary_Exp>
                     </Binary_Exp>
@@ -622,7 +622,7 @@
             </Goal>
         </Simple_Goal>
     </Proof_Obligation>
-    <Proof_Obligation goalHash="782640656323806120">
+    <Proof_Obligation goalHash="11586311709327112390">
         <Tag>Operation_AjoutRegarde</Tag>
         <Definition name="B definitions"/>
         <Definition name="ctx"/>
@@ -635,38 +635,38 @@
         <Definition name="ass"/>
         <Hypothesis>
             <Exp_Comparison op=":">
-                <Id value="pa" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:5:2:1:1:1"/>
-                <Id value="pages" typref="0" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:5:2:1:1:2"/>
+                <Id value="pa" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:5:2:1:1:1"/>
+                <Id value="pages" typref="0" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:5:2:1:1:2"/>
             </Exp_Comparison>
         </Hypothesis>
         <Hypothesis>
             <Exp_Comparison op=":">
-                <Id value="do" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:5:2:1:2:1"/>
-                <Id value="donnees" typref="0" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:5:2:1:2:2"/>
+                <Id value="do" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:5:2:1:2:1"/>
+                <Id value="donnees" typref="0" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:5:2:1:2:2"/>
             </Exp_Comparison>
         </Hypothesis>
         <Simple_Goal>
             <Tag>Invariant is preserved</Tag>
             <Goal>
                 <Exp_Comparison op=":">
-                    <Binary_Exp op="\/" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:3:1">
-                        <Id value="Regarde" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:5:3:1:2:1:1"/>
+                    <Binary_Exp op="\/" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:3:1">
+                        <Id value="Regarde" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:5:3:1:2:1:1"/>
                         <Nary_Exp op="{" typref="2">
                             <Binary_Exp op="|-&gt;" typref="4">
-                                <Id value="do" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:5:3:1:2:1:2:1:1"/>
-                                <Id value="pa" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:5:3:1:2:1:2:1:2"/>
+                                <Id value="do" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:5:3:1:2:1:2:1:1"/>
+                                <Id value="pa" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:5:3:1:2:1:2:1:2"/>
                             </Binary_Exp>
                         </Nary_Exp>
                     </Binary_Exp>
                     <Binary_Exp op="&lt;-&gt;" typref="3">
-                        <Id value="donnees" typref="0" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:3:2:1"/>
-                        <Id value="pages" typref="0" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:3:2:2"/>
+                        <Id value="donnees" typref="0" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:3:2:1"/>
+                        <Id value="pages" typref="0" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:3:2:2"/>
                     </Binary_Exp>
                 </Exp_Comparison>
             </Goal>
         </Simple_Goal>
     </Proof_Obligation>
-    <Proof_Obligation goalHash="11742141681119002055">
+    <Proof_Obligation goalHash="9544748348553394464">
         <Tag>Operation_SuppRegarde</Tag>
         <Definition name="B definitions"/>
         <Definition name="ctx"/>
@@ -679,48 +679,48 @@
         <Definition name="ass"/>
         <Hypothesis>
             <Exp_Comparison op=":">
-                <Id value="pa" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:6:2:1:1:1"/>
-                <Id value="pages" typref="0" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:6:2:1:1:2"/>
+                <Id value="pa" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:6:2:1:1:1"/>
+                <Id value="pages" typref="0" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:6:2:1:1:2"/>
             </Exp_Comparison>
         </Hypothesis>
         <Hypothesis>
             <Exp_Comparison op=":">
-                <Id value="do" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:6:2:1:2:1"/>
-                <Id value="donnees" typref="0" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:6:2:1:2:2"/>
+                <Id value="do" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:6:2:1:2:1"/>
+                <Id value="donnees" typref="0" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:6:2:1:2:2"/>
             </Exp_Comparison>
         </Hypothesis>
         <Hypothesis>
             <Exp_Comparison op=":">
                 <Binary_Exp op="|-&gt;" typref="4">
-                    <Id value="do" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:6:2:1:3:1:1"/>
-                    <Id value="pa" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:6:2:1:3:1:2"/>
+                    <Id value="do" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:6:2:1:3:1:1"/>
+                    <Id value="pa" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:6:2:1:3:1:2"/>
                 </Binary_Exp>
-                <Id value="Regarde" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:6:2:1:3:2"/>
+                <Id value="Regarde" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:6:2:1:3:2"/>
             </Exp_Comparison>
         </Hypothesis>
         <Simple_Goal>
             <Tag>Invariant is preserved</Tag>
             <Goal>
                 <Exp_Comparison op=":">
-                    <Binary_Exp op="-s" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:3:1">
-                        <Id value="Regarde" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:6:3:1:2:1:1"/>
+                    <Binary_Exp op="-s" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:3:1">
+                        <Id value="Regarde" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:6:3:1:2:1:1"/>
                         <Nary_Exp op="{" typref="2">
                             <Binary_Exp op="|-&gt;" typref="4">
-                                <Id value="do" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:6:3:1:2:1:2:1:1"/>
-                                <Id value="pa" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:6:3:1:2:1:2:1:2"/>
+                                <Id value="do" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:6:3:1:2:1:2:1:1"/>
+                                <Id value="pa" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:6:3:1:2:1:2:1:2"/>
                             </Binary_Exp>
                         </Nary_Exp>
                     </Binary_Exp>
                     <Binary_Exp op="&lt;-&gt;" typref="3">
-                        <Id value="donnees" typref="0" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:3:2:1"/>
-                        <Id value="pages" typref="0" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:3:2:2"/>
+                        <Id value="donnees" typref="0" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:3:2:1"/>
+                        <Id value="pages" typref="0" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:3:2:2"/>
                     </Binary_Exp>
                 </Exp_Comparison>
             </Goal>
         </Simple_Goal>
     </Proof_Obligation>
-    <Proof_Obligation goalHash="11137001832052702535">
-        <Tag>Operation_SoustraireDroits</Tag>
+    <Proof_Obligation goalHash="296461813639174547">
+        <Tag>Operation_SoustraireDroitsD</Tag>
         <Definition name="B definitions"/>
         <Definition name="ctx"/>
         <Definition name="cst"/>
@@ -732,29 +732,29 @@
         <Definition name="ass"/>
         <Hypothesis>
             <Exp_Comparison op=":">
-                <Id value="do" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:7:2:1:1"/>
-                <Id value="donnees" typref="0" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:7:2:1:2"/>
+                <Id value="do" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:7:2:1:1"/>
+                <Id value="donnees" typref="0" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:7:2:1:2"/>
             </Exp_Comparison>
         </Hypothesis>
         <Local_Hyp num="1">
             <Exp_Comparison op=":">
-                <Id value="do" suffix="1" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:1:1"/>
-                <Id value="donnees" typref="0" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:1:2"/>
+                <Id value="do" suffix="1" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:1:1"/>
+                <Id value="donnees" typref="0" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:1:2"/>
             </Exp_Comparison>
         </Local_Hyp>
         <Simple_Goal>
             <Tag>Invariant is preserved</Tag>
             <Goal>
                 <Exp_Comparison op=":">
-                    <Binary_Exp op="&lt;&lt;|" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:1:1">
+                    <Binary_Exp op="&lt;&lt;|" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:1:1">
                         <Nary_Exp op="{" typref="0">
-                            <Id value="do" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:7:3:1:1:2:1:1:1"/>
+                            <Id value="do" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:7:3:1:1:2:1:1:1"/>
                         </Nary_Exp>
-                        <Id value="Lit" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:7:3:1:1:2:1:2"/>
+                        <Id value="Lit" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:7:3:1:1:2:1:2"/>
                     </Binary_Exp>
                     <Binary_Exp op="&lt;-&gt;" typref="3">
-                        <Id value="donnees" typref="0" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:1:2:1"/>
-                        <Id value="pages" typref="0" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:1:2:2"/>
+                        <Id value="donnees" typref="0" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:1:2:1"/>
+                        <Id value="pages" typref="0" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:1:2:2"/>
                     </Binary_Exp>
                 </Exp_Comparison>
             </Goal>
@@ -763,15 +763,15 @@
             <Tag>Invariant is preserved</Tag>
             <Goal>
                 <Exp_Comparison op=":">
-                    <Binary_Exp op="&lt;&lt;|" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:2:1">
+                    <Binary_Exp op="&lt;&lt;|" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:2:1">
                         <Nary_Exp op="{" typref="0">
-                            <Id value="do" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:7:3:1:2:2:1:1:1"/>
+                            <Id value="do" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:7:3:1:2:2:1:1:1"/>
                         </Nary_Exp>
-                        <Id value="Ecrit" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:7:3:1:2:2:1:2"/>
+                        <Id value="Ecrit" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:7:3:1:2:2:1:2"/>
                     </Binary_Exp>
                     <Binary_Exp op="&lt;-&gt;" typref="3">
-                        <Id value="donnees" typref="0" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:2:2:1"/>
-                        <Id value="pages" typref="0" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:2:2:2"/>
+                        <Id value="donnees" typref="0" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:2:2:1"/>
+                        <Id value="pages" typref="0" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:2:2:2"/>
                     </Binary_Exp>
                 </Exp_Comparison>
             </Goal>
@@ -780,15 +780,15 @@
             <Tag>Invariant is preserved</Tag>
             <Goal>
                 <Exp_Comparison op=":">
-                    <Binary_Exp op="&lt;&lt;|" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:3:1">
+                    <Binary_Exp op="&lt;&lt;|" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:3:1">
                         <Nary_Exp op="{" typref="0">
-                            <Id value="do" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:7:3:1:3:2:1:1:1"/>
+                            <Id value="do" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:7:3:1:3:2:1:1:1"/>
                         </Nary_Exp>
-                        <Id value="Regarde" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:7:3:1:3:2:1:2"/>
+                        <Id value="Regarde" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:7:3:1:3:2:1:2"/>
                     </Binary_Exp>
                     <Binary_Exp op="&lt;-&gt;" typref="3">
-                        <Id value="donnees" typref="0" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:3:2:1"/>
-                        <Id value="pages" typref="0" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:3:2:2"/>
+                        <Id value="donnees" typref="0" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:3:2:1"/>
+                        <Id value="pages" typref="0" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:3:2:2"/>
                     </Binary_Exp>
                 </Exp_Comparison>
             </Goal>
@@ -798,19 +798,19 @@
             <Goal>
                 <Exp_Comparison op="&lt;:">
                     <Unary_Exp op="ran" typref="0">
-                        <Binary_Exp op="&lt;&lt;|" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:4:1:1">
+                        <Binary_Exp op="&lt;&lt;|" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:4:1:1">
                             <Nary_Exp op="{" typref="0">
-                                <Id value="do" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:7:3:1:2:2:1:1:1"/>
+                                <Id value="do" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:7:3:1:2:2:1:1:1"/>
                             </Nary_Exp>
-                            <Id value="Ecrit" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:7:3:1:2:2:1:2"/>
+                            <Id value="Ecrit" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:7:3:1:2:2:1:2"/>
                         </Binary_Exp>
                     </Unary_Exp>
                     <Unary_Exp op="ran" typref="0">
-                        <Binary_Exp op="&lt;&lt;|" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:4:2:1">
+                        <Binary_Exp op="&lt;&lt;|" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:4:2:1">
                             <Nary_Exp op="{" typref="0">
-                                <Id value="do" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:7:3:1:1:2:1:1:1"/>
+                                <Id value="do" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:7:3:1:1:2:1:1:1"/>
                             </Nary_Exp>
-                            <Id value="Lit" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:7:3:1:1:2:1:2"/>
+                            <Id value="Lit" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:7:3:1:1:2:1:2"/>
                         </Binary_Exp>
                     </Unary_Exp>
                 </Exp_Comparison>
@@ -822,30 +822,30 @@
             <Goal>
                 <Exp_Comparison op=":">
                     <Binary_Exp op="(" typref="1">
-                        <Id value="possedeD" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:1:1"/>
-                        <Id value="do" suffix="1" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:1:2"/>
+                        <Id value="possedeD" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:1:1"/>
+                        <Id value="do" suffix="1" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:1:2"/>
                     </Binary_Exp>
                     <Binary_Exp op="/\" typref="0">
                         <Binary_Exp op="[" typref="0">
-                            <Binary_Exp op="&lt;&lt;|" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:2:1:1">
+                            <Binary_Exp op="&lt;&lt;|" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:2:1:1">
                                 <Nary_Exp op="{" typref="0">
-                                    <Id value="do" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:7:3:1:1:2:1:1:1"/>
+                                    <Id value="do" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:7:3:1:1:2:1:1:1"/>
                                 </Nary_Exp>
-                                <Id value="Lit" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:7:3:1:1:2:1:2"/>
+                                <Id value="Lit" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:7:3:1:1:2:1:2"/>
                             </Binary_Exp>
                             <Nary_Exp op="{" typref="0">
-                                <Id value="do" suffix="1" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:2:1:2:1"/>
+                                <Id value="do" suffix="1" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:2:1:2:1"/>
                             </Nary_Exp>
                         </Binary_Exp>
                         <Binary_Exp op="[" typref="0">
-                            <Binary_Exp op="&lt;&lt;|" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:2:2:1">
+                            <Binary_Exp op="&lt;&lt;|" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:2:2:1">
                                 <Nary_Exp op="{" typref="0">
-                                    <Id value="do" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:7:3:1:2:2:1:1:1"/>
+                                    <Id value="do" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:7:3:1:2:2:1:1:1"/>
                                 </Nary_Exp>
-                                <Id value="Ecrit" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:7:3:1:2:2:1:2"/>
+                                <Id value="Ecrit" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:7:3:1:2:2:1:2"/>
                             </Binary_Exp>
                             <Nary_Exp op="{" typref="0">
-                                <Id value="do" suffix="1" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:2:2:2:1"/>
+                                <Id value="do" suffix="1" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:2:2:2:1"/>
                             </Nary_Exp>
                         </Binary_Exp>
                     </Binary_Exp>
@@ -853,7 +853,182 @@
             </Goal>
         </Simple_Goal>
     </Proof_Obligation>
-    <Proof_Obligation goalHash="12010219063415129321">
+    <Proof_Obligation goalHash="8962460429029073738">
+        <Tag>Operation_SoustraireDroitsDP</Tag>
+        <Definition name="B definitions"/>
+        <Definition name="ctx"/>
+        <Definition name="cst"/>
+        <Definition name="lprp"/>
+        <Definition name="inprp"/>
+        <Definition name="inext"/>
+        <Definition name="seext"/>
+        <Definition name="inv"/>
+        <Definition name="ass"/>
+        <Hypothesis>
+            <Exp_Comparison op=":">
+                <Id value="do" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:8:2:1:1:1"/>
+                <Id value="donnees" typref="0" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:8:2:1:1:2"/>
+            </Exp_Comparison>
+        </Hypothesis>
+        <Hypothesis>
+            <Exp_Comparison op=":">
+                <Id value="pa" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:8:2:1:2:1"/>
+                <Id value="pages" typref="0" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:8:2:1:2:2"/>
+            </Exp_Comparison>
+        </Hypothesis>
+        <Local_Hyp num="1">
+            <Exp_Comparison op=":">
+                <Id value="do" suffix="1" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:1:1"/>
+                <Id value="donnees" typref="0" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:1:2"/>
+            </Exp_Comparison>
+        </Local_Hyp>
+        <Simple_Goal>
+            <Tag>Invariant is preserved</Tag>
+            <Goal>
+                <Exp_Comparison op=":">
+                    <Binary_Exp op="|&gt;&gt;" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:1:1">
+                        <Binary_Exp op="&lt;&lt;|" typref="2">
+                            <Nary_Exp op="{" typref="0">
+                                <Id value="do" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:8:3:1:1:2:1:1:1:1"/>
+                            </Nary_Exp>
+                            <Id value="Lit" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:8:3:1:1:2:1:1:2"/>
+                        </Binary_Exp>
+                        <Nary_Exp op="{" typref="0">
+                            <Id value="pa" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:8:3:1:1:2:1:2:1"/>
+                        </Nary_Exp>
+                    </Binary_Exp>
+                    <Binary_Exp op="&lt;-&gt;" typref="3">
+                        <Id value="donnees" typref="0" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:1:2:1"/>
+                        <Id value="pages" typref="0" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:1:2:2"/>
+                    </Binary_Exp>
+                </Exp_Comparison>
+            </Goal>
+        </Simple_Goal>
+        <Simple_Goal>
+            <Tag>Invariant is preserved</Tag>
+            <Goal>
+                <Exp_Comparison op=":">
+                    <Binary_Exp op="|&gt;&gt;" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:2:1">
+                        <Binary_Exp op="&lt;&lt;|" typref="2">
+                            <Nary_Exp op="{" typref="0">
+                                <Id value="do" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:8:3:1:3:2:1:1:1:1"/>
+                            </Nary_Exp>
+                            <Id value="Ecrit" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:8:3:1:3:2:1:1:2"/>
+                        </Binary_Exp>
+                        <Nary_Exp op="{" typref="0">
+                            <Id value="pa" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:8:3:1:3:2:1:2:1"/>
+                        </Nary_Exp>
+                    </Binary_Exp>
+                    <Binary_Exp op="&lt;-&gt;" typref="3">
+                        <Id value="donnees" typref="0" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:2:2:1"/>
+                        <Id value="pages" typref="0" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:2:2:2"/>
+                    </Binary_Exp>
+                </Exp_Comparison>
+            </Goal>
+        </Simple_Goal>
+        <Simple_Goal>
+            <Tag>Invariant is preserved</Tag>
+            <Goal>
+                <Exp_Comparison op=":">
+                    <Binary_Exp op="|&gt;&gt;" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:3:1">
+                        <Binary_Exp op="&lt;&lt;|" typref="2">
+                            <Nary_Exp op="{" typref="0">
+                                <Id value="do" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:8:3:1:2:2:1:1:1:1"/>
+                            </Nary_Exp>
+                            <Id value="Regarde" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:8:3:1:2:2:1:1:2"/>
+                        </Binary_Exp>
+                        <Nary_Exp op="{" typref="0">
+                            <Id value="pa" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:8:3:1:2:2:1:2:1"/>
+                        </Nary_Exp>
+                    </Binary_Exp>
+                    <Binary_Exp op="&lt;-&gt;" typref="3">
+                        <Id value="donnees" typref="0" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:3:2:1"/>
+                        <Id value="pages" typref="0" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:3:2:2"/>
+                    </Binary_Exp>
+                </Exp_Comparison>
+            </Goal>
+        </Simple_Goal>
+        <Simple_Goal>
+            <Tag>Invariant is preserved</Tag>
+            <Goal>
+                <Exp_Comparison op="&lt;:">
+                    <Unary_Exp op="ran" typref="0">
+                        <Binary_Exp op="|&gt;&gt;" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:4:1:1">
+                            <Binary_Exp op="&lt;&lt;|" typref="2">
+                                <Nary_Exp op="{" typref="0">
+                                    <Id value="do" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:8:3:1:3:2:1:1:1:1"/>
+                                </Nary_Exp>
+                                <Id value="Ecrit" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:8:3:1:3:2:1:1:2"/>
+                            </Binary_Exp>
+                            <Nary_Exp op="{" typref="0">
+                                <Id value="pa" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:8:3:1:3:2:1:2:1"/>
+                            </Nary_Exp>
+                        </Binary_Exp>
+                    </Unary_Exp>
+                    <Unary_Exp op="ran" typref="0">
+                        <Binary_Exp op="|&gt;&gt;" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:4:2:1">
+                            <Binary_Exp op="&lt;&lt;|" typref="2">
+                                <Nary_Exp op="{" typref="0">
+                                    <Id value="do" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:8:3:1:1:2:1:1:1:1"/>
+                                </Nary_Exp>
+                                <Id value="Lit" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:8:3:1:1:2:1:1:2"/>
+                            </Binary_Exp>
+                            <Nary_Exp op="{" typref="0">
+                                <Id value="pa" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:8:3:1:1:2:1:2:1"/>
+                            </Nary_Exp>
+                        </Binary_Exp>
+                    </Unary_Exp>
+                </Exp_Comparison>
+            </Goal>
+        </Simple_Goal>
+        <Simple_Goal>
+            <Tag>Invariant is preserved</Tag>
+            <Ref_Hyp num="1"/>
+            <Goal>
+                <Exp_Comparison op=":">
+                    <Binary_Exp op="(" typref="1">
+                        <Id value="possedeD" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:1:1"/>
+                        <Id value="do" suffix="1" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:1:2"/>
+                    </Binary_Exp>
+                    <Binary_Exp op="/\" typref="0">
+                        <Binary_Exp op="[" typref="0">
+                            <Binary_Exp op="|&gt;&gt;" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:2:1:1">
+                                <Binary_Exp op="&lt;&lt;|" typref="2">
+                                    <Nary_Exp op="{" typref="0">
+                                        <Id value="do" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:8:3:1:1:2:1:1:1:1"/>
+                                    </Nary_Exp>
+                                    <Id value="Lit" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:8:3:1:1:2:1:1:2"/>
+                                </Binary_Exp>
+                                <Nary_Exp op="{" typref="0">
+                                    <Id value="pa" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:8:3:1:1:2:1:2:1"/>
+                                </Nary_Exp>
+                            </Binary_Exp>
+                            <Nary_Exp op="{" typref="0">
+                                <Id value="do" suffix="1" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:2:1:2:1"/>
+                            </Nary_Exp>
+                        </Binary_Exp>
+                        <Binary_Exp op="[" typref="0">
+                            <Binary_Exp op="|&gt;&gt;" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:2:2:1">
+                                <Binary_Exp op="&lt;&lt;|" typref="2">
+                                    <Nary_Exp op="{" typref="0">
+                                        <Id value="do" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:8:3:1:3:2:1:1:1:1"/>
+                                    </Nary_Exp>
+                                    <Id value="Ecrit" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:8:3:1:3:2:1:1:2"/>
+                                </Binary_Exp>
+                                <Nary_Exp op="{" typref="0">
+                                    <Id value="pa" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:8:3:1:3:2:1:2:1"/>
+                                </Nary_Exp>
+                            </Binary_Exp>
+                            <Nary_Exp op="{" typref="0">
+                                <Id value="do" suffix="1" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:2:2:2:1"/>
+                            </Nary_Exp>
+                        </Binary_Exp>
+                    </Binary_Exp>
+                </Exp_Comparison>
+            </Goal>
+        </Simple_Goal>
+    </Proof_Obligation>
+    <Proof_Obligation goalHash="11554057057480762686">
         <Tag>Operation_AjoutPermissionsProprietaire</Tag>
         <Definition name="B definitions"/>
         <Definition name="ctx"/>
@@ -866,47 +1041,38 @@
         <Definition name="ass"/>
         <Hypothesis>
             <Exp_Comparison op=":">
-                <Id value="pa" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:8:2:1:1:1"/>
-                <Id value="pages" typref="0" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:8:2:1:1:2"/>
+                <Id value="pa" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:9:2:1:1:1"/>
+                <Id value="pages" typref="0" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:9:2:1:1:2"/>
             </Exp_Comparison>
         </Hypothesis>
         <Hypothesis>
             <Exp_Comparison op=":">
-                <Id value="do" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:8:2:1:2:1"/>
-                <Id value="DONNEES" typref="0" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:8:2:1:2:2"/>
-            </Exp_Comparison>
-        </Hypothesis>
-        <Hypothesis>
-            <Exp_Comparison op="=">
-                <Id value="pa" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:8:2:1:3:1"/>
-                <Binary_Exp op="(" typref="1">
-                    <Id value="possedeD" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:8:2:1:3:2:1"/>
-                    <Id value="do" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:8:2:1:3:2:2"/>
-                </Binary_Exp>
+                <Id value="do" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:9:2:1:2:1"/>
+                <Id value="DONNEES" typref="0" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:9:2:1:2:2"/>
             </Exp_Comparison>
         </Hypothesis>
         <Local_Hyp num="1">
             <Exp_Comparison op=":">
-                <Id value="do" suffix="1" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:1:1"/>
-                <Id value="donnees" typref="0" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:1:2"/>
+                <Id value="do" suffix="1" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:1:1"/>
+                <Id value="donnees" typref="0" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:1:2"/>
             </Exp_Comparison>
         </Local_Hyp>
         <Simple_Goal>
             <Tag>Invariant is preserved</Tag>
             <Goal>
                 <Exp_Comparison op=":">
-                    <Binary_Exp op="\/" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:1:1">
-                        <Id value="Lit" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:8:3:1:1:2:1:1"/>
+                    <Binary_Exp op="\/" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:1:1">
+                        <Id value="Lit" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:9:3:1:1:2:1:1"/>
                         <Nary_Exp op="{" typref="2">
                             <Binary_Exp op="|-&gt;" typref="4">
-                                <Id value="do" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:8:3:1:1:2:1:2:1:1"/>
-                                <Id value="pa" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:8:3:1:1:2:1:2:1:2"/>
+                                <Id value="do" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:9:3:1:1:2:1:2:1:1"/>
+                                <Id value="pa" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:9:3:1:1:2:1:2:1:2"/>
                             </Binary_Exp>
                         </Nary_Exp>
                     </Binary_Exp>
                     <Binary_Exp op="&lt;-&gt;" typref="3">
-                        <Id value="donnees" typref="0" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:1:2:1"/>
-                        <Id value="pages" typref="0" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:1:2:2"/>
+                        <Id value="donnees" typref="0" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:1:2:1"/>
+                        <Id value="pages" typref="0" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:1:2:2"/>
                     </Binary_Exp>
                 </Exp_Comparison>
             </Goal>
@@ -915,18 +1081,18 @@
             <Tag>Invariant is preserved</Tag>
             <Goal>
                 <Exp_Comparison op=":">
-                    <Binary_Exp op="\/" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:2:1">
-                        <Id value="Ecrit" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:8:3:1:2:2:1:1"/>
+                    <Binary_Exp op="\/" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:2:1">
+                        <Id value="Ecrit" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:9:3:1:2:2:1:1"/>
                         <Nary_Exp op="{" typref="2">
                             <Binary_Exp op="|-&gt;" typref="4">
-                                <Id value="do" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:8:3:1:2:2:1:2:1:1"/>
-                                <Id value="pa" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:8:3:1:2:2:1:2:1:2"/>
+                                <Id value="do" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:9:3:1:2:2:1:2:1:1"/>
+                                <Id value="pa" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:9:3:1:2:2:1:2:1:2"/>
                             </Binary_Exp>
                         </Nary_Exp>
                     </Binary_Exp>
                     <Binary_Exp op="&lt;-&gt;" typref="3">
-                        <Id value="donnees" typref="0" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:2:2:1"/>
-                        <Id value="pages" typref="0" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:2:2:2"/>
+                        <Id value="donnees" typref="0" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:2:2:1"/>
+                        <Id value="pages" typref="0" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:2:2:2"/>
                     </Binary_Exp>
                 </Exp_Comparison>
             </Goal>
@@ -935,18 +1101,18 @@
             <Tag>Invariant is preserved</Tag>
             <Goal>
                 <Exp_Comparison op=":">
-                    <Binary_Exp op="\/" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:3:1">
-                        <Id value="Regarde" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:8:3:1:3:2:1:1"/>
+                    <Binary_Exp op="\/" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:3:1">
+                        <Id value="Regarde" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:9:3:1:3:2:1:1"/>
                         <Nary_Exp op="{" typref="2">
                             <Binary_Exp op="|-&gt;" typref="4">
-                                <Id value="do" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:8:3:1:3:2:1:2:1:1"/>
-                                <Id value="pa" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:8:3:1:3:2:1:2:1:2"/>
+                                <Id value="do" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:9:3:1:3:2:1:2:1:1"/>
+                                <Id value="pa" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:9:3:1:3:2:1:2:1:2"/>
                             </Binary_Exp>
                         </Nary_Exp>
                     </Binary_Exp>
                     <Binary_Exp op="&lt;-&gt;" typref="3">
-                        <Id value="donnees" typref="0" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:3:2:1"/>
-                        <Id value="pages" typref="0" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:3:2:2"/>
+                        <Id value="donnees" typref="0" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:3:2:1"/>
+                        <Id value="pages" typref="0" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:3:2:2"/>
                     </Binary_Exp>
                 </Exp_Comparison>
             </Goal>
@@ -956,23 +1122,23 @@
             <Goal>
                 <Exp_Comparison op="&lt;:">
                     <Unary_Exp op="ran" typref="0">
-                        <Binary_Exp op="\/" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:4:1:1">
-                            <Id value="Ecrit" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:8:3:1:2:2:1:1"/>
+                        <Binary_Exp op="\/" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:4:1:1">
+                            <Id value="Ecrit" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:9:3:1:2:2:1:1"/>
                             <Nary_Exp op="{" typref="2">
                                 <Binary_Exp op="|-&gt;" typref="4">
-                                    <Id value="do" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:8:3:1:2:2:1:2:1:1"/>
-                                    <Id value="pa" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:8:3:1:2:2:1:2:1:2"/>
+                                    <Id value="do" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:9:3:1:2:2:1:2:1:1"/>
+                                    <Id value="pa" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:9:3:1:2:2:1:2:1:2"/>
                                 </Binary_Exp>
                             </Nary_Exp>
                         </Binary_Exp>
                     </Unary_Exp>
                     <Unary_Exp op="ran" typref="0">
-                        <Binary_Exp op="\/" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:4:2:1">
-                            <Id value="Lit" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:8:3:1:1:2:1:1"/>
+                        <Binary_Exp op="\/" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:4:2:1">
+                            <Id value="Lit" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:9:3:1:1:2:1:1"/>
                             <Nary_Exp op="{" typref="2">
                                 <Binary_Exp op="|-&gt;" typref="4">
-                                    <Id value="do" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:8:3:1:1:2:1:2:1:1"/>
-                                    <Id value="pa" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:8:3:1:1:2:1:2:1:2"/>
+                                    <Id value="do" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:9:3:1:1:2:1:2:1:1"/>
+                                    <Id value="pa" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:9:3:1:1:2:1:2:1:2"/>
                                 </Binary_Exp>
                             </Nary_Exp>
                         </Binary_Exp>
@@ -986,36 +1152,36 @@
             <Goal>
                 <Exp_Comparison op=":">
                     <Binary_Exp op="(" typref="1">
-                        <Id value="possedeD" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:1:1"/>
-                        <Id value="do" suffix="1" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:1:2"/>
+                        <Id value="possedeD" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:1:1"/>
+                        <Id value="do" suffix="1" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:1:2"/>
                     </Binary_Exp>
                     <Binary_Exp op="/\" typref="0">
                         <Binary_Exp op="[" typref="0">
-                            <Binary_Exp op="\/" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:2:1:1">
-                                <Id value="Lit" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:8:3:1:1:2:1:1"/>
+                            <Binary_Exp op="\/" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:2:1:1">
+                                <Id value="Lit" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:9:3:1:1:2:1:1"/>
                                 <Nary_Exp op="{" typref="2">
                                     <Binary_Exp op="|-&gt;" typref="4">
-                                        <Id value="do" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:8:3:1:1:2:1:2:1:1"/>
-                                        <Id value="pa" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:8:3:1:1:2:1:2:1:2"/>
+                                        <Id value="do" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:9:3:1:1:2:1:2:1:1"/>
+                                        <Id value="pa" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:9:3:1:1:2:1:2:1:2"/>
                                     </Binary_Exp>
                                 </Nary_Exp>
                             </Binary_Exp>
                             <Nary_Exp op="{" typref="0">
-                                <Id value="do" suffix="1" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:2:1:2:1"/>
+                                <Id value="do" suffix="1" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:2:1:2:1"/>
                             </Nary_Exp>
                         </Binary_Exp>
                         <Binary_Exp op="[" typref="0">
-                            <Binary_Exp op="\/" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:2:2:1">
-                                <Id value="Ecrit" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:8:3:1:2:2:1:1"/>
+                            <Binary_Exp op="\/" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:2:2:1">
+                                <Id value="Ecrit" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:9:3:1:2:2:1:1"/>
                                 <Nary_Exp op="{" typref="2">
                                     <Binary_Exp op="|-&gt;" typref="4">
-                                        <Id value="do" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:8:3:1:2:2:1:2:1:1"/>
-                                        <Id value="pa" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:8:3:1:2:2:1:2:1:2"/>
+                                        <Id value="do" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:9:3:1:2:2:1:2:1:1"/>
+                                        <Id value="pa" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:9:3:1:2:2:1:2:1:2"/>
                                     </Binary_Exp>
                                 </Nary_Exp>
                             </Binary_Exp>
                             <Nary_Exp op="{" typref="0">
-                                <Id value="do" suffix="1" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:2:2:2:1"/>
+                                <Id value="do" suffix="1" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:2:2:2:1"/>
                             </Nary_Exp>
                         </Binary_Exp>
                     </Binary_Exp>
@@ -1023,7 +1189,7 @@
             </Goal>
         </Simple_Goal>
     </Proof_Obligation>
-    <Proof_Obligation goalHash="12010219063415129321">
+    <Proof_Obligation goalHash="11554057057480762686">
         <Tag>Operation_AjoutPremieresPermissions</Tag>
         <Definition name="B definitions"/>
         <Definition name="ctx"/>
@@ -1036,38 +1202,38 @@
         <Definition name="ass"/>
         <Hypothesis>
             <Exp_Comparison op=":">
-                <Id value="pa" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:9:2:1:1:1"/>
-                <Id value="PAGES" typref="0" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:9:2:1:1:2"/>
+                <Id value="pa" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:10:2:1:1:1"/>
+                <Id value="PAGES" typref="0" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:10:2:1:1:2"/>
             </Exp_Comparison>
         </Hypothesis>
         <Hypothesis>
             <Exp_Comparison op=":">
-                <Id value="do" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:9:2:1:2:1"/>
-                <Id value="DONNEES" typref="0" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:9:2:1:2:2"/>
+                <Id value="do" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:10:2:1:2:1"/>
+                <Id value="DONNEES" typref="0" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:10:2:1:2:2"/>
             </Exp_Comparison>
         </Hypothesis>
         <Local_Hyp num="1">
             <Exp_Comparison op=":">
-                <Id value="do" suffix="1" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:1:1"/>
-                <Id value="donnees" typref="0" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:1:2"/>
+                <Id value="do" suffix="1" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:1:1"/>
+                <Id value="donnees" typref="0" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:1:2"/>
             </Exp_Comparison>
         </Local_Hyp>
         <Simple_Goal>
             <Tag>Invariant is preserved</Tag>
             <Goal>
                 <Exp_Comparison op=":">
-                    <Binary_Exp op="\/" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:1:1">
-                        <Id value="Lit" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:9:3:1:1:2:1:1"/>
+                    <Binary_Exp op="\/" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:1:1">
+                        <Id value="Lit" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:10:3:1:1:2:1:1"/>
                         <Nary_Exp op="{" typref="2">
                             <Binary_Exp op="|-&gt;" typref="4">
-                                <Id value="do" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:9:3:1:1:2:1:2:1:1"/>
-                                <Id value="pa" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:9:3:1:1:2:1:2:1:2"/>
+                                <Id value="do" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:10:3:1:1:2:1:2:1:1"/>
+                                <Id value="pa" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:10:3:1:1:2:1:2:1:2"/>
                             </Binary_Exp>
                         </Nary_Exp>
                     </Binary_Exp>
                     <Binary_Exp op="&lt;-&gt;" typref="3">
-                        <Id value="donnees" typref="0" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:1:2:1"/>
-                        <Id value="pages" typref="0" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:1:2:2"/>
+                        <Id value="donnees" typref="0" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:1:2:1"/>
+                        <Id value="pages" typref="0" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:1:2:2"/>
                     </Binary_Exp>
                 </Exp_Comparison>
             </Goal>
@@ -1076,18 +1242,18 @@
             <Tag>Invariant is preserved</Tag>
             <Goal>
                 <Exp_Comparison op=":">
-                    <Binary_Exp op="\/" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:2:1">
-                        <Id value="Ecrit" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:9:3:1:2:2:1:1"/>
+                    <Binary_Exp op="\/" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:2:1">
+                        <Id value="Ecrit" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:10:3:1:2:2:1:1"/>
                         <Nary_Exp op="{" typref="2">
                             <Binary_Exp op="|-&gt;" typref="4">
-                                <Id value="do" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:9:3:1:2:2:1:2:1:1"/>
-                                <Id value="pa" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:9:3:1:2:2:1:2:1:2"/>
+                                <Id value="do" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:10:3:1:2:2:1:2:1:1"/>
+                                <Id value="pa" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:10:3:1:2:2:1:2:1:2"/>
                             </Binary_Exp>
                         </Nary_Exp>
                     </Binary_Exp>
                     <Binary_Exp op="&lt;-&gt;" typref="3">
-                        <Id value="donnees" typref="0" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:2:2:1"/>
-                        <Id value="pages" typref="0" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:2:2:2"/>
+                        <Id value="donnees" typref="0" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:2:2:1"/>
+                        <Id value="pages" typref="0" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:2:2:2"/>
                     </Binary_Exp>
                 </Exp_Comparison>
             </Goal>
@@ -1096,18 +1262,18 @@
             <Tag>Invariant is preserved</Tag>
             <Goal>
                 <Exp_Comparison op=":">
-                    <Binary_Exp op="\/" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:3:1">
-                        <Id value="Regarde" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:9:3:1:3:2:1:1"/>
+                    <Binary_Exp op="\/" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:3:1">
+                        <Id value="Regarde" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:10:3:1:3:2:1:1"/>
                         <Nary_Exp op="{" typref="2">
                             <Binary_Exp op="|-&gt;" typref="4">
-                                <Id value="do" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:9:3:1:3:2:1:2:1:1"/>
-                                <Id value="pa" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:9:3:1:3:2:1:2:1:2"/>
+                                <Id value="do" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:10:3:1:3:2:1:2:1:1"/>
+                                <Id value="pa" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:10:3:1:3:2:1:2:1:2"/>
                             </Binary_Exp>
                         </Nary_Exp>
                     </Binary_Exp>
                     <Binary_Exp op="&lt;-&gt;" typref="3">
-                        <Id value="donnees" typref="0" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:3:2:1"/>
-                        <Id value="pages" typref="0" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:3:2:2"/>
+                        <Id value="donnees" typref="0" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:3:2:1"/>
+                        <Id value="pages" typref="0" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:3:2:2"/>
                     </Binary_Exp>
                 </Exp_Comparison>
             </Goal>
@@ -1117,23 +1283,23 @@
             <Goal>
                 <Exp_Comparison op="&lt;:">
                     <Unary_Exp op="ran" typref="0">
-                        <Binary_Exp op="\/" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:4:1:1">
-                            <Id value="Ecrit" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:9:3:1:2:2:1:1"/>
+                        <Binary_Exp op="\/" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:4:1:1">
+                            <Id value="Ecrit" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:10:3:1:2:2:1:1"/>
                             <Nary_Exp op="{" typref="2">
                                 <Binary_Exp op="|-&gt;" typref="4">
-                                    <Id value="do" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:9:3:1:2:2:1:2:1:1"/>
-                                    <Id value="pa" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:9:3:1:2:2:1:2:1:2"/>
+                                    <Id value="do" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:10:3:1:2:2:1:2:1:1"/>
+                                    <Id value="pa" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:10:3:1:2:2:1:2:1:2"/>
                                 </Binary_Exp>
                             </Nary_Exp>
                         </Binary_Exp>
                     </Unary_Exp>
                     <Unary_Exp op="ran" typref="0">
-                        <Binary_Exp op="\/" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:4:2:1">
-                            <Id value="Lit" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:9:3:1:1:2:1:1"/>
+                        <Binary_Exp op="\/" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:4:2:1">
+                            <Id value="Lit" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:10:3:1:1:2:1:1"/>
                             <Nary_Exp op="{" typref="2">
                                 <Binary_Exp op="|-&gt;" typref="4">
-                                    <Id value="do" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:9:3:1:1:2:1:2:1:1"/>
-                                    <Id value="pa" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:9:3:1:1:2:1:2:1:2"/>
+                                    <Id value="do" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:10:3:1:1:2:1:2:1:1"/>
+                                    <Id value="pa" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:10:3:1:1:2:1:2:1:2"/>
                                 </Binary_Exp>
                             </Nary_Exp>
                         </Binary_Exp>
@@ -1147,36 +1313,36 @@
             <Goal>
                 <Exp_Comparison op=":">
                     <Binary_Exp op="(" typref="1">
-                        <Id value="possedeD" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:1:1"/>
-                        <Id value="do" suffix="1" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:1:2"/>
+                        <Id value="possedeD" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:1:1"/>
+                        <Id value="do" suffix="1" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:1:2"/>
                     </Binary_Exp>
                     <Binary_Exp op="/\" typref="0">
                         <Binary_Exp op="[" typref="0">
-                            <Binary_Exp op="\/" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:2:1:1">
-                                <Id value="Lit" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:9:3:1:1:2:1:1"/>
+                            <Binary_Exp op="\/" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:2:1:1">
+                                <Id value="Lit" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:10:3:1:1:2:1:1"/>
                                 <Nary_Exp op="{" typref="2">
                                     <Binary_Exp op="|-&gt;" typref="4">
-                                        <Id value="do" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:9:3:1:1:2:1:2:1:1"/>
-                                        <Id value="pa" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:9:3:1:1:2:1:2:1:2"/>
+                                        <Id value="do" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:10:3:1:1:2:1:2:1:1"/>
+                                        <Id value="pa" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:10:3:1:1:2:1:2:1:2"/>
                                     </Binary_Exp>
                                 </Nary_Exp>
                             </Binary_Exp>
                             <Nary_Exp op="{" typref="0">
-                                <Id value="do" suffix="1" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:2:1:2:1"/>
+                                <Id value="do" suffix="1" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:2:1:2:1"/>
                             </Nary_Exp>
                         </Binary_Exp>
                         <Binary_Exp op="[" typref="0">
-                            <Binary_Exp op="\/" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:2:2:1">
-                                <Id value="Ecrit" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:9:3:1:2:2:1:1"/>
+                            <Binary_Exp op="\/" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:2:2:1">
+                                <Id value="Ecrit" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:10:3:1:2:2:1:1"/>
                                 <Nary_Exp op="{" typref="2">
                                     <Binary_Exp op="|-&gt;" typref="4">
-                                        <Id value="do" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:9:3:1:2:2:1:2:1:1"/>
-                                        <Id value="pa" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:9:3:1:2:2:1:2:1:2"/>
+                                        <Id value="do" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:10:3:1:2:2:1:2:1:1"/>
+                                        <Id value="pa" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:10:3:1:2:2:1:2:1:2"/>
                                     </Binary_Exp>
                                 </Nary_Exp>
                             </Binary_Exp>
                             <Nary_Exp op="{" typref="0">
-                                <Id value="do" suffix="1" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:2:2:2:1"/>
+                                <Id value="do" suffix="1" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:2:2:2:1"/>
                             </Nary_Exp>
                         </Binary_Exp>
                     </Binary_Exp>
@@ -1184,7 +1350,7 @@
             </Goal>
         </Simple_Goal>
     </Proof_Obligation>
-    <Proof_Obligation goalHash="13923534262698440247">
+    <Proof_Obligation goalHash="1353252926930846394">
         <Tag>WellDefinednessInvariant</Tag>
         <Definition name="B definitions"/>
         <Definition name="ctx"/>
@@ -1195,45 +1361,45 @@
         <Definition name="seext"/>
         <Local_Hyp num="1">
             <Exp_Comparison op=":">
-                <Id value="Lit" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:1:1"/>
+                <Id value="Lit" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:1:1"/>
                 <Binary_Exp op="&lt;-&gt;" typref="3">
-                    <Id value="donnees" typref="0" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:1:2:1"/>
-                    <Id value="pages" typref="0" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:1:2:2"/>
+                    <Id value="donnees" typref="0" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:1:2:1"/>
+                    <Id value="pages" typref="0" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:1:2:2"/>
                 </Binary_Exp>
             </Exp_Comparison>
         </Local_Hyp>
         <Local_Hyp num="2">
             <Exp_Comparison op=":">
-                <Id value="Ecrit" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:2:1"/>
+                <Id value="Ecrit" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:2:1"/>
                 <Binary_Exp op="&lt;-&gt;" typref="3">
-                    <Id value="donnees" typref="0" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:2:2:1"/>
-                    <Id value="pages" typref="0" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:2:2:2"/>
+                    <Id value="donnees" typref="0" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:2:2:1"/>
+                    <Id value="pages" typref="0" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:2:2:2"/>
                 </Binary_Exp>
             </Exp_Comparison>
         </Local_Hyp>
         <Local_Hyp num="3">
             <Exp_Comparison op=":">
-                <Id value="Regarde" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:3:1"/>
+                <Id value="Regarde" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:3:1"/>
                 <Binary_Exp op="&lt;-&gt;" typref="3">
-                    <Id value="donnees" typref="0" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:3:2:1"/>
-                    <Id value="pages" typref="0" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:3:2:2"/>
+                    <Id value="donnees" typref="0" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:3:2:1"/>
+                    <Id value="pages" typref="0" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:3:2:2"/>
                 </Binary_Exp>
             </Exp_Comparison>
         </Local_Hyp>
         <Local_Hyp num="4">
             <Exp_Comparison op="&lt;:">
                 <Unary_Exp op="ran" typref="0">
-                    <Id value="Ecrit" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:4:1:1"/>
+                    <Id value="Ecrit" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:4:1:1"/>
                 </Unary_Exp>
                 <Unary_Exp op="ran" typref="0">
-                    <Id value="Lit" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:4:2:1"/>
+                    <Id value="Lit" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:4:2:1"/>
                 </Unary_Exp>
             </Exp_Comparison>
         </Local_Hyp>
         <Local_Hyp num="5">
             <Exp_Comparison op=":">
-                <Id value="do" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:1:1"/>
-                <Id value="donnees" typref="0" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:1:2"/>
+                <Id value="do" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:1:1"/>
+                <Id value="donnees" typref="0" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:1:2"/>
             </Exp_Comparison>
         </Local_Hyp>
         <Simple_Goal>
@@ -1245,9 +1411,9 @@
             <Ref_Hyp num="5"/>
             <Goal>
                 <Exp_Comparison op=":">
-                    <Id value="do" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:1:2"/>
+                    <Id value="do" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:1:2"/>
                     <Unary_Exp op="dom" typref="0">
-                        <Id value="possedeD" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:1:1"/>
+                        <Id value="possedeD" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:1:1"/>
                     </Unary_Exp>
                 </Exp_Comparison>
             </Goal>
@@ -1261,20 +1427,20 @@
             <Ref_Hyp num="5"/>
             <Goal>
                 <Exp_Comparison op=":">
-                    <Id value="possedeD" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:1:1"/>
+                    <Id value="possedeD" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:1:1"/>
                     <Binary_Exp op="+-&gt;" typref="3">
                         <Unary_Exp op="dom" typref="0">
-                            <Id value="possedeD" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:1:1"/>
+                            <Id value="possedeD" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:1:1"/>
                         </Unary_Exp>
                         <Unary_Exp op="ran" typref="0">
-                            <Id value="possedeD" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:1:1"/>
+                            <Id value="possedeD" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:3:1:5:2:1:2:1:1"/>
                         </Unary_Exp>
                     </Binary_Exp>
                 </Exp_Comparison>
             </Goal>
         </Simple_Goal>
     </Proof_Obligation>
-    <Proof_Obligation goalHash="17135080609680345006">
+    <Proof_Obligation goalHash="11518733751749882904">
         <Tag>WellDefinednessPrecondition_SuppLit</Tag>
         <Definition name="B definitions"/>
         <Definition name="ctx"/>
@@ -1287,33 +1453,33 @@
         <Definition name="ass"/>
         <Local_Hyp num="1">
             <Exp_Comparison op=":">
-                <Id value="pa" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:2:2:1:1:1"/>
-                <Id value="pages" typref="0" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:2:2:1:1:2"/>
+                <Id value="pa" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:2:2:1:1:1"/>
+                <Id value="pages" typref="0" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:2:2:1:1:2"/>
             </Exp_Comparison>
         </Local_Hyp>
         <Local_Hyp num="2">
             <Exp_Comparison op=":">
-                <Id value="do" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:2:2:1:2:1"/>
-                <Id value="donnees" typref="0" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:2:2:1:2:2"/>
+                <Id value="do" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:2:2:1:2:1"/>
+                <Id value="donnees" typref="0" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:2:2:1:2:2"/>
             </Exp_Comparison>
         </Local_Hyp>
         <Local_Hyp num="3">
             <Exp_Comparison op=":">
                 <Binary_Exp op="|-&gt;" typref="4">
-                    <Id value="do" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:2:2:1:3:1:1"/>
-                    <Id value="pa" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:2:2:1:3:1:2"/>
+                    <Id value="do" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:2:2:1:3:1:1"/>
+                    <Id value="pa" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:2:2:1:3:1:2"/>
                 </Binary_Exp>
-                <Id value="Lit" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:2:2:1:3:2"/>
+                <Id value="Lit" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:2:2:1:3:2"/>
             </Exp_Comparison>
         </Local_Hyp>
         <Local_Hyp num="4">
             <Unary_Pred op="not">
                 <Exp_Comparison op=":">
                     <Binary_Exp op="|-&gt;" typref="4">
-                        <Id value="do" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:2:2:1:4:1:1"/>
-                        <Id value="pa" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:2:2:1:4:1:2"/>
+                        <Id value="do" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:2:2:1:4:1:1"/>
+                        <Id value="pa" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:2:2:1:4:1:2"/>
                     </Binary_Exp>
-                    <Id value="Ecrit" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:2:2:1:4:2"/>
+                    <Id value="Ecrit" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:2:2:1:4:2"/>
                 </Exp_Comparison>
             </Unary_Pred>
         </Local_Hyp>
@@ -1325,9 +1491,9 @@
             <Ref_Hyp num="4"/>
             <Goal>
                 <Exp_Comparison op=":">
-                    <Id value="do" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:2:2:1:5:2:2"/>
+                    <Id value="do" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:2:2:1:5:2:2"/>
                     <Unary_Exp op="dom" typref="0">
-                        <Id value="possedeD" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:2:2:1:5:2:1"/>
+                        <Id value="possedeD" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:2:2:1:5:2:1"/>
                     </Unary_Exp>
                 </Exp_Comparison>
             </Goal>
@@ -1340,20 +1506,20 @@
             <Ref_Hyp num="4"/>
             <Goal>
                 <Exp_Comparison op=":">
-                    <Id value="possedeD" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:2:2:1:5:2:1"/>
+                    <Id value="possedeD" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:2:2:1:5:2:1"/>
                     <Binary_Exp op="+-&gt;" typref="3">
                         <Unary_Exp op="dom" typref="0">
-                            <Id value="possedeD" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:2:2:1:5:2:1"/>
+                            <Id value="possedeD" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:2:2:1:5:2:1"/>
                         </Unary_Exp>
                         <Unary_Exp op="ran" typref="0">
-                            <Id value="possedeD" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:2:2:1:5:2:1"/>
+                            <Id value="possedeD" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:2:2:1:5:2:1"/>
                         </Unary_Exp>
                     </Binary_Exp>
                 </Exp_Comparison>
             </Goal>
         </Simple_Goal>
     </Proof_Obligation>
-    <Proof_Obligation goalHash="201282273432438134">
+    <Proof_Obligation goalHash="11251006386837297702">
         <Tag>WellDefinednessPrecondition_SuppEcrit</Tag>
         <Definition name="B definitions"/>
         <Definition name="ctx"/>
@@ -1366,23 +1532,23 @@
         <Definition name="ass"/>
         <Local_Hyp num="1">
             <Exp_Comparison op=":">
-                <Id value="pa" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:4:2:1:1:1"/>
-                <Id value="pages" typref="0" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:4:2:1:1:2"/>
+                <Id value="pa" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:4:2:1:1:1"/>
+                <Id value="pages" typref="0" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:4:2:1:1:2"/>
             </Exp_Comparison>
         </Local_Hyp>
         <Local_Hyp num="2">
             <Exp_Comparison op=":">
-                <Id value="do" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:4:2:1:2:1"/>
-                <Id value="donnees" typref="0" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:4:2:1:2:2"/>
+                <Id value="do" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:4:2:1:2:1"/>
+                <Id value="donnees" typref="0" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:4:2:1:2:2"/>
             </Exp_Comparison>
         </Local_Hyp>
         <Local_Hyp num="3">
             <Exp_Comparison op=":">
                 <Binary_Exp op="|-&gt;" typref="4">
-                    <Id value="do" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:4:2:1:3:1:1"/>
-                    <Id value="pa" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:4:2:1:3:1:2"/>
+                    <Id value="do" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:4:2:1:3:1:1"/>
+                    <Id value="pa" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:4:2:1:3:1:2"/>
                 </Binary_Exp>
-                <Id value="Ecrit" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:4:2:1:3:2"/>
+                <Id value="Ecrit" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:4:2:1:3:2"/>
             </Exp_Comparison>
         </Local_Hyp>
         <Simple_Goal>
@@ -1392,9 +1558,9 @@
             <Ref_Hyp num="3"/>
             <Goal>
                 <Exp_Comparison op=":">
-                    <Id value="do" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:4:2:1:4:2:2"/>
+                    <Id value="do" typref="1" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:4:2:1:4:2:2"/>
                     <Unary_Exp op="dom" typref="0">
-                        <Id value="possedeD" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:4:2:1:4:2:1"/>
+                        <Id value="possedeD" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:4:2:1:4:2:1"/>
                     </Unary_Exp>
                 </Exp_Comparison>
             </Goal>
@@ -1406,68 +1572,13 @@
             <Ref_Hyp num="3"/>
             <Goal>
                 <Exp_Comparison op=":">
-                    <Id value="possedeD" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:4:2:1:4:2:1"/>
+                    <Id value="possedeD" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:4:2:1:4:2:1"/>
                     <Binary_Exp op="+-&gt;" typref="3">
                         <Unary_Exp op="dom" typref="0">
-                            <Id value="possedeD" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:4:2:1:4:2:1"/>
+                            <Id value="possedeD" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:4:2:1:4:2:1"/>
                         </Unary_Exp>
                         <Unary_Exp op="ran" typref="0">
-                            <Id value="possedeD" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:4:2:1:4:2:1"/>
-                        </Unary_Exp>
-                    </Binary_Exp>
-                </Exp_Comparison>
-            </Goal>
-        </Simple_Goal>
-    </Proof_Obligation>
-    <Proof_Obligation goalHash="9773763630986367618">
-        <Tag>WellDefinednessPrecondition_AjoutPermissionsProprietaire</Tag>
-        <Definition name="B definitions"/>
-        <Definition name="ctx"/>
-        <Definition name="cst"/>
-        <Definition name="lprp"/>
-        <Definition name="inprp"/>
-        <Definition name="inext"/>
-        <Definition name="seext"/>
-        <Definition name="inv"/>
-        <Definition name="ass"/>
-        <Local_Hyp num="1">
-            <Exp_Comparison op=":">
-                <Id value="pa" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:8:2:1:1:1"/>
-                <Id value="pages" typref="0" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:8:2:1:1:2"/>
-            </Exp_Comparison>
-        </Local_Hyp>
-        <Local_Hyp num="2">
-            <Exp_Comparison op=":">
-                <Id value="do" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:8:2:1:2:1"/>
-                <Id value="DONNEES" typref="0" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:8:2:1:2:2"/>
-            </Exp_Comparison>
-        </Local_Hyp>
-        <Simple_Goal>
-            <Tag>Operation precondition is well defined</Tag>
-            <Ref_Hyp num="1"/>
-            <Ref_Hyp num="2"/>
-            <Goal>
-                <Exp_Comparison op=":">
-                    <Id value="do" typref="1" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:8:2:1:3:2:2"/>
-                    <Unary_Exp op="dom" typref="0">
-                        <Id value="possedeD" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:8:2:1:3:2:1"/>
-                    </Unary_Exp>
-                </Exp_Comparison>
-            </Goal>
-        </Simple_Goal>
-        <Simple_Goal>
-            <Tag>Operation precondition is well defined</Tag>
-            <Ref_Hyp num="1"/>
-            <Ref_Hyp num="2"/>
-            <Goal>
-                <Exp_Comparison op=":">
-                    <Id value="possedeD" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:8:2:1:3:2:1"/>
-                    <Binary_Exp op="+-&gt;" typref="3">
-                        <Unary_Exp op="dom" typref="0">
-                            <Id value="possedeD" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:8:2:1:3:2:1"/>
-                        </Unary_Exp>
-                        <Unary_Exp op="ran" typref="0">
-                            <Id value="possedeD" typref="2" tag="/Users/juliettedebono/Documents/TSP/Formel/TP/reseau_social/bdp/Permissions.bxml:1:5:8:2:1:3:2:1"/>
+                            <Id value="possedeD" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp/Permissions.bxml:1:5:4:2:1:4:2:1"/>
                         </Unary_Exp>
                     </Binary_Exp>
                 </Exp_Comparison>

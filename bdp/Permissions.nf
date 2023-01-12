@@ -97,8 +97,8 @@ THEORY ListConstraintsX IS
 END
 &
 THEORY ListOperationsX IS
-  Internal_List_Operations(Machine(Permissions))==(AjoutLit,SuppLit,AjoutEcrit,SuppEcrit,AjoutRegarde,SuppRegarde,SoustraireDroits,AjoutPermissionsProprietaire,AjoutPremieresPermissions);
-  List_Operations(Machine(Permissions))==(AjoutLit,SuppLit,AjoutEcrit,SuppEcrit,AjoutRegarde,SuppRegarde,SoustraireDroits,AjoutPermissionsProprietaire,AjoutPremieresPermissions)
+  Internal_List_Operations(Machine(Permissions))==(AjoutLit,SuppLit,AjoutEcrit,SuppEcrit,AjoutRegarde,SuppRegarde,SoustraireDroitsD,SoustraireDroitsDP,AjoutPermissionsProprietaire,AjoutPremieresPermissions);
+  List_Operations(Machine(Permissions))==(AjoutLit,SuppLit,AjoutEcrit,SuppEcrit,AjoutRegarde,SuppRegarde,SoustraireDroitsD,SoustraireDroitsDP,AjoutPermissionsProprietaire,AjoutPremieresPermissions)
 END
 &
 THEORY ListInputX IS
@@ -108,7 +108,8 @@ THEORY ListInputX IS
   List_Input(Machine(Permissions),SuppEcrit)==(pa,do);
   List_Input(Machine(Permissions),AjoutRegarde)==(pa,do);
   List_Input(Machine(Permissions),SuppRegarde)==(pa,do);
-  List_Input(Machine(Permissions),SoustraireDroits)==(do);
+  List_Input(Machine(Permissions),SoustraireDroitsD)==(do);
+  List_Input(Machine(Permissions),SoustraireDroitsDP)==(do,pa);
   List_Input(Machine(Permissions),AjoutPermissionsProprietaire)==(pa,do);
   List_Input(Machine(Permissions),AjoutPremieresPermissions)==(pa,do)
 END
@@ -120,7 +121,8 @@ THEORY ListOutputX IS
   List_Output(Machine(Permissions),SuppEcrit)==(?);
   List_Output(Machine(Permissions),AjoutRegarde)==(?);
   List_Output(Machine(Permissions),SuppRegarde)==(?);
-  List_Output(Machine(Permissions),SoustraireDroits)==(?);
+  List_Output(Machine(Permissions),SoustraireDroitsD)==(?);
+  List_Output(Machine(Permissions),SoustraireDroitsDP)==(?);
   List_Output(Machine(Permissions),AjoutPermissionsProprietaire)==(?);
   List_Output(Machine(Permissions),AjoutPremieresPermissions)==(?)
 END
@@ -132,7 +134,8 @@ THEORY ListHeaderX IS
   List_Header(Machine(Permissions),SuppEcrit)==(SuppEcrit(pa,do));
   List_Header(Machine(Permissions),AjoutRegarde)==(AjoutRegarde(pa,do));
   List_Header(Machine(Permissions),SuppRegarde)==(SuppRegarde(pa,do));
-  List_Header(Machine(Permissions),SoustraireDroits)==(SoustraireDroits(do));
+  List_Header(Machine(Permissions),SoustraireDroitsD)==(SoustraireDroitsD(do));
+  List_Header(Machine(Permissions),SoustraireDroitsDP)==(SoustraireDroitsDP(do,pa));
   List_Header(Machine(Permissions),AjoutPermissionsProprietaire)==(AjoutPermissionsProprietaire(pa,do));
   List_Header(Machine(Permissions),AjoutPremieresPermissions)==(AjoutPremieresPermissions(pa,do))
 END
@@ -146,15 +149,17 @@ THEORY ListPreconditionX IS
   List_Precondition(Machine(Permissions),SuppEcrit)==(pa: pages & do: donnees & do|->pa: Ecrit & pa/=possedeD(do));
   List_Precondition(Machine(Permissions),AjoutRegarde)==(pa: pages & do: donnees);
   List_Precondition(Machine(Permissions),SuppRegarde)==(pa: pages & do: donnees & do|->pa: Regarde);
-  List_Precondition(Machine(Permissions),SoustraireDroits)==(do: donnees);
-  List_Precondition(Machine(Permissions),AjoutPermissionsProprietaire)==(pa: pages & do: DONNEES & pa = possedeD(do));
+  List_Precondition(Machine(Permissions),SoustraireDroitsD)==(do: donnees);
+  List_Precondition(Machine(Permissions),SoustraireDroitsDP)==(do: donnees & pa: pages);
+  List_Precondition(Machine(Permissions),AjoutPermissionsProprietaire)==(pa: pages & do: DONNEES);
   List_Precondition(Machine(Permissions),AjoutPremieresPermissions)==(pa: PAGES & do: DONNEES)
 END
 &
 THEORY ListSubstitutionX IS
   Expanded_List_Substitution(Machine(Permissions),AjoutPremieresPermissions)==(pa: PAGES & do: DONNEES | Lit,Ecrit,Regarde:=Lit\/{do|->pa},Ecrit\/{do|->pa},Regarde\/{do|->pa});
-  Expanded_List_Substitution(Machine(Permissions),AjoutPermissionsProprietaire)==(pa: pages & do: DONNEES & pa = possedeD(do) | Lit,Ecrit,Regarde:=Lit\/{do|->pa},Ecrit\/{do|->pa},Regarde\/{do|->pa});
-  Expanded_List_Substitution(Machine(Permissions),SoustraireDroits)==(do: donnees | Lit,Ecrit,Regarde:={do}<<|Lit,{do}<<|Ecrit,{do}<<|Regarde);
+  Expanded_List_Substitution(Machine(Permissions),AjoutPermissionsProprietaire)==(pa: pages & do: DONNEES | Lit,Ecrit,Regarde:=Lit\/{do|->pa},Ecrit\/{do|->pa},Regarde\/{do|->pa});
+  Expanded_List_Substitution(Machine(Permissions),SoustraireDroitsDP)==(do: donnees & pa: pages | Lit,Regarde,Ecrit:={do}<<|Lit|>>{pa},{do}<<|Regarde|>>{pa},{do}<<|Ecrit|>>{pa});
+  Expanded_List_Substitution(Machine(Permissions),SoustraireDroitsD)==(do: donnees | Lit,Ecrit,Regarde:={do}<<|Lit,{do}<<|Ecrit,{do}<<|Regarde);
   Expanded_List_Substitution(Machine(Permissions),SuppRegarde)==(pa: pages & do: donnees & do|->pa: Regarde | Regarde:=Regarde-{do|->pa});
   Expanded_List_Substitution(Machine(Permissions),AjoutRegarde)==(pa: pages & do: donnees | Regarde:=Regarde\/{do|->pa});
   Expanded_List_Substitution(Machine(Permissions),SuppEcrit)==(pa: pages & do: donnees & do|->pa: Ecrit & pa/=possedeD(do) | Ecrit:=Ecrit-{do|->pa});
@@ -167,7 +172,8 @@ THEORY ListSubstitutionX IS
   List_Substitution(Machine(Permissions),SuppEcrit)==(Ecrit:=Ecrit-{do|->pa});
   List_Substitution(Machine(Permissions),AjoutRegarde)==(Regarde:=Regarde\/{do|->pa});
   List_Substitution(Machine(Permissions),SuppRegarde)==(Regarde:=Regarde-{do|->pa});
-  List_Substitution(Machine(Permissions),SoustraireDroits)==(Lit:={do}<<|Lit || Ecrit:={do}<<|Ecrit || Regarde:={do}<<|Regarde);
+  List_Substitution(Machine(Permissions),SoustraireDroitsD)==(Lit:={do}<<|Lit || Ecrit:={do}<<|Ecrit || Regarde:={do}<<|Regarde);
+  List_Substitution(Machine(Permissions),SoustraireDroitsDP)==(Lit:={do}<<|Lit|>>{pa} || Regarde:={do}<<|Regarde|>>{pa} || Ecrit:={do}<<|Ecrit|>>{pa});
   List_Substitution(Machine(Permissions),AjoutPermissionsProprietaire)==(Lit:=Lit\/{do|->pa} || Ecrit:=Ecrit\/{do|->pa} || Regarde:=Regarde\/{do|->pa});
   List_Substitution(Machine(Permissions),AjoutPremieresPermissions)==(Lit:=Lit\/{do|->pa} || Ecrit:=Ecrit\/{do|->pa} || Regarde:=Regarde\/{do|->pa})
 END
@@ -215,13 +221,14 @@ THEORY ListANYVarX IS
   List_ANY_Var(Machine(Permissions),SuppEcrit)==(?);
   List_ANY_Var(Machine(Permissions),AjoutRegarde)==(?);
   List_ANY_Var(Machine(Permissions),SuppRegarde)==(?);
-  List_ANY_Var(Machine(Permissions),SoustraireDroits)==(?);
+  List_ANY_Var(Machine(Permissions),SoustraireDroitsD)==(?);
+  List_ANY_Var(Machine(Permissions),SoustraireDroitsDP)==(?);
   List_ANY_Var(Machine(Permissions),AjoutPermissionsProprietaire)==(?);
   List_ANY_Var(Machine(Permissions),AjoutPremieresPermissions)==(?)
 END
 &
 THEORY ListOfIdsX IS
-  List_Of_Ids(Machine(Permissions)) == (? | ? | Regarde,Ecrit,Lit | ? | AjoutLit,SuppLit,AjoutEcrit,SuppEcrit,AjoutRegarde,SuppRegarde,SoustraireDroits,AjoutPermissionsProprietaire,AjoutPremieresPermissions | ? | used(Machine(PossedeD)),used(Machine(Page)),used(Machine(Donnee)) | ? | Permissions);
+  List_Of_Ids(Machine(Permissions)) == (? | ? | Regarde,Ecrit,Lit | ? | AjoutLit,SuppLit,AjoutEcrit,SuppEcrit,AjoutRegarde,SuppRegarde,SoustraireDroitsD,SoustraireDroitsDP,AjoutPermissionsProprietaire,AjoutPremieresPermissions | ? | used(Machine(PossedeD)),used(Machine(Page)),used(Machine(Donnee)) | ? | Permissions);
   List_Of_HiddenCst_Ids(Machine(Permissions)) == (? | ?);
   List_Of_VisibleCst_Ids(Machine(Permissions)) == (?);
   List_Of_VisibleVar_Ids(Machine(Permissions)) == (? | ?);
@@ -248,7 +255,7 @@ THEORY VariablesEnvX IS
 END
 &
 THEORY OperationsEnvX IS
-  Operations(Machine(Permissions)) == (Type(AjoutPremieresPermissions) == Cst(No_type,atype(PAGES,?,?)*atype(DONNEES,?,?));Type(AjoutPermissionsProprietaire) == Cst(No_type,atype(PAGES,?,?)*atype(DONNEES,?,?));Type(SoustraireDroits) == Cst(No_type,atype(DONNEES,?,?));Type(SuppRegarde) == Cst(No_type,atype(PAGES,?,?)*atype(DONNEES,?,?));Type(AjoutRegarde) == Cst(No_type,atype(PAGES,?,?)*atype(DONNEES,?,?));Type(SuppEcrit) == Cst(No_type,atype(PAGES,?,?)*atype(DONNEES,?,?));Type(AjoutEcrit) == Cst(No_type,atype(PAGES,?,?)*atype(DONNEES,?,?));Type(SuppLit) == Cst(No_type,atype(PAGES,?,?)*atype(DONNEES,?,?));Type(AjoutLit) == Cst(No_type,atype(PAGES,?,?)*atype(DONNEES,?,?)))
+  Operations(Machine(Permissions)) == (Type(AjoutPremieresPermissions) == Cst(No_type,atype(PAGES,?,?)*atype(DONNEES,?,?));Type(AjoutPermissionsProprietaire) == Cst(No_type,atype(PAGES,?,?)*atype(DONNEES,?,?));Type(SoustraireDroitsDP) == Cst(No_type,atype(DONNEES,?,?)*atype(PAGES,?,?));Type(SoustraireDroitsD) == Cst(No_type,atype(DONNEES,?,?));Type(SuppRegarde) == Cst(No_type,atype(PAGES,?,?)*atype(DONNEES,?,?));Type(AjoutRegarde) == Cst(No_type,atype(PAGES,?,?)*atype(DONNEES,?,?));Type(SuppEcrit) == Cst(No_type,atype(PAGES,?,?)*atype(DONNEES,?,?));Type(AjoutEcrit) == Cst(No_type,atype(PAGES,?,?)*atype(DONNEES,?,?));Type(SuppLit) == Cst(No_type,atype(PAGES,?,?)*atype(DONNEES,?,?));Type(AjoutLit) == Cst(No_type,atype(PAGES,?,?)*atype(DONNEES,?,?)))
 END
 &
 THEORY TCIntRdX IS

@@ -1,9 +1,11 @@
 THEORY ProofList IS
-_f(1) & WellDefinednessInvariant.1,(_f(15) & _f(2) & _f(16) => _f(17));
-_f(1) & _f(6) & _f(14) & _f(7) & Operation_AjoutPremiereDonnee.2,(_f(8) & _f(3) => _f(10));
-_f(1) & _f(6) & _f(14) & _f(7) & Operation_AjoutPremiereDonnee.1,(_f(3) => _f(9));
-_f(1) & _f(6) & _f(2) & _f(11) & Operation_SuppPossedeDonnee.2,(_f(8) & _f(3) => _f(13));
-_f(1) & _f(6) & _f(2) & _f(11) & Operation_SuppPossedeDonnee.1,(_f(3) => _f(12));
+_f(1) & _f(6) & WellDefinednessPrecondition_SuppPossedeDonnee.2,(_f(2) & _f(11) & _f(19) => _f(21));
+_f(1) & _f(6) & WellDefinednessPrecondition_SuppPossedeDonnee.1,(_f(2) & _f(11) & _f(19) => _f(20));
+_f(1) & WellDefinednessInvariant.1,(_f(16) & _f(2) & _f(17) => _f(18));
+_f(1) & _f(6) & _f(15) & _f(7) & Operation_AjoutPremiereDonnee.2,(_f(8) & _f(3) => _f(10));
+_f(1) & _f(6) & _f(15) & _f(7) & Operation_AjoutPremiereDonnee.1,(_f(3) => _f(9));
+_f(1) & _f(6) & _f(2) & _f(11) & _f(12) & Operation_SuppPossedeDonnee.2,(_f(8) & _f(3) => _f(14));
+_f(1) & _f(6) & _f(2) & _f(11) & _f(12) & Operation_SuppPossedeDonnee.1,(_f(3) => _f(13));
 _f(1) & _f(6) & _f(2) & _f(7) & Operation_AjoutPossedeDonnee.2,(_f(8) & _f(3) => _f(10));
 _f(1) & _f(6) & _f(2) & _f(7) & Operation_AjoutPossedeDonnee.1,(_f(3) => _f(9));
 _f(1) & Initialisation.2,(_f(2) & _f(3) => _f(5));
@@ -22,12 +24,16 @@ possedeD : donnees +-> pages & dom(possedeD) = donnees & ((possedeD) : (((donnee
 ((((possedeD) <+ (({((do) |-> (pa))})))) : (((donnees) --> (pages))));
 (1 <= card(((((possedeD) <+ (({((do) |-> (pa))})))) |> (({pa$1})))));
 ((do) : (donnees));
+(((possedeD )(do)) = (pa));
 (((possedeD - ({((do) |-> (pa))}))) : (((donnees) --> (pages))));
 (1 <= card((((possedeD - ({((do) |-> (pa))}))) |> (({pa$1})))));
 ((pa) : (PAGES));
 possedeD : donnees +-> pages & dom(possedeD) = donnees & ((possedeD) : (((donnees) --> (pages))));
 "Invariant is well defined";
-((((possedeD) |> (({pa})))) : (FIN(((possedeD) |> (({pa}))))))
+((((possedeD) |> (({pa})))) : (FIN(((possedeD) |> (({pa}))))));
+"Operation precondition is well defined";
+((do) : (dom(possedeD)));
+((possedeD) : (((dom(possedeD)) +-> (ran(possedeD)))))
 END
 &
 THEORY EnumerateX

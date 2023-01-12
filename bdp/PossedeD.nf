@@ -122,13 +122,13 @@ THEORY ListOperationGuardX END
 &
 THEORY ListPreconditionX IS
   List_Precondition(Machine(PossedeD),AjoutPossedeDonnee)==(pa: pages & do: DONNEES-donnees);
-  List_Precondition(Machine(PossedeD),SuppPossedeDonnee)==(pa: pages & do: donnees);
+  List_Precondition(Machine(PossedeD),SuppPossedeDonnee)==(pa: pages & do: donnees & possedeD(do) = pa);
   List_Precondition(Machine(PossedeD),AjoutPremiereDonnee)==(pa: PAGES & do: DONNEES-donnees)
 END
 &
 THEORY ListSubstitutionX IS
   Expanded_List_Substitution(Machine(PossedeD),AjoutPremiereDonnee)==(pa: PAGES & do: DONNEES-donnees | possedeD:=possedeD<+{do|->pa});
-  Expanded_List_Substitution(Machine(PossedeD),SuppPossedeDonnee)==(pa: pages & do: donnees | possedeD:=possedeD-{do|->pa});
+  Expanded_List_Substitution(Machine(PossedeD),SuppPossedeDonnee)==(pa: pages & do: donnees & possedeD(do) = pa | possedeD:=possedeD-{do|->pa});
   Expanded_List_Substitution(Machine(PossedeD),AjoutPossedeDonnee)==(pa: pages & do: DONNEES-donnees | possedeD:=possedeD<+{do|->pa});
   List_Substitution(Machine(PossedeD),AjoutPossedeDonnee)==(possedeD(do):=pa);
   List_Substitution(Machine(PossedeD),SuppPossedeDonnee)==(possedeD:=possedeD-{do|->pa});
