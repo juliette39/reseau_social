@@ -1,54 +1,54 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<Proof_Obligations xmlns="https://www.atelierb.eu/Formats/pog" author="pmi2Pos" version="1.0">
+<Proof_Obligations xmlns="https://www.atelierb.eu/Formats/pog" version="1.0" author="pmi2Pos">
 <Proof_Obligation>
 <Tag>Initialisation</Tag>
 <Simple_Goal status="Unproved">
 <Tag>Invariant is preserved</Tag>
-<Proof_State passList="Force(0),(?; 0; Rapide; 1)" methodList="?" proofState="Unproved"/>
+<Proof_State passList="Force(0),(?; 0; 1)" methodList="?" proofState="Unproved"/>
 </Simple_Goal>
 <Simple_Goal status="Unproved">
 <Tag>Invariant is preserved</Tag>
-<Proof_State passList="Force(0),(?; 0; Rapide; 1)" methodList="?" proofState="Unproved"/>
+<Proof_State passList="Force(0),(?; 0; 1)" methodList="?" proofState="Unproved"/>
 </Simple_Goal>
 </Proof_Obligation>
 <Proof_Obligation>
 <Tag>Operation_AjoutPossedeDonnee</Tag>
 <Simple_Goal status="Unproved">
 <Tag>Invariant is preserved</Tag>
-<Proof_State passList="Force(0),(?; 0; Rapide; 1)" methodList="?" proofState="Unproved"/>
+<Proof_State passList="Force(0),(?; 0; 1)" methodList="?" proofState="Unproved"/>
 </Simple_Goal>
 <Simple_Goal status="Unproved">
 <Tag>Invariant is preserved</Tag>
-<Proof_State passList="Force(0),(?; 0; Rapide; 1)" methodList="?" proofState="Unproved"/>
+<Proof_State passList="Force(0),(?; 0; 1)" methodList="?" proofState="Unproved"/>
 </Simple_Goal>
 </Proof_Obligation>
 <Proof_Obligation>
 <Tag>Operation_SuppPossedeDonnee</Tag>
 <Simple_Goal status="Unproved">
 <Tag>Invariant is preserved</Tag>
-<Proof_State passList="Force(0),(?; 0; Rapide; 1)" methodList="?" proofState="Unproved"/>
+<Proof_State passList="Force(0),(?; 0; 1)" methodList="?" proofState="Unproved"/>
 </Simple_Goal>
 <Simple_Goal status="Unproved">
 <Tag>Invariant is preserved</Tag>
-<Proof_State passList="Force(0),(?; 0; Rapide; 1)" methodList="?" proofState="Unproved"/>
+<Proof_State passList="Force(0),(?; 0; 1)" methodList="?" proofState="Unproved"/>
 </Simple_Goal>
 </Proof_Obligation>
 <Proof_Obligation>
 <Tag>Operation_AjoutPremiereDonnee</Tag>
 <Simple_Goal status="Unproved">
 <Tag>Invariant is preserved</Tag>
-<Proof_State passList="Force(0),(?; 0; Rapide; 1)" methodList="?" proofState="Unproved"/>
+<Proof_State passList="Force(0),(?; 0; 1)" methodList="?" proofState="Unproved"/>
 </Simple_Goal>
 <Simple_Goal status="Unproved">
 <Tag>Invariant is preserved</Tag>
-<Proof_State passList="Force(0),(?; 0; Rapide; 1)" methodList="?" proofState="Unproved"/>
+<Proof_State passList="Force(0),(?; 0; 1)" methodList="dd &amp; ah(possedeD&lt;+{do|->pa} = possedeD\/{do|->pa}) &amp; pr &amp; pp(rp.1 | 60) &amp; dd" proofState="Unproved"/>
 </Simple_Goal>
 </Proof_Obligation>
 <Proof_Obligation>
 <Tag>WellDefinednessInvariant</Tag>
 <Simple_Goal status="Unproved">
 <Tag>Invariant is well defined</Tag>
-<Proof_State passList="Force(0),(?; 0; Rapide; 1)" methodList="?" proofState="Unproved"/>
+<Proof_State passList="Force(0),(?; 0; 1)" methodList="?" proofState="Unproved"/>
 </Simple_Goal>
 </Proof_Obligation>
 <Proof_Obligation>

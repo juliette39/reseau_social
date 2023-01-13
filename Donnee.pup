@@ -1,0 +1,5 @@
+﻿THEORY User_Pass IS
+Operation(Operation_ajoutD) & ff(0) & dd & ah(types<+{do|->ty} = types\/{do|->ty}) & pr & pp(rp.1 | 60) & pp(rp.1 | 60) & dd & pp(rp.1 | 60) & dd & pp(rp.1 | 60);
+Operation(Operation_suppressionD) & ff(0) & dd & ah(dom({do}<<|types) = donnees-{do}) & pr & dd & pp(rp.1 | 60);
+Operation(Operation_ajoutD) & ff(0) & dd & ah(types<+{do|->ty} = types\/{do|->ty}) & pr & pr & pp(rp.1 | 60) & dd & pp(rp.1 | 60) & dd & pp(rp.1 | 60) & dd & pr
+END

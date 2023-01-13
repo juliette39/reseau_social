@@ -57,7 +57,7 @@ THEORY ListInvariantX IS
   Abstract_List_Invariant(Machine(System))==(btrue);
   Expanded_List_Invariant(Machine(System))==(ran(Ecrit) <: ran(Lit) & pages <: PAGES & donnees <: DONNEES & types: donnees --> TYPES);
   Context_List_Invariant(Machine(System))==(btrue);
-  List_Invariant(Machine(System))==(Lit: donnees <-> pages & Ecrit: donnees <-> pages & Regarde: donnees <-> pages & !do.(do: donnees => possedeD(do): Lit[{do}]/\Ecrit[{do}]) & possedeD: donnees --> pages & !pa.(pa: pages => card(possedeD|>{pa})>=1))
+  List_Invariant(Machine(System))==(Lit: donnees <-> pages & Ecrit: donnees <-> pages & Regarde: donnees <-> pages & !do.(do: donnees => possedeD(do): Lit[{do}]/\Ecrit[{do}]) & possedeD: donnees -->> pages & !pa.(pa: pages => card(possedeD|>{pa})>=1))
 END
 &
 THEORY ListAssertionsX IS

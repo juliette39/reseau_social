@@ -1,13 +1,16 @@
 THEORY BalanceX IS
-PossedeD,9,0,0,0,0,0,0;
+PossedeD,11,0,0,2,0,0,0;
 Initialisation,2,0,0,0,0,0,0;
 Operation_AjoutPossedeDonnee,2,0,0,0,0,0,0;
 Operation_AjoutPremiereDonnee,2,0,0,0,0,0,0;
 Operation_SuppPossedeDonnee,2,0,0,0,0,0,0;
-WellDefinednessInvariant,1,0,0,0,0,0,0
+WellDefinednessInvariant,1,0,0,0,0,0,0;
+WellDefinednessPrecondition_SuppPossedeDonnee,2,0,0,2,0,0,0
 END
 &
 THEORY ProofState IS
+Proved(0);
+Proved(0);
 Unproved;
 Unproved;
 Unproved;
@@ -20,6 +23,8 @@ Unproved
 END
 &
 THEORY MethodList IS
+pr;
+pr;
 ?;
 ?;
 ?;
@@ -32,22 +37,25 @@ THEORY MethodList IS
 END
 &
 THEORY PassList IS
-Force(0),(?; Rapide; 0; 1);
-Force(0),(?; 0; 1; Rapide);
-Force(0),(?; 0; 1; Rapide);
-Force(0),(?; Rapide; 0; 1);
-Force(0),(?; Rapide; 0; 1);
-Force(0),(?; 0; 1; Rapide);
-Force(0),(?; 0; 1; Rapide);
-Force(0),(?; Rapide; 0; 1);
-Force(0),(?; Rapide; 0; 1)
+Force(0),?;
+Force(0),?;
+Force(0),(?; 0; Rapide; 1);
+Force(0),(?; 0; Rapide; 1);
+Force(0),(?; 0; Rapide; 1);
+Force(0),(?; 0; Rapide; 1);
+Force(0),(?; 0; Rapide; 1);
+Force(0),(?; 0; Rapide; 1);
+Force(0),(?; 0; Rapide; 1);
+Force(0),(?; 0; Rapide; 1);
+Force(0),(?; 0; Rapide; 1)
 END
 &
 THEORY Status IS
-PossedeD,9,0,0,0,0,0;
+PossedeD,11,0,2,0,0,0;
 Initialisation,2,0,0,0,0,0;
 Operation_AjoutPossedeDonnee,2,0,0,0,0,0;
 Operation_AjoutPremiereDonnee,2,0,0,0,0,0;
 Operation_SuppPossedeDonnee,2,0,0,0,0,0;
-WellDefinednessInvariant,1,0,0,0,0,0
+WellDefinednessInvariant,1,0,0,0,0,0;
+WellDefinednessPrecondition_SuppPossedeDonnee,2,0,2,0,0,0
 END

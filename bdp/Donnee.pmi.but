@@ -1,1 +1,1 @@
-﻿Flag(FileOn("Donnee.pmi.res")) & Set(toto | dom(ran(types)): FIN(INTEGER))
+﻿Flag(FileOn("Donnee.pmi.res")) & Set(toto | (1..3)*{TYPES}: FIN(NATURAL*{TYPES}) & not((1..3)*{TYPES} = {}) & donnees: POW(DONNEES) & types: donnees +-> (1..3)*{TYPES} & dom(types) = donnees & types: donnees --> (1..3)*{TYPES} & do: donnees & dom({do}<<|types) = donnees-{do} => {do}<<|types: donnees-{do} --> (1..3)*{TYPES})

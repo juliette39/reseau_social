@@ -35,7 +35,7 @@
             </Enumerated_Values>
         </Set>
     </Define>
-    <Define name="inext" hash="87471868558216742">
+    <Define name="inext" hash="16572008862855595293">
         <Exp_Comparison op=":">
             <Id value="Lit" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp//Permissions.bxml:1:3:1:1:1"/>
             <Binary_Exp op="&lt;-&gt;" typref="3">
@@ -100,7 +100,7 @@
         </Quantified_Pred>
         <Exp_Comparison op=":">
             <Id value="possedeD" typref="2" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp//PossedeD.bxml:1:3:1:1:1"/>
-            <Binary_Exp op="--&gt;" typref="3">
+            <Binary_Exp op="--&gt;&gt;" typref="3">
                 <Id value="donnees" typref="0" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp//PossedeD.bxml:1:3:1:1:2:1"/>
                 <Id value="pages" typref="0" tag="/home/basile/Documents/2A/CSC4204/projets/reseau_social/bdp//PossedeD.bxml:1:3:1:1:2:2"/>
             </Binary_Exp>
@@ -149,7 +149,7 @@
     <Define name="ass" hash="0"/>
     <Define name="cst" hash="0"/>
     <Define name="sets" hash="0"/>
-    <Proof_Obligation goalHash="2245892686642008834">
+    <Proof_Obligation goalHash="1688489375882139394">
         <Tag>Operation_Inscription</Tag>
         <Definition name="B definitions"/>
         <Definition name="ctx"/>
@@ -231,7 +231,7 @@
             </Goal>
         </Simple_Goal>
     </Proof_Obligation>
-    <Proof_Obligation goalHash="5000221814910277515">
+    <Proof_Obligation goalHash="7434661911090164768">
         <Tag>Operation_Publier</Tag>
         <Definition name="B definitions"/>
         <Definition name="ctx"/>
@@ -302,7 +302,7 @@
             </Goal>
         </Simple_Goal>
     </Proof_Obligation>
-    <Proof_Obligation goalHash="4022731322677383132">
+    <Proof_Obligation goalHash="14196172664138162998">
         <Tag>Operation_SupprimeDonnee</Tag>
         <Definition name="B definitions"/>
         <Definition name="ctx"/>
@@ -432,7 +432,7 @@
             </Goal>
         </Simple_Goal>
     </Proof_Obligation>
-    <Proof_Obligation goalHash="6243545041700584497">
+    <Proof_Obligation goalHash="488315603770038014">
         <Tag>Operation_RetireLit</Tag>
         <Definition name="B definitions"/>
         <Definition name="ctx"/>
@@ -513,7 +513,7 @@
             </Goal>
         </Simple_Goal>
     </Proof_Obligation>
-    <Proof_Obligation goalHash="12551489136125091251">
+    <Proof_Obligation goalHash="6836380716790742315">
         <Tag>Operation_RetireEcrit</Tag>
         <Definition name="B definitions"/>
         <Definition name="ctx"/>

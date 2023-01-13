@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<Proof_Obligations xmlns="https://www.atelierb.eu/Formats/pog" version="1.0" author="pmi2Pos">
+<Proof_Obligations version="1.0" author="pmi2Pos" xmlns="https://www.atelierb.eu/Formats/pog">
 <Proof_Obligation>
 <Tag>Initialisation</Tag>
 <Simple_Goal status="Proved">
@@ -87,17 +87,17 @@
 </Proof_Obligation>
 <Proof_Obligation>
 <Tag>Operation_SoustraireDroitsD</Tag>
-<Simple_Goal status="Unproved">
+<Simple_Goal status="Proved">
 <Tag>Invariant is preserved</Tag>
-<Proof_State passList="Force(0),(?; 0; Rapide; 1)" methodList="?" proofState="Unproved"/>
+<Proof_State passList="Force(0),(?; 0; Rapide; 1)" methodList="dd &amp; ah({do}&lt;&lt;|Lit &lt;: Lit) &amp; pr &amp; dd &amp; pp(rp.1 | 60)" proofState="Proved(Util)"/>
 </Simple_Goal>
-<Simple_Goal status="Unproved">
+<Simple_Goal status="Proved">
 <Tag>Invariant is preserved</Tag>
-<Proof_State passList="Force(0),(?; 0; Rapide; 1)" methodList="?" proofState="Unproved"/>
+<Proof_State passList="Force(0),(?; 0; Rapide; 1)" methodList="dd &amp; ah({do}&lt;&lt;|Ecrit &lt;: Ecrit) &amp; pr &amp; dd &amp; pp(rp.1 | 60)" proofState="Proved(Util)"/>
 </Simple_Goal>
-<Simple_Goal status="Unproved">
+<Simple_Goal status="Proved">
 <Tag>Invariant is preserved</Tag>
-<Proof_State passList="Force(0),(?; 0; Rapide; 1)" methodList="?" proofState="Unproved"/>
+<Proof_State passList="Force(0),(?; 0; Rapide; 1)" methodList="dd &amp; ah({do}&lt;&lt;|Regarde &lt;: Regarde) &amp; pr &amp; dd &amp; pr &amp; pp(rp.1 | 60)" proofState="Proved(Util)"/>
 </Simple_Goal>
 <Simple_Goal status="Unproved">
 <Tag>Invariant is preserved</Tag>
@@ -110,17 +110,17 @@
 </Proof_Obligation>
 <Proof_Obligation>
 <Tag>Operation_SoustraireDroitsDP</Tag>
-<Simple_Goal status="Unproved">
+<Simple_Goal status="Proved">
 <Tag>Invariant is preserved</Tag>
-<Proof_State passList="Force(0),(?; 0; Rapide; 1)" methodList="?" proofState="Unproved"/>
+<Proof_State passList="Force(0),(?; 0; Rapide; 1)" methodList="dd &amp; ah({do}&lt;&lt;|Lit &lt;: Lit) &amp; pr &amp; dd &amp; pp(rp.1 | 60)" proofState="Proved(Util)"/>
 </Simple_Goal>
-<Simple_Goal status="Unproved">
+<Simple_Goal status="Proved">
 <Tag>Invariant is preserved</Tag>
-<Proof_State passList="Force(0),(?; 0; Rapide; 1)" methodList="?" proofState="Unproved"/>
+<Proof_State passList="Force(0),(?; 0; Rapide; 1)" methodList="dd &amp; ah({do}&lt;&lt;|Ecrit &lt;: Ecrit) &amp; pr &amp; dd &amp; pp(rp.1 | 60)" proofState="Proved(Util)"/>
 </Simple_Goal>
-<Simple_Goal status="Unproved">
+<Simple_Goal status="Proved">
 <Tag>Invariant is preserved</Tag>
-<Proof_State passList="Force(0),(?; 0; Rapide; 1)" methodList="?" proofState="Unproved"/>
+<Proof_State passList="Force(0),(?; 0; Rapide; 1)" methodList="dd &amp; ah({do}&lt;&lt;|Regarde &lt;: Regarde) &amp; pr &amp; dd &amp; pp(rp.1 | 60)" proofState="Proved(Util)"/>
 </Simple_Goal>
 <Simple_Goal status="Unproved">
 <Tag>Invariant is preserved</Tag>
@@ -135,7 +135,7 @@
 <Tag>Operation_AjoutPermissionsProprietaire</Tag>
 <Simple_Goal status="Unproved">
 <Tag>Invariant is preserved</Tag>
-<Proof_State passList="Force(0),(?; 0; Rapide; 1)" methodList="?" proofState="Unproved"/>
+<Proof_State passList="Force(0),(?; 0; Rapide; 1)" methodList="dd" proofState="Unproved"/>
 </Simple_Goal>
 <Simple_Goal status="Unproved">
 <Tag>Invariant is preserved</Tag>
@@ -196,7 +196,7 @@
 </Simple_Goal>
 <Simple_Goal status="Unproved">
 <Tag>Operation precondition is well defined</Tag>
-<Proof_State passList="Force(0),(?; 0; Rapide; 1)" methodList="?" proofState="Unproved"/>
+<Proof_State passList="Force(0),(?; 0; Rapide; 1)" methodList="dd &amp; ah(dom(possedeD) = dom(possedeD)) &amp; pr &amp; dd &amp; pr &amp; ah(possedeD : dom(possedeD) +-> pages) &amp; pr" proofState="Unproved"/>
 </Simple_Goal>
 </Proof_Obligation>
 <Proof_Obligation>

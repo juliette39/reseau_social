@@ -1,0 +1,8 @@
+﻿THEORY User_Pass IS
+Operation(Operation_SoustraireDroitsD) & ff(0) & dd & ah({do}<<|Lit <: Lit) & pr & dd & pp(rp.1 | 60);
+Operation(Operation_SoustraireDroitsD) & ff(0) & dd & ah({do}<<|Ecrit <: Ecrit) & pr & dd & pp(rp.1 | 60);
+Operation(Operation_SoustraireDroitsDP) & ff(0) & dd & ah({do}<<|Lit <: Lit) & pr & dd & pp(rp.1 | 60);
+Operation(Operation_SoustraireDroitsDP) & ff(0) & dd & ah({do}<<|Ecrit <: Ecrit) & pr & dd & pp(rp.1 | 60);
+Operation(Operation_SoustraireDroitsDP) & ff(0) & dd & ah({do}<<|Regarde <: Regarde) & pr & dd & pp(rp.1 | 60);
+Operation(Operation_SoustraireDroitsD) & ff(0) & dd & ah({do}<<|Regarde <: Regarde) & pr & dd & pr & pp(rp.1 | 60)
+END

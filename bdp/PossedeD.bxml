@@ -41,9 +41,9 @@
 <Pos l='12' c='5' s='8'/>
 </Attr>
 </Id>
-<Binary_Exp op='--&gt;' typref='5'>
+<Binary_Exp op='--&gt;&gt;' typref='5'>
 <Attr>
-<Pos l='12' c='21' s='3'/>
+<Pos l='12' c='21' s='4'/>
 </Attr>
 <Id value='donnees' typref='6'>
 <Attr>
@@ -52,7 +52,7 @@
 </Id>
 <Id value='pages' typref='7'>
 <Attr>
-<Pos l='12' c='24' s='5'/>
+<Pos l='12' c='25' s='5'/>
 </Attr>
 </Id>
 </Binary_Exp>

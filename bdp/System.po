@@ -25,7 +25,7 @@ END
 THEORY Formulas IS
 ((NAT) = (((0) .. (2147483647)))) & ((INT) = (((-2147483647) .. (2147483647))));
 PAGES: FIN(INTEGER) & not(PAGES = {}) & DONNEES: FIN(INTEGER) & not(DONNEES = {}) & ((1..3)*{TYPES}): FIN(NATURAL*{TYPES})& not(((1..3)*{TYPES}) = {});
-((Lit) : (((donnees) <-> (pages)))) & ((Ecrit) : (((donnees) <-> (pages)))) & ((Regarde) : (((donnees) <-> (pages)))) & ran(Ecrit) : POW( ran(Lit)) & !(do).(((((do) : (donnees))) => ((((possedeD )(do)) : ((((Lit )[({do})]) /\ ((Ecrit )[({do})]))))))) & possedeD : donnees +-> pages & dom(possedeD) = donnees & ((possedeD) : (((donnees) --> (pages)))) & !(pa).(((((pa) : (pages))) => ((1 <= card(((possedeD) |> (({pa})))))))) & pages : POW( PAGES) & donnees : POW( DONNEES) & types : donnees +-> ((1..3)*{TYPES}) & dom(types) = donnees & ((types) : (((donnees) --> (((1..3)*{TYPES})))));
+((Lit) : (((donnees) <-> (pages)))) & ((Ecrit) : (((donnees) <-> (pages)))) & ((Regarde) : (((donnees) <-> (pages)))) & ran(Ecrit) : POW( ran(Lit)) & !(do).(((((do) : (donnees))) => ((((possedeD )(do)) : ((((Lit )[({do})]) /\ ((Ecrit )[({do})]))))))) & possedeD : donnees +-> pages & possedeD : donnees --> pages & possedeD : donnees +->> pages & dom(possedeD) = donnees & ran(possedeD) = pages & ((possedeD) : (((donnees) -->> (pages)))) & !(pa).(((((pa) : (pages))) => ((1 <= card(((possedeD) |> (({pa})))))))) & pages : POW( PAGES) & donnees : POW( DONNEES) & types : donnees +-> ((1..3)*{TYPES}) & dom(types) = donnees & ((types) : (((donnees) --> (((1..3)*{TYPES})))));
 (pages : POW( PAGES) & not(pages = PAGES));
 ((pa) : ((PAGES - pages)));
 ((do) : ((DONNEES - donnees)));

@@ -53,7 +53,7 @@ END
 &
 THEORY ListInvariantX IS
   Gluing_Seen_List_Invariant(Machine(PossedeD))==(btrue);
-  Gluing_List_Invariant(Machine(PossedeD))==(possedeD: donnees --> pages & !pa.(pa: pages => card(possedeD|>{pa})>=1));
+  Gluing_List_Invariant(Machine(PossedeD))==(possedeD: donnees -->> pages & !pa.(pa: pages => card(possedeD|>{pa})>=1));
   Expanded_List_Invariant(Machine(PossedeD))==(btrue);
   Abstract_List_Invariant(Machine(PossedeD))==(btrue);
   Context_List_Invariant(Machine(PossedeD))==(pages <: PAGES & donnees <: DONNEES & types: donnees --> TYPES);
